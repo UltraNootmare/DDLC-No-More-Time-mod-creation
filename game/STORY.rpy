@@ -1,19 +1,4 @@
 label STORY:
-    "What is your gender?"
-    menu:
-        "Male":
-            $ persistent.he = "he"
-            $ persistent.hes = "he's"
-            $ persistent.him = "him"
-        "Female":
-            $ persistent.he = "she"
-            $ persistent.hes = "she's"
-            $ persistent.him = "her"
-        "Other":
-            $ persistent.he = "they"
-            $ persistent.hes = "they"
-            $ persistent.him = "them"
-    
     play music t9g fadein 1.0
     mc "Ugh, what happened?"
     mc "My head is throbbing..."
