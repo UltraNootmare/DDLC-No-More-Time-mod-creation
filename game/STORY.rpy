@@ -18,6 +18,7 @@ label STORY:
     m 2n "Why i thought Sayori bandaged you up and stopped the bleeding"
     show monika 2q at t33 zorder 1 
     show sayori 1p at f32 zorder 2
-    mc "Well i taste...  colors-{nw}"
+    mc "Well i taste...  colors?"
+    
     image black = "#000000"
     play sound "sfx/fall2.ogg"
