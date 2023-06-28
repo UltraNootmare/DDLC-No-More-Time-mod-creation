@@ -1,5 +1,4 @@
 label STORY:
-    show monika 1
     play music t9g fadein 1.0
     mc "Hey, I'm alive!"
     scene bg club_day with fade
