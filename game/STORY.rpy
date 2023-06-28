@@ -33,8 +33,8 @@ label STORY:
     "Monika and Sayori are sitting in the waiting room until-{w=1}{nw}"
     show yuri 1u at t44 zorder 4
     show natsuki 2p at t43 zorder 2
-    y 1v "Ehm i heard about what happened to [player]..."
+    y 1v "Ehm i heard about what happened to [player]..{nw}"
     show yuri 1p at t44 zorder 4
     show natsuki 1 at t43 zorder 2
     s 1p "HE MIGHT DIE!!!"
-    m 3i "Sayori stop saying that or I'll put you in the same position [player] is in at the moment."
+    m 3i "Sayori stop saying that or I'll put you in the same position [player] is in."
