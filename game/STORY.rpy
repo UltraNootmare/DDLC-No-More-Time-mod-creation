@@ -1,5 +1,8 @@
 label STORY:
     play music t9g fadein 1.0
+
+    show monika 1s at t33 zorder 1
+
     mc "Hey, I'm alive!"
     scene bg club_day with fade
     show sayori 1u at f32 zorder 2
@@ -9,9 +12,7 @@ label STORY:
     mc "Yeah"
     mc "What even happened?"
     m 2r "You collapsed all of a sudden and hit your head off the edge of a desk."
-    stop music
     mc "{b}What??!{/b}"
-    play music t9g fadein 1.0
     m 2n "How do you not remember that? You even said 'make sure to catch me' and 'everythings going black' before you fell?"
     show monika 2o at t33 zorder 1 
     mc "I don't really remember anything from today.."
