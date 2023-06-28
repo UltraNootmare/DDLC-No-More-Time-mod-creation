@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/STORY.rpy", line 34: expected statement.
-    "ok":
-        ^
+File "game/definitions/definitions.rpy", line 897: unexpected EOF while parsing
+    im.Composite((960, 960), (18, 22), "mod_assets/expressions/ns_horrified.png", (0, 0), "natsuki/3b.png"))
+                                                                                                            ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Wed Jun 28 19:48:42 2023
+Wed Jun 28 21:00:11 2023

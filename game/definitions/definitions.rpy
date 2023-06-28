@@ -894,7 +894,7 @@ image natsuki 5bw = im.Composite((960, 960), (18, 22), "natsuki/w.png", (0, 0), 
 image natsuki 5bx = im.Composite((960, 960), (18, 22), "natsuki/x.png", (0, 0), "natsuki/3b.png")
 image natsuki 5by = im.Composite((960, 960), (18, 22), "natsuki/y.png", (0, 0), "natsuki/3b.png")
 image natsuki 5bz = im.Composite((960, 960), (18, 22), "natsuki/z.png", (0, 0), "natsuki/3b.png")
-image natsuki 5bhorrified = im.Composite((960, 960), (18, 22), "mod_assets/expressions/ns_horrified.png", (0, 0), "natsuki/3b.png"))
+image natsuki 5bhorrified = im.Composite((960, 960), (18, 22), "mod_assets/expressions/ns_horrified.png", (0, 0), "natsuki/3b.png")
 
 # These image definitions are left-overs of certain Natsuki expressions 
 # found in the original 1.0 release of DDLC.
