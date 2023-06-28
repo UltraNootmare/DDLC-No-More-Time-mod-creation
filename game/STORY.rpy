@@ -35,7 +35,7 @@ label STORY:
     show natsuki 2p at t43 zorder 2
     y 1v "Ehm i heard about what happened to [player]..{w=1}{nw}"
     show yuri 1p at t44 zorder 4
-    show natsuki 1 at t43 zorder 2
+    show natsuki 1horrified at t43 zorder 2
     s 1p "HE MIGHT DIE!!!"
     show sayori 1u at t42 zorder 3
     m 3i "Sayori stop saying that or I'll put you in the same position [player] is in."
