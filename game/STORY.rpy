@@ -1,4 +1,19 @@
 label STORY:
+    "What is your gender?"
+    menu:
+        "Male":
+            $ persistent.he = "he"
+            $ persistent.hes = "he's"
+            $ persistent.him = "him"
+        "Female":
+            $ persistent.he = "she"
+            $ persistent.hes = "she's"
+            $ persistent.him = "her"
+        "Other":
+            $ persistent.he = "they"
+            $ persistent.hes = "they"
+            $ persistent.him = "them"
+    
     play music t9g fadein 1.0
     mc "Ugh, what happened?"
     mc "My head is throbbing..."
@@ -36,15 +51,15 @@ label STORY:
     y 1v "Ehm i heard about what happened to [player]-{w=1}{nw}"
     show yuri 1p at t44 zorder 4
     show natsuki 2horrified at t43 zorder 2
-    s 1p "HE MIGHT DIE!!!{w=1}"
+    s 1p "[persistent.heC] MIGHT DIE!!!{w=1}"
     show sayori 1u at t42 zorder 3
     m 3i "Sayori stop saying that or I'll put you in the same position [player] is in."
     show monika 3o at t41 zorder 1
     n 5v "{b}I SWEAR TO GOD SAYORI, YOU WERE ABOUT TO GIVE ME A HEARTATTACK!!..{/b}"
     "*one extremely long complaint at Sayori for overexaggerating later*{w=1}{nw}"
     show natsuki 2g at t43 zorder 2
-    y 1v "Well... How's he doing?"
+    y 1v "Well... How's [persistent.he] doing?"
     show yuri 1u at t44 zorder 4
-    m 3p "The doctor says he's in stable condition..."
+    m 3p "The doctor says [persistent.hes] in stable condition..."
     m 3p "They say they'll get back to us in the next 30 minutes."
     show monika 3o at t41 zorder 1
