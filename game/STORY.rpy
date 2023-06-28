@@ -1,6 +1,7 @@
 label STORY:
     play music t9g fadein 1.0
-    mc "Ugh what happened my head is banging..."
+    mc "Ugh, what happened?"
+    mc "My head is banging..."
     scene bg club_day with fade
     show sayori 1u at f32 zorder 2
     show monika 2o at f33 zorder 1 
@@ -10,7 +11,7 @@ label STORY:
     mc "What even happened?"
     m 2r "You collapsed all of a sudden and hit your head off the edge of a desk."
     mc "{b}What??!{/b}"
-    m 2n "How do you not remember that? You even said 'make sure to catch me' and 'everythings going black' before you fell!"
+    m 2n "How do you not remember that? {w=1} You even said 'make sure to catch me' and 'everythings going black' before you fell!"
     show monika 2o at t33 zorder 1 
     mc "I don't really remember anything from today.."
     mc "If I was hurt that bad why didn't you call an ambulance?"
@@ -20,7 +21,7 @@ label STORY:
     m 2n "Why? I thought Sayori bandaged you up and stopped the bleeding"
     show monika 2horrified at t33 zorder 1 
     show sayori 1horrified at f32 zorder 2
-    mc "I taste.. colours?"
+    mc "I taste.. colours?{w=1}{nw}"
     scene black
     play sound "sfx/fall2.ogg"
     "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}."
