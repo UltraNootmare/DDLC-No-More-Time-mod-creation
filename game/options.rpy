@@ -4,10 +4,6 @@
 
 ## options.rpy
 
-# Custom Defenitions
-define config.developer = True
-
-
 # This file customizes what your mod is and and how it starts and builds!
 
 # This controls what your mod is called.
