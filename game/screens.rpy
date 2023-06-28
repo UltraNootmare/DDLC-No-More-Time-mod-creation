@@ -476,6 +476,14 @@ init python:
         renpy.hide_screen("name_input")
         if launchGame:
             renpy.jump_out_of_context("start")
+    
+    def FinishEnterGender(launchGame=True):
+        if not he: return
+        persistent.he = he
+        renpy.save_persistent()
+        renpy.hide_screen("gender_input")
+        if launchGame:
+            renpy.jump_out_of_context("start")
 
 screen navigation():
 
@@ -805,7 +813,8 @@ screen about():
                 yfit True
 
             vbox:
-                add Transform("mod_assets/DDLCModTemplateLogo.png", size=(200,200)) xalign .5
+                ## Adds the logo composited by the game here
+                add im.Composite((512, 512), (0, 0), recolorize("mod_assets/logo_bg.png"), (0, 0), "mod_assets/logo_fg.png")
 
                 null height 5
                 
@@ -1224,7 +1233,7 @@ screen ddlc_preferences():
                     action Preference("all mute", "toggle")
                     style "mute_all_button"
 
-screen template_preferences():
+screen mod_preferences():
     hbox:
         box_wrap True
 
@@ -1247,6 +1256,7 @@ screen template_preferences():
         
         vbox:
             style_prefix "name"
+            label _("Player")
             label _("Player Name")
             
             null height 3
@@ -1257,6 +1267,16 @@ screen template_preferences():
                 text "[player]" xalign 0.5
             
             textbutton _("Change Name") action Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName, launchGame=False)):
+                text_style "navigation_button_text"
+            
+            label _("Player Gender")
+
+            if he == "":
+                text _("No Gender Set") xalign 0.5
+            else:
+                text "[player]" xalign 0.5
+            
+            textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
                 text_style "navigation_button_text"
 
         null height (4 * gui.pref_spacing)
@@ -1708,6 +1728,37 @@ screen name_input(message, ok_action):
                 xalign 0.5
 
             input default "" value VariableInputValue("player") length 12 allow "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+            hbox:
+                xalign 0.5
+                spacing 100
+
+                textbutton _("OK") action ok_action
+
+screen gender_input(message, ok_action):
+
+    ## Ensure other screens do not get input while this screen is displayed.
+    modal True
+
+    zorder 200
+
+    style_prefix "confirm"
+
+    add "gui/overlay/confirm.png"
+    key "K_RETURN" action [Play("sound", gui.activate_sound), ok_action]
+
+    frame:
+
+        vbox:
+            xalign .5
+            yalign .5
+            spacing 30
+
+            label _(message):
+                style "confirm_prompt"
+                xalign 0.5
+
+            input default "" value VariableInputValue("he") length 12 allow "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
             hbox:
                 xalign 0.5

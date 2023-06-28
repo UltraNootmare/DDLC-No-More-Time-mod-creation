@@ -1616,10 +1616,10 @@ default he = persistent.he
 default him = persistent.him
 default are = persistent.are
 default hes = persistent.hes
-default he_capital = he.capitalize()
-default him_capital = him.capitalize()
-default are_capital = are.capitalize()
-default hes_capital = hes.capitalize()
+default heC = he.capitalize()
+default himC = him.capitalize()
+default areC = are.capitalize()
+default hesC = hes.capitalize()
 
 ## Extra Settings Variables
 # This section controls whether the mod is censored or is in let's play mode.
