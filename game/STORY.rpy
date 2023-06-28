@@ -9,9 +9,12 @@ label STORY:
     mc "Yeah"
     mc "What even happened?"
     m 2r "You collapsed all of a sudden and hit your head off the edge of a desk."
+    stop music
+    mc "{b}What??!{/b}"
+    play music t9g fadein 1.0
     m 2n "How do you not remember that? You even said 'make sure to catch me' and 'everythings going black' before you fell?"
     show monika 2o at t33 zorder 1 
-    mc "I don't really remember anything from today"
+    mc "I don't really remember anything from today.."
     mc "If I was hurt that bad why didn't you call an ambulance?"
     m 2n "Hehe"
     show monika 2o at t33 zorder 1 

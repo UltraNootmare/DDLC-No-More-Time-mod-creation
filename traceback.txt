@@ -1,0 +1,40 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 12, in script
+    pause music
+  File "renpy/common/000statements.rpy", line 455, in execute_pause
+    delay = eval(p["delay"])
+  File "game/STORY.rpy", line 12, in <module>
+    pause music
+NameError: name 'music' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 12, in script
+    pause music
+  File "renpy/ast.py", line 2259, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 455, in execute_pause
+    delay = eval(p["delay"])
+  File "renpy/python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/STORY.rpy", line 12, in <module>
+    pause music
+NameError: name 'music' is not defined
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 7.6.1.23060707
+DDLC - No More Time 4.2.2-Py2
+Wed Jun 28 17:23:15 2023
