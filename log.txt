@@ -1,9 +1,9 @@
-Wed Jun 28 18:00:51 2023
+Wed Jun 28 18:03:33 2023
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
 
-Bootstrap to the start of init.init. took 0.07s
+Bootstrap to the start of init.init. took 0.05s
 Early init. took 0.00s
 Loader init. took 0.02s
 Loading error handling. took 0.02s
@@ -11,31 +11,31 @@ Loading script. took 0.21s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
 Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.10s
-Loading analysis data. took 0.07s
-Analyze and compile ATL. took 0.08s
-Reloading save slot metadata. took 0.02s
+Running init code. took 0.08s
+Loading analysis data. took 0.05s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.04s
 Index archives took 0.00s
-Dump and make backups. took 0.09s
+Dump and make backups. took 0.07s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.08s
+Initial gc. took 0.06s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.07s
-Build styles took 0.01s
-Load screen analysis took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.03s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.09s
+Prepare screens took 0.10s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.19s
+Interface start. took 0.16s
 
 Initializing gl renderer:
 primary display bounds: (0, 0, 2560, 1440)
@@ -62,103 +62,10 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1435, 807) drawable=(1435, 807)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-
-Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
-  File "renpy/ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
-  File "renpy/ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "renpy/display/core.py", line 4172, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2782, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/screen.py", line 731, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 1339, in render
-    st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 1062, in render
-    surf = render(d, rw, height - y, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 1339, in render
-    st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 1849, in render
-    cwidth, cheight = sizeit('c', width, height, 0, 0)
-  File "renpy/display/layout.py", line 1846, in sizeit
-    rend = renpy.display.render.render_for_size(pos_d[pos], width, height, st, at)
-  File "render.pyx", line 318, in renpy.display.render.render_for_size
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/viewport.py", line 273, in render
-    surf = renpy.display.render.render(self.child, child_width, child_height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 1107, in render
-    surf = render(d, width - x, rh, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 1339, in render
-    st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 1107, in render
-    surf = render(d, width - x, rh, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/transform.py", line 909, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/transform.py", line 909, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/im.py", line 676, in render
-    return cache.get(self, render=True)
-  File "renpy/display/im.py", line 330, in get
-    surf = image.load()
-  File "renpy/display/im.py", line 803, in load
-    raise e
-IOError: Couldn't find file 'mod_assets/DDLCModTemplateLogo.png'.
-
-While loading <renpy.display.im.Image object (u'mod_assets/DDLCModTemplateLogo.png') at 0x000000000874e350>:
-IOError: Couldn't find file 'mod_assets/DDLCModTemplateLogo.png'.
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
