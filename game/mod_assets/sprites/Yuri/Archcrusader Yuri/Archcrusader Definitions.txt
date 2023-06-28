@@ -1,0 +1,8 @@
+## Lowered
+image archcrusader 1 = "mod_assets/archcrusader/a.png"
+## Wielding
+image archcrusader 2 = "mod_assets/archcrusader/b.png"
+## Raised
+image archcrusader 3 = "mod_assets/archcrusader/c.png"
+## Blocking
+image archcrusader 4 = "mod_assets/archcrusader/d.png"
