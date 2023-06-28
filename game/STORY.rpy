@@ -28,3 +28,5 @@ label STORY:
     "Okay I get it, we'll continue with the story{w=1}{nw}"
     
     scene bg hospital with fade
+
+    
