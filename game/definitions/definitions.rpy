@@ -241,7 +241,7 @@ image bg notebook-glitch = "bg/notebook-glitch.png" # Glitched Poem Game BG
 image bg glitch = LiveTile("bg/glitch.jpg")
 
 # Custom backgrounds
-image bg hospital = "mod_assets/bg/hospital.png"
+image bg hospital = "mod_assets/backgrounds/hospital.png"
 
 # This image transform shows a glitched scene effect
 # during Act 3 when we delete Monika.
