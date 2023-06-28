@@ -25,4 +25,6 @@ label STORY:
     image black = "#000000"
     play sound "sfx/fall2.ogg"
     "Okay I get it, we'll continue with the story"
+    "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}."
+    "okay i get it we'll continue the story"
     
