@@ -30,11 +30,18 @@ label STORY:
     scene bg hospital with fade
     show monika 2o at t41 zorder 1
     show sayori 1u at t42 zorder 3
-    "Monika and Sayori are sitting in the waiting room until-{w=1}{nw}"
+    "Monika and Sayori are sitting in the waiting room until-"
     show yuri 1u at t44 zorder 4
     show natsuki 2p at t43 zorder 2
     y 1v "Ehm i heard about what happened to [player]..{nw}"
     show yuri 1p at t44 zorder 4
     show natsuki 1 at t43 zorder 2
+<<<<<<< Updated upstream
     s 1p "HE MIGHT DIE!!!"
     m 3i "Sayori stop saying that or I'll put you in the same position [player] is in."
+=======
+    s 1p "HE MIGHT DIE!!!!!!!!!!!!!!!!!!!!!!"
+    m 3i "Sayori stop saying that or I'll put you in the same position [player] is in at the moment."
+    n 5v "{b}I SWEAR TO GOD SAYORI YOU WERE ABOUT TO GIVE ME A HEARTATTACK....{/b} *one extremely long complaint at Sayori for overexaggerating later* "
+    
+>>>>>>> Stashed changes
