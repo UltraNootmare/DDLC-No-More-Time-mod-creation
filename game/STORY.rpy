@@ -24,7 +24,7 @@ label STORY:
     mc "I taste.. colours?{w=1}{nw}"
     scene black
     play sound "sfx/fall2.ogg"
-    "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}."
-    "Okay I get it, we'll continue with the story"
+    "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}.{nw}"
+    "Okay I get it, we'll continue with the story{w=1}{nw}"
     
     scene bg hospital with fade
