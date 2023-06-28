@@ -19,7 +19,7 @@ label STORY:
     mc "Well can you call one now?"
     m 2n "Why? I thought Sayori bandaged you up and stopped the bleeding"
     show monika 2horrified at t33 zorder 1 
-    show sayori 1p at f32 zorder 2
+    show sayori 1horrified at f32 zorder 2
     mc "Well, I taste...  colours?"
     scene black
     play sound "sfx/fall2.ogg"
