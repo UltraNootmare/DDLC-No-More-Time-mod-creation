@@ -4,6 +4,10 @@
 
 ## options.rpy
 
+# Custom Defenitions
+define config.developer = True
+
+
 # This file customizes what your mod is and and how it starts and builds!
 
 # This controls what your mod is called.
@@ -14,7 +18,7 @@ define config.name = "DDLC - No More Time"
 define gui.show_name = True
 
 # This controls the version number of your mod.
-define config.version = "4.2.2-Py2"
+define config.version = "0.0.1-Py2"
 
 # This adds information about your mod in the About screen.
 # DDLC does not have a 'About' screen so you can leave this blank.
@@ -25,7 +29,7 @@ define gui.about = _("")
 # Note:
 #   The build name is ASCII only so no numbers, spaces, or semicolons.
 #   Example: Doki Doki Yuri Time to DokiDokiYuriTime
-define build.name = "DDLCModTemplateTwo-Py2"
+define build.name = "DDLC-NoMoreTime"
 
 # This configures whether your mod has sound effects.
 define config.has_sound = True
@@ -82,7 +86,7 @@ default preferences.sfx_volume = 0.75
 #   Windows: %AppData%/RenPy/
 #   macOS: $HOME/Library/RenPy/ (Un-hide the Library Folder)
 #   Linux: $HOME/.renpy/
-define config.save_directory = "DDLCModTemplateTwo"
+define config.save_directory = "DDLCNoMoreTime"
 
 # This controls the window logo of your mod.
 define config.window_icon = "gui/window_icon.png"
