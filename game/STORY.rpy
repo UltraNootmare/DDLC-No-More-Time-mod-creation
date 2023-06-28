@@ -40,4 +40,4 @@ label STORY:
     show sayori 1u at t42 zorder 3
     m 3i "Sayori stop saying that or I'll put you in the same position [player] is in."
     n 5v "{b}I SWEAR TO GOD SAYORI, YOU WERE ABOUT TO GIVE ME A HEARTATTACK!!..{/b}{w=1} *one extremely long complaint at Sayori for overexaggerating later* "
-    
+    show natsuki 1g at t43 zorder 2
