@@ -1,8 +1,5 @@
 label STORY:
     play music t9g fadein 1.0
-
-    show monika 1s at t33 zorder 1
-
     mc "Ugh what happened my head is banging..."
     scene bg club_day with fade
     show sayori 1u at f32 zorder 2
@@ -21,7 +18,7 @@ label STORY:
     show monika 2o at t33 zorder 1 
     mc "Well can you call one now?"
     m 2n "Why? I thought Sayori bandaged you up and stopped the bleeding"
-    show monika 2q at t33 zorder 1 
+    show monika 2s at t33 zorder 1 
     show sayori 1p at f32 zorder 2
     mc "Well, I taste...  colours?"
     scene black
