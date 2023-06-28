@@ -3,7 +3,7 @@ label STORY:
 
     show monika 1s at t33 zorder 1
 
-    mc "Hey, I'm alive!"
+    mc "Ugh what happened my head is banging..."
     scene bg club_day with fade
     show sayori 1u at f32 zorder 2
     show monika 2o at f33 zorder 1 
