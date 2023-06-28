@@ -25,3 +25,4 @@ label STORY:
     play sound "sfx/fall2.ogg"
     "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}."
     "Okay I get it, we'll continue with the story"
+    
