@@ -1,88 +1,49 @@
-<<<<<<< Updated upstream
-Wed Jun 28 20:27:31 2023
-=======
-Wed Jun 28 20:28:27 2023
->>>>>>> Stashed changes
+Wed Jun 28 20:39:22 2023
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
 
-Bootstrap to the start of init.init. took 0.08s
+Bootstrap to the start of init.init. took 0.05s
 Early init. took 0.00s
-<<<<<<< Updated upstream
-Loader init. took 0.44s
-Loading error handling. took 0.07s
-Loading script. took 2.02s
-Loading save slot metadata. took 0.07s
-Loading persistent. took 0.00s
-Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.39s
-Loading analysis data. took 0.08s
-Analyze and compile ATL. took 0.09s
-Reloading save slot metadata. took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Ultra Nootmare\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
-Dump and make backups. took 0.13s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.03s
-Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
-Load screen analysis took 0.02s
-Analyze screens took 0.03s
-Save screen analysis took 0.04s
-Prepare screens took 0.12s
-=======
 Loader init. took 0.13s
 Loading error handling. took 0.02s
-Loading script. took 0.34s
+Loading script. took 0.21s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
 Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.08s
-Loading analysis data. took 0.06s
-Analyze and compile ATL. took 0.07s
+Running init code. took 0.09s
+Loading analysis data. took 0.05s
+Analyze and compile ATL. took 0.06s
 Reloading save slot metadata. took 0.07s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
 Dump and make backups. took 0.07s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.07s
+Initial gc. took 0.06s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.14s
->>>>>>> Stashed changes
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.08s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.05s
 Running _start took 0.00s
 Performance test:
-<<<<<<< Updated upstream
-Interface start. took 0.15s
-=======
-Interface start. took 0.22s
->>>>>>> Stashed changes
+Interface start. took 0.25s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1600, 900)
+primary display bounds: (0, 0, 2560, 1440)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 530'
-Version: '4.6.0 - Build 31.0.101.2111'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
 Display Info: None
 Number of texture units: 32
 Using shader environment.
@@ -98,61 +59,41 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-<<<<<<< Updated upstream
-Screen sizes: virtual=(1280, 720) physical=(1419, 798) drawable=(1419, 798)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-=======
-Screen sizes: virtual=(1280, 720) physical=(2379, 1338) drawable=(2379, 1338)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(2298, 1239) drawable=(2298, 1239)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(2348, 1260) drawable=(2348, 1260)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(2321, 1269) drawable=(2321, 1269)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(2296, 1271) drawable=(2296, 1271)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(2291, 1271) drawable=(2291, 1271)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(2279, 1270) drawable=(2279, 1270)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(2270, 1269) drawable=(2270, 1269)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(2261, 1269) drawable=(2261, 1269)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(2254, 1269) drawable=(2254, 1269)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(1848, 806) drawable=(1848, 806)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(1673, 806) drawable=(1673, 806)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(1440, 806) drawable=(1440, 806)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(1432, 806) drawable=(1432, 806)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(1434, 806) drawable=(1434, 806)
+Screen sizes: virtual=(1280, 720) physical=(1433, 806) drawable=(1433, 806)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.10s
+Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
->>>>>>> Stashed changes
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.07s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.07s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
