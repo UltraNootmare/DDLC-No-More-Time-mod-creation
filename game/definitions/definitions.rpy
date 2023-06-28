@@ -1452,6 +1452,137 @@ image monika g2:
             pause 0.2
     repeat
 
+## Custom Characters ##
+
+image monika doctor 1 = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/a.png")
+image monika doctor 2 = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/a.png")
+image monika doctor 3 = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/a.png")
+image monika doctor 4 = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/a.png")
+image monika doctor 5 = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/3a.png")
+
+image monika doctor 1a = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/a.png")
+image monika doctor 1b = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/b.png")
+image monika doctor 1c = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/c.png")
+image monika doctor 1d = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/d.png")
+image monika doctor 1e = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/e.png")
+image monika doctor 1f = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/f.png")
+image monika doctor 1g = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/g.png")
+image monika doctor 1h = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/h.png")
+image monika doctor 1i = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/i.png")
+image monika doctor 1j = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/j.png")
+image monika doctor 1k = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/k.png")
+image monika doctor 1l = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/l.png")
+image monika doctor 1m = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/m.png")
+image monika doctor 1n = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/n.png")
+image monika doctor 1o = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/o.png")
+image monika doctor 1p = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/p.png")
+image monika doctor 1q = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/q.png")
+image monika doctor 1r = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/r.png")
+
+image monika doctor 2a = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/a.png")
+image monika doctor 2b = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/b.png")
+image monika doctor 2c = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/c.png")
+image monika doctor 2d = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/d.png")
+image monika doctor 2e = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/e.png")
+image monika doctor 2f = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/f.png")
+image monika doctor 2g = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/g.png")
+image monika doctor 2h = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/h.png")
+image monika doctor 2i = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/i.png")
+image monika doctor 2j = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/j.png")
+image monika doctor 2k = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/k.png")
+image monika doctor 2l = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/l.png")
+image monika doctor 2m = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/m.png")
+image monika doctor 2n = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/n.png")
+image monika doctor 2o = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/o.png")
+image monika doctor 2p = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/p.png")
+image monika doctor 2q = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/q.png")
+image monika doctor 2r = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/1l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/r.png")
+
+image monika doctor 3a = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/a.png")
+image monika doctor 3b = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/b.png")
+image monika doctor 3c = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/c.png")
+image monika doctor 3d = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/d.png")
+image monika doctor 3e = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/e.png")
+image monika doctor 3f = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/f.png")
+image monika doctor 3g = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/g.png")
+image monika doctor 3h = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/h.png")
+image monika doctor 3i = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/i.png")
+image monika doctor 3j = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/j.png")
+image monika doctor 3k = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/k.png")
+image monika doctor 3l = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/l.png")
+image monika doctor 3m = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/m.png")
+image monika doctor 3n = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/n.png")
+image monika doctor 3o = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/o.png")
+image monika doctor 3p = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/p.png")
+image monika doctor 3q = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/q.png")
+image monika doctor 3r = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/1r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/r.png")
+
+image monika doctor 4a = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/a.png")
+image monika doctor 4b = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/b.png")
+image monika doctor 4c = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/c.png")
+image monika doctor 4d = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/d.png")
+image monika doctor 4e = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/e.png")
+image monika doctor 4f = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/f.png")
+image monika doctor 4g = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/g.png")
+image monika doctor 4h = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/h.png")
+image monika doctor 4i = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/i.png")
+image monika doctor 4j = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/j.png")
+image monika doctor 4k = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/k.png")
+image monika doctor 4l = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/l.png")
+image monika doctor 4m = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/m.png")
+image monika doctor 4n = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/n.png")
+image monika doctor 4o = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/o.png")
+image monika doctor 4p = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/p.png")
+image monika doctor 4q = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/q.png")
+image monika doctor 4r = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/2l.png", (0, 0), "mod_assets/sprites/Monika/Doctor/2r.png", (0, 0), "mod_assets/sprites/Monika/Doctor/r.png")
+
+image monika doctor 5a = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/3a.png")
+image monika doctor 5b = im.Composite((960, 960), (0, 0), "mod_assets/sprites/Monika/Doctor/3b.png")
+
+image monika doctor g1:
+    "mod_assets/sprites/Monika/Doctor/g1.png"
+    xoffset 35 yoffset 55
+    parallel:
+        zoom 1.00
+        linear 0.10 zoom 1.03
+        repeat
+    parallel:
+        xoffset 35
+        0.20
+        xoffset 0
+        0.05
+        xoffset -10
+        0.05
+        xoffset 0
+        0.05
+        xoffset -80
+        0.05
+        repeat
+    time 1.25
+    xoffset 0 yoffset 0 zoom 1.00
+    "monika doctor 3"
+
+image monika doctor g2:
+    block:
+        choice:
+            "mod_assets/sprites/Monika/Doctor/g2.png"
+        choice:
+            "mod_assets/sprites/Monika/Doctor/g3.png"
+        choice:
+            "mod_assets/sprites/Monika/Doctor/g4.png"
+    block:
+        choice:
+            pause 0.05
+        choice:
+            pause 0.1
+        choice:
+            pause 0.15
+        choice:
+            pause 0.2
+    repeat
+
+#######################
+
 ## Character Variables
 # This is where the characters are declared in the mod.
 # To define a new character with assets, declare a character variable like in this example:
@@ -1463,6 +1594,7 @@ define narrator = Character(ctc="ctc", ctc_position="fixed")
 define mc = DynamicCharacter('player', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define s = DynamicCharacter('s_name', image='sayori', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define md = DynamicCharacter('md_name', image='monika doctor', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
@@ -1538,6 +1670,7 @@ default faint_effect = None
 
 default s_name = "Sayori"
 default m_name = "Monika"
+default md_name = "Dr. Not Monika"
 default n_name = "Natsuki"
 default y_name = "Yuri"
 

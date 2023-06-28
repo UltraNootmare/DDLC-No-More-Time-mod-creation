@@ -1,2 +1,0 @@
-If you're reading this, then you should already have one or both of the previous spritesets.
-Simply extract the "femc" and/or "femc_lh" folders to where you extracted the originals, and replace any files that you are asked to.

@@ -36,7 +36,7 @@ label STORY:
     y 1v "Ehm i heard about what happened to [player]-{w=1}{nw}"
     show yuri 1p at t44 zorder 4
     show natsuki 2horrified at t43 zorder 2
-    s 1p "HE MIGHT DIE!!!"
+    s 1p "HE MIGHT DIE!!!{w=1}"
     show sayori 1u at t42 zorder 3
     m 3i "Sayori stop saying that or I'll put you in the same position [player] is in."
     show monika 3o at t41 zorder 1
