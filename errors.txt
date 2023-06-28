@@ -7,4 +7,4 @@ File "game/STORY.rpy", line 23: end of line expected.
                 ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Wed Jun 28 17:16:20 2023
+Wed Jun 28 16:25:48 2023
