@@ -6,6 +6,9 @@
 
 # This file customizes what your mod is and and how it starts and builds!
 
+### DEV MODE - REMOVE AFTER TESTING ###
+define config.developer = True
+
 # This controls what your mod is called.
 define config.name = "DDLC - No More Time"
 
