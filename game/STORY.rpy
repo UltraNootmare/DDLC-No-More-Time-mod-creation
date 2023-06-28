@@ -20,10 +20,9 @@ label STORY:
     show monika 2q at t33 zorder 1 
     show sayori 1p at f32 zorder 2
     mc "Well, I taste...  colours?"
-    "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}."
-    scene fade 1.0
-    image black = "#000000"
+    scene black = "#000000"
     play sound "sfx/fall2.ogg"
     "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}."
     "Okay I get it, we'll continue with the story"
+    
     scene bg hospital with fade
