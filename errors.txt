@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/STORY.rpy", line 22: expected '=' not found.
-    image black
-               ^
+File "game/STORY.rpy", line 26: end of line expected.
+    "{w=1}""{w=1}""{w=1}""{w=1}""{w=1}"
+                  ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Wed Jun 28 13:52:29 2023
+Wed Jun 28 16:25:48 2023
