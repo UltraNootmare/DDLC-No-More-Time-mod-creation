@@ -35,4 +35,4 @@ label STORY:
     show natsuki 2n at t43 zorder 2
     y 1v "Ehm i heard about what happened to [player]..."
     s 1p "HE MIGHT DIE!!!!!!!!!!!!!!!!!!!!!!"
-    
+    m 3i "Sayori stop saying that or I'll put you in the same position [player] is in at the moment."
