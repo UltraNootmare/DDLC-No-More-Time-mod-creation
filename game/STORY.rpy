@@ -21,8 +21,7 @@ label STORY:
     show monika 2q at t33 zorder 1 
     show sayori 1p at f32 zorder 2
     mc "Well, I taste...  colours?"
-    "{w=1}"
+    "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}."
     image black = "#000000"
     play sound "sfx/fall2.ogg"
     "Okay I get it, we'll continue with the story"
-    "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}."
