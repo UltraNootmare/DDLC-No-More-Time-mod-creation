@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/STORY.rpy", line 22: expected '=' not found.
+    image black
+               ^
+
+Ren'Py Version: Ren'Py 7.6.1.23060707
+Wed Jun 28 13:52:29 2023
