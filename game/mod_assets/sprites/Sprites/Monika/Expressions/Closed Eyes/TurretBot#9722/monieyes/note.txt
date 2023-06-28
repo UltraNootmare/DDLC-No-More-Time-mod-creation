@@ -1,0 +1,5 @@
+Okay, I'm not 100% sure this belongs here, but basically: Append this to any Monika image definition to close her eyes. Tested with all her vanilla expressions and it works great.
+
+- TurretBot (Steamed Hams mod)
+
+taken from Discord
