@@ -34,3 +34,5 @@ label STORY:
     show yuri 1u at t44 zorder 4
     show natsuki 2n at t43 zorder 2
     y 1v "Ehm i heard about what happened to [player]..."
+    s 1p "HE MIGHT DIE!!!!!!!!!!!!!!!!!!!!!!"
+    
