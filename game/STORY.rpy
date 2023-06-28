@@ -28,11 +28,11 @@ label STORY:
     "Okay I get it, we'll continue with the story{w=1}{nw}"
     
     scene bg hospital with fade
-    show monika 3o at t41 zorder 1
+    show monika 2o at t41 zorder 1
     show sayori 1u at t42 zorder 3
     "Monika and Sayori are sitting in the waiting room until-"
     show yuri 1u at t44 zorder 4
-    show natsuki 2n at t43 zorder 2
+    show natsuki 2p at t43 zorder 2
     y 1v "Ehm i heard about what happened to [player]..."
     show yuri 1p at t44 zorder 4
     show natsuki 1 at t43 zorder 2
