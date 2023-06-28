@@ -1,7 +1,7 @@
 label STORY:
     play music t9g fadein 1.0
 
-    show monika 1s at t33 zorder 1
+    show monika 1horrified at t33 zorder 1
 
     mc "Ugh what happened my head is banging..."
     scene bg club_day with fade
