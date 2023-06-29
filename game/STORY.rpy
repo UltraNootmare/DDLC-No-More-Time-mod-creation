@@ -184,6 +184,7 @@ label STORY:
         scene black
         "Sayori hugs [player] with tears running down her face..."
         scene cg sayorihospital with fade
+        "{w=5}{nw}"
         
     else:
         scene bg hospital with fade
