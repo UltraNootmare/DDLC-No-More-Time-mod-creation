@@ -53,69 +53,6 @@ define config.gestures = { "n" : 'game_menu', "s" : "hide_windows", "e" : 'toggl
 # This init python statement sets up the functions, keymaps and channels
 # for the game.
 init python:
-    ## Pronouns
-
-    def pLoadPresets():
-        """
-        Returns a list of pronoun presets from the 'pronouns.json' file.
-        """
-        import json
-
-        # load our pronoun preset file from the 'game' directory
-        if renpy.loadable("pronouns.json"):
-            try:
-                with renpy.file("pronouns.json") as file:
-                    contents = file.read()
-
-            except PermissionError:
-                pLog("Error: The pronouns mod doesn't have the permissions to access the preset file 'pronouns.json'")
-                return
-
-            except IOError:
-                pLog("Error: The pronouns mod was unable to open the preset file 'pronouns.json'")
-                return
-
-            #
-            try:
-                jsonData = json.loads(contents)
-            except:
-                pLog("Error: The preset file 'pronouns.json' is not a valid JSON file.")
-
-            return jsonData["pronouns"]
-
-        pLog("Error: The preset file 'pronouns.json' is missing from the 'game' directory.")
-
-
-    def pUpdatePronouns(presets):
-        """
-        Updates the main character's pronouns to match the player's preference.
-        """
-
-        index = preferences.pronoun
-
-        if presets is None or not (index >= 0 and index < len(presets)):
-            return
-
-        #
-        name = "undefined"
-
-        try:
-            preset = presets[index]
-            name = preset["id"]
-
-            persistent.pperp  = preset["perp"]
-            persistent.pperp2 = preset["perp2"]
-            persistent.pperp3 = preset["perp3"]
-            persistent.pposp  = preset["posp"]
-            persistent.pposp2 = preset["posp2"]
-            persistent.refl   = preset["refl"]
-            persistent.palt   = preset["alt"]
-            persistent.palt2  = preset["alt2"]
-            persistent.palt3  = preset["alt3"]
-
-        except:
-            pLog("Warning: The selected preset '%s' is either incomplete or invalid." % (name))
-
     ## More Android Gestures
     # This variable makes a keymap for the history screen.
     if renpy.android:
@@ -1672,6 +1609,7 @@ define _dismiss_pause = config.developer
 # To use this feature, simply ask the user for their pronoun and use it here.
 # For capitalization, use heC, himC, areC and hesC
 <<<<<<< HEAD
+<<<<<<< HEAD
 define persistent.initialised = False
 
 ## Personal pronouns
@@ -1693,6 +1631,8 @@ define persistent.palt3 = "date"
 
 
 =======
+=======
+>>>>>>> parent of b04e293 (a)
 default persistent.he = ""
 default persistent.him = ""
 default persistent.are = ""
@@ -1701,11 +1641,18 @@ default he = persistent.he
 default him = persistent.him
 default are = persistent.are
 default hes = persistent.hes
+<<<<<<< HEAD
 default he_capital = he.capitalize()
 default him_capital = him.capitalize()
 default are_capital = are.capitalize()
 default hes_capital = hes.capitalize()
 >>>>>>> parent of cc6a68e (Adding gender in settings..)
+=======
+default heC = he.capitalize()
+default himC = him.capitalize()
+default areC = are.capitalize()
+default hesC = hes.capitalize()
+>>>>>>> parent of b04e293 (a)
 
 ## Extra Settings Variables
 # This section controls whether the mod is censored or is in let's play mode.

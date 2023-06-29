@@ -3,6 +3,7 @@ errors listed below, and try again.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 File "game/screens.rpy", line 1275: Line is indented, but the preceding text_style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
     vbox:
     ^
@@ -17,3 +18,11 @@ File "game/definitions/definitions.rpy", line 897: unexpected EOF while parsing
 Ren'Py Version: Ren'Py 7.6.1.23060707
 Wed Jun 28 21:00:11 2023
 >>>>>>> parent of cc6a68e (Adding gender in settings..)
+=======
+File "game/screens.rpy", line 810: u't11' is not a keyword argument or valid child of the add statement.
+    add logo t11
+                ^
+
+Ren'Py Version: Ren'Py 7.6.1.23060707
+Wed Jun 28 22:03:56 2023
+>>>>>>> parent of b04e293 (a)

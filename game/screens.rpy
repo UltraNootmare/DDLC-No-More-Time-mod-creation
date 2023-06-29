@@ -1226,12 +1226,15 @@ screen ddlc_preferences():
 
 <<<<<<< HEAD
 screen mod_preferences():
+<<<<<<< HEAD
     python:
         pronounPresets = pLoadPresets()
     
 =======
 screen template_preferences():
 >>>>>>> parent of cc6a68e (Adding gender in settings..)
+=======
+>>>>>>> parent of b04e293 (a)
     hbox:
         box_wrap True
 
@@ -1267,11 +1270,9 @@ screen template_preferences():
                 text_style "navigation_button_text"
 <<<<<<< HEAD
             
-            vbox:
-                hbox:
-                    box_wrap True
-                    style_prefix "radio"
+            label _("Player Gender")
 
+<<<<<<< HEAD
                     label _("Preferred Pronoun")
 
                 hbox:
@@ -1303,6 +1304,15 @@ screen template_preferences():
                                 size 20
 =======
 >>>>>>> parent of cc6a68e (Adding gender in settings..)
+=======
+            if he == "":
+                text _("No Gender Set") xalign 0.5
+            else:
+                text "[he]" xalign 0.5
+            
+            textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
+                text_style "navigation_button_text"
+>>>>>>> parent of b04e293 (a)
 
         null height (4 * gui.pref_spacing)
 

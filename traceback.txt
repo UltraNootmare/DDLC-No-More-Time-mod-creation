@@ -1,6 +1,7 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 While running game code:
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -57,10 +58,31 @@ NameError: name 'logo' is not defined
 While loading <renpy.display.im.Image object (u'mod_assets/DDLCModTemplateLogo.png') at 0x000000000874e350>:
 IOError: Couldn't find file 'mod_assets/DDLCModTemplateLogo.png'.
 >>>>>>> parent of cc6a68e (Adding gender in settings..)
+=======
+After initialization, but before game start.
+  File "game/screens.rpy", line 1311, in prepare_screen
+    screen preferences():
+  File "game/screens.rpy", line 1311, in prepare
+    screen preferences():
+  File "game/screens.rpy", line 1322, in prepare
+    use game_menu(_("Settings"), scroll="viewport"):
+  File "game/screens.rpy", line 1322, in prepare
+    use game_menu(_("Settings"), scroll="viewport"):
+  File "game/screens.rpy", line 1324, in prepare
+    vbox:
+  File "game/screens.rpy", line 1324, in prepare
+    vbox:
+  File "game/screens.rpy", line 1336, in prepare
+    if ddlc_settings:
+  File "game/screens.rpy", line 1338, in prepare
+    else:
+Exception: A screen named template_preferences does not exist.
+>>>>>>> parent of b04e293 (a)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -168,10 +190,40 @@ NameError: name 'logo' is not defined
 >>>>>>> parent of 97f8823 (added gender settings)
 =======
 >>>>>>> parent of 97f8823 (added gender settings)
+=======
+  File "renpy/bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 670, in main
+    run(restart)
+  File "renpy/main.py", line 93, in run
+    renpy.display.screen.prepare_screens()
+  File "renpy/display/screen.py", line 1003, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens.rpy", line 1311, in prepare_screen
+    screen preferences():
+  File "game/screens.rpy", line 1311, in prepare
+    screen preferences():
+  File "game/screens.rpy", line 1322, in prepare
+    use game_menu(_("Settings"), scroll="viewport"):
+  File "game/screens.rpy", line 1322, in prepare
+    use game_menu(_("Settings"), scroll="viewport"):
+  File "game/screens.rpy", line 1324, in prepare
+    vbox:
+  File "game/screens.rpy", line 1324, in prepare
+    vbox:
+  File "game/screens.rpy", line 1336, in prepare
+    if ddlc_settings:
+  File "game/screens.rpy", line 1338, in prepare
+    else:
+  File "renpy/sl2/slast.py", line 2015, in prepare
+    raise Exception("A screen named {} does not exist.".format(self.target))
+Exception: A screen named template_preferences does not exist.
+>>>>>>> parent of b04e293 (a)
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Thu Jun 29 11:15:02 2023
@@ -269,3 +321,6 @@ Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1-Py2
 Wed Jun 28 18:01:08 2023
 >>>>>>> parent of cc6a68e (Adding gender in settings..)
+=======
+Wed Jun 28 22:14:13 2023
+>>>>>>> parent of b04e293 (a)
