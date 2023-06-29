@@ -132,4 +132,4 @@ NameError: name 'FinishEnterGender' is not defined
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
-Thu Jun 29 11:22:42 2023
+Thu Jun 29 11:39:21 2023

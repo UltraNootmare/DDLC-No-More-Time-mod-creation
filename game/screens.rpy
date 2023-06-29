@@ -476,6 +476,27 @@ init python:
         renpy.hide_screen("name_input")
         if launchGame:
             renpy.jump_out_of_context("start")
+    
+    def FinishEnterGender(launchGame=True):
+        if not player: return
+        persistent.gender = gender
+        match persistent.gender:
+            case "Male":
+                persistent.he = "he"
+                persistent.hes = "he's"
+                persistent.him = "him"
+            case "Female":
+                persistent.he = "she"
+                persistent.hes = "she's"
+                persistent.him = "her"
+            case "Other":
+                persistent.he = "they"
+                persistent.hes = "they're"
+                persistent.him = "them"
+        renpy.save_persistent()
+        renpy.hide_screen("name_input")
+        if launchGame:
+            renpy.jump_out_of_context("start")
 
 screen navigation():
 

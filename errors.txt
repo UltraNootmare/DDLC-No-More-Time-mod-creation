@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1750: Line is indented, but the preceding xalign statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    vbox:
-    ^
+File "game/screens.rpy", line 483: invalid syntax
+        match gender:
+                    ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Thu Jun 29 11:31:16 2023
+Thu Jun 29 11:43:10 2023
