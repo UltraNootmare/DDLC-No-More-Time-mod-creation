@@ -39,7 +39,7 @@ label STORY:
     show natsuki 2horrified at t43 zorder 2
     s 1p "HE MIGHT DIE!!!{w=1}"
     show sayori 1u at t42 zorder 3
-    y 3i "Sayori stop saying that or I'll put you in the same position [player] is in."
+    m 3i "Sayori stop saying that or I'll put you in the same position [player] is in."
     show monika 3o at t41 zorder 1
     n 5v "{b}I SWEAR TO GOD SAYORI, YOU WERE ABOUT TO GIVE ME A HEARTATTACK!!..{/b}"
     "*One extremely long complaint at Sayori for overexaggerating later*{w=1}{nw}"
