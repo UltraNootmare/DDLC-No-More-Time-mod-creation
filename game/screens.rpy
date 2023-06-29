@@ -1234,6 +1234,9 @@ screen ddlc_preferences():
                     style "mute_all_button"
 
 screen mod_preferences():
+    python:
+        pronounPresets = pLoadPresets()
+    
     hbox:
         box_wrap True
 
@@ -1269,15 +1272,40 @@ screen mod_preferences():
             textbutton _("Change Name") action Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName, launchGame=False)):
                 text_style "navigation_button_text"
             
-            label _("Player Gender")
+            vbox:
+                hbox:
+                    box_wrap True
+                    style_prefix "radio"
 
-            if he == "":
-                text _("No Gender Set") xalign 0.5
-            else:
-                text "[he]" xalign 0.5
-            
-            textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-                text_style "navigation_button_text"
+                    label _("Preferred Pronoun")
+
+                hbox:
+                    vbox:
+                        style_prefix "radio"
+
+                        for i in range(len(pronounPresets)):
+                            $ pronoun = pronounPresets[i]
+
+                            textbutton _(pronoun["id"]):
+                                action SetField(preferences, "pronoun", i), pUpdatePronouns(pronounPresets)
+
+                    vbox:
+                        yalign 0.5
+
+                        hbox:
+                            $ name = pronounPresets[preferences.pronoun]["id"]
+                            $ description = pronounPresets[preferences.pronoun]["description"]
+
+                            text _("{b}Selected: '%s'{/b}\nDescription: %s" % (name, description)):
+                                size 18
+
+
+                        vbox:
+                            text _("Note: your preferences will only be applied"):
+                                size 20
+
+                            text _("when you start a new chapter (or game.)"):
+                                size 20
 
         null height (4 * gui.pref_spacing)
 

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 810: u't11' is not a keyword argument or valid child of the add statement.
-    add logo t11
-                ^
+File "game/screens.rpy", line 1275: Line is indented, but the preceding text_style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    vbox:
+    ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Wed Jun 28 22:03:56 2023
+Thu Jun 29 11:06:37 2023
