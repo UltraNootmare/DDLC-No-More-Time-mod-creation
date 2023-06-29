@@ -4,11 +4,23 @@ label STORY:
         menu:
             "Male":
                 $ genderNum = 0
+                $ persistent.he = "he"
+                $ persistent.hes = "he's"
+                $ persistent.him = "him"
+                $ persistent.himself = "himself"
             "Female":
                 $ genderNum = 1
+                $ persistent.he = "she"
+                $ persistent.hes = "she's"
+                $ persistent.him = "her"
+                $ persistent.himself = "herself"
             "Other":
                 $ genderNum = 2
-        $ UpdateGender()
+                $ persistent.he = "they"
+                $ persistent.hes = "they're"
+                $ persistent.him = "them"
+                $ persistent.himself = "themselves"
+    $ gender = persistent.genderPresets[persistent.genderNum]
 
     play music t9g fadein 1.0
     mc "Ugh, what happened?"
@@ -172,6 +184,10 @@ label STORY:
 
         scene bg hospital_room with fade
         "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk they all hug him..."
+        show monika 1o at t41 zorder 1
+        show sayori 1u at t43 zorder 3
+        show natsuki 1u at t44 zorder 2
+        show yuri 1u at t44 zorder 4
         
     else:
         scene bg hospital with fade
