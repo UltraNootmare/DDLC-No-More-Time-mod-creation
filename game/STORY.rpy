@@ -20,6 +20,7 @@ label STORY:
                 $ persistent.hes = "they"
                 $ persistent.him = "them"
                 $ persistent.himself = "themselves"
+    $ gender = persistent.genderPresets[persistent.genderNum]
     
     play music t9g fadein 1.0
     mc "Ugh, what happened?"
