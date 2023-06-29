@@ -2,9 +2,29 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1264: u'else' is not a keyword argument or valid child of the vbox statement.
-    else:
-        ^
+File "game/definitions/splash.rpy", line 78: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
+    ^
+
+File "game/definitions/splash.rpy", line 87: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
+    ^
+
+File "game/definitions/splash.rpy", line 95: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "black"
+    ^
+
+File "game/definitions/splash.rpy", line 179: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    recolorize("gui/overlay/main_menu_d.png", "#ffbde1")
+    ^
+
+File "game/definitions/splash.rpy", line 263: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "black"
+    ^
+
+File "game/definitions/splash.rpy", line 282: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "black"
+    ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Thu Jun 29 18:30:41 2023
+Thu Jun 29 19:00:19 2023
