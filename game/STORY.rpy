@@ -170,10 +170,8 @@ label STORY:
         show yuri 1u at t42 zorder 4
         show natsuki 1u at t44 zorder 2
         s 1w "I DON'T WANT YOU TO DIE!!!"
-        scene black
-        "Sayori hugs [player] with tears running down her face..."
         scene cg sayorihospital with fade
-        "{w=5}{nw}"
+        "Sayori hugs [player] with tears running down her face..."
 
     else:
         scene bg hospital with fade
