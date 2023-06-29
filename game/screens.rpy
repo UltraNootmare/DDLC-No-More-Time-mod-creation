@@ -385,7 +385,7 @@ style choice_button is default:
     properties gui.button_properties("choice_button")
     hover_sound gui.hover_sound
     activate_sound gui.activate_sound
-    idle_background Frame("mod_assets/ui/button/choice_dark_idle_background.png", gui.choice_button_borders)
+    idle_background Frame("mod_assets/gui/button/choice_dark_idle_background.png", gui.choice_button_borders)
     hover_background Frame("mod_assets/gui/button/choice_dark_hover_background.png", gui.choice_button_borders)
 
 style choice_button_text is default:
@@ -1369,7 +1369,7 @@ style radio_vbox:
 
 style radio_button:
     properties gui.button_properties("radio_button")
-    foreground "gui/button/check_[prefix_]foreground_d.png"
+    foreground "mod_assets/gui/button/check_[prefix_]foreground_d.png"
 
 style radio_button_text:
     properties gui.button_text_properties("radio_button")
@@ -1381,7 +1381,7 @@ style check_vbox:
 
 style check_button:
     properties gui.button_properties("check_button")
-    foreground "gui/button/check_[prefix_]foreground_d.png"
+    foreground "mod_assets/gui/button/check_[prefix_]foreground_d.png"
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
