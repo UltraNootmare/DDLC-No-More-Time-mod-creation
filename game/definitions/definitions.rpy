@@ -249,6 +249,10 @@ image bg glitch = LiveTile("bg/glitch.jpg")
 image bg hospital = "mod_assets/backgrounds/hospital.png"
 image bg hospital_room = "mod_assets/backgrounds/hospitalroom.png"
 
+#Day transitions (custom)
+
+define day7end = "mod_assets/day_transitions/Day7end.avi"
+
 # This image transform shows a glitched scene effect
 # during Act 3 when we delete Monika.
 image glitch_color:

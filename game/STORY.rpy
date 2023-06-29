@@ -169,6 +169,7 @@ label STORY:
         show natsuki 3u at t44 zorder 2
         show monika 2o at t41 zorder 1
         s 1w "I DON'T WANT YOU TO DIE!!"
+
         scene cg sayorihospital with fade
         "Sayori hugs [player] with tears running down her face.."
         mc "It's fine Sayori, you still have the others.."
@@ -177,6 +178,31 @@ label STORY:
         mc "How about we spend the next seven days having the most fun we can possibly have."
         s "Ok. But can we stay like this for a while."
         mc "Hehe sure"
+
+        scene black
+        "A very long time later..."
+        "infact such a long time that they ended up back home."
+
+        scene bg kitchen with fade
+        show sayori 1bd at t11 
+        s 1bc "So what do you want to do first??"
+        mc "Ehh... Sayori it is 9pm and i want to sleep like a normal person so-"
+        mc "Let's wait till tomorrow."
+        s 1be "aww.."
+        s 1bc "Can I atleast stay here?"
+        mc "Uhh why?"
+        show sayori 1bu at t11 
+        mc "Ok-ok"
+        show sayori 1ba at t11 
+        mc "But you're sleeping on the couch."
+        s 1bj "Hmph- fine."
+        hide sayori with moveoutright
+        mc "I'm going to sleep"
+
+        scene black
+        "[player] goes to his room before passing out on his bed..."
+        $ renpy.movie_cutscene (day7end)
+
         
     else:
         scene bg hospital with fade
