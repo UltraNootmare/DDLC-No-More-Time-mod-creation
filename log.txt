@@ -1,23 +1,42 @@
-Thu Jun 29 11:43:09 2023
+Thu Jun 29 11:54:20 2023
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
 
-Bootstrap to the start of init.init. took 0.05s
+Bootstrap to the start of init.init. took 0.08s
 Early init. took 0.00s
 Loader init. took 0.12s
 Loading error handling. took 0.02s
-Loading script. took 0.43s
+Loading script. took 0.44s
 Loading save slot metadata. took 0.05s
 Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 483: invalid syntax
-        match gender:
-                    ^
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.12s
+Loading analysis data. took 0.03s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.08s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start. took 0.21s
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.07s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.09s
+Save bytecode. took 0.11s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.18s
 
 Initializing gl renderer:
 primary display bounds: (0, 0, 2560, 1440)
@@ -44,3 +63,74 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1433, 806) drawable=(1433, 806)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/core.py", line 4052, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/screen.py", line 476, in visit_all
+    callback(self)
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/core.py", line 4052, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/screen.py", line 487, in per_interact
+    self.update()
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/screen.py", line 680, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 1749, in execute
+    screen gender_input(message, ok_action):
+  File "game/screens.rpy", line 1749, in execute
+    screen gender_input(message, ok_action):
+  File "game/screens.rpy", line 1761, in execute
+    frame:
+  File "game/screens.rpy", line 1763, in execute
+    vbox:
+  File "game/screens.rpy", line 1772, in execute
+    vbox:
+  File "game/screens.rpy", line 1780, in execute
+    hbox:
+  File "game/screens.rpy", line 1781, in execute
+    vbox:
+  File "game/screens.rpy", line 1784, in execute
+    for i in range(len(genderPresets)):
+  File "game/screens.rpy", line 1784, in <module>
+    for i in range(len(genderPresets)):
+NameError: name 'genderPresets' is not defined
+
+While running game code:
+  File "game/screens.rpy", line 1749, in execute
+    screen gender_input(message, ok_action):
+  File "game/screens.rpy", line 1749, in execute
+    screen gender_input(message, ok_action):
+  File "game/screens.rpy", line 1761, in execute
+    frame:
+  File "game/screens.rpy", line 1763, in execute
+    vbox:
+  File "game/screens.rpy", line 1772, in execute
+    vbox:
+  File "game/screens.rpy", line 1780, in execute
+    hbox:
+  File "game/screens.rpy", line 1781, in execute
+    vbox:
+  File "game/screens.rpy", line 1784, in execute
+    for i in range(len(genderPresets)):
+  File "game/screens.rpy", line 1784, in <module>
+    for i in range(len(genderPresets)):
+NameError: name 'genderPresets' is not defined

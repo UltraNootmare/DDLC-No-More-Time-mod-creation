@@ -1,53 +1,25 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/screens.rpy", line 1300, in execute
-    screen preferences():
-  File "game/screens.rpy", line 1300, in execute
-    screen preferences():
-  File "game/screens.rpy", line 1311, in execute
-    use game_menu(_("Settings"), scroll="viewport"):
-  File "game/screens.rpy", line 658, in execute
-    screen game_menu(title, scroll=None):
-  File "game/screens.rpy", line 658, in execute
-    screen game_menu(title, scroll=None):
-  File "game/screens.rpy", line 669, in execute
+  File "game/screens.rpy", line 1749, in execute
+    screen gender_input(message, ok_action):
+  File "game/screens.rpy", line 1749, in execute
+    screen gender_input(message, ok_action):
+  File "game/screens.rpy", line 1761, in execute
     frame:
-  File "game/screens.rpy", line 672, in execute
+  File "game/screens.rpy", line 1763, in execute
+    vbox:
+  File "game/screens.rpy", line 1772, in execute
+    vbox:
+  File "game/screens.rpy", line 1780, in execute
     hbox:
-  File "game/screens.rpy", line 678, in execute
-    frame:
-  File "game/screens.rpy", line 681, in execute
-    if scroll == "viewport":
-  File "game/screens.rpy", line 683, in execute
-    viewport:
-  File "game/screens.rpy", line 691, in execute
+  File "game/screens.rpy", line 1781, in execute
     vbox:
-  File "game/screens.rpy", line 692, in execute
-    transclude
-  File "game/screens.rpy", line 1311, in execute
-    use game_menu(_("Settings"), scroll="viewport"):
-  File "game/screens.rpy", line 1313, in execute
-    vbox:
-  File "game/screens.rpy", line 1325, in execute
-    if ddlc_settings:
-  File "game/screens.rpy", line 1328, in execute
-    use mod_preferences
-  File "game/screens.rpy", line 1227, in execute
-    screen mod_preferences():
-  File "game/screens.rpy", line 1227, in execute
-    screen mod_preferences():
-  File "game/screens.rpy", line 1228, in execute
-    hbox:
-  File "game/screens.rpy", line 1248, in execute
-    vbox:
-  File "game/screens.rpy", line 1268, in execute
-    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-  File "game/screens.rpy", line 1268, in keywords
-    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-  File "game/screens.rpy", line 1268, in <module>
-    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-NameError: name 'FinishEnterGender' is not defined
+  File "game/screens.rpy", line 1784, in execute
+    for i in range(len(genderPresets)):
+  File "game/screens.rpy", line 1784, in <module>
+    for i in range(len(genderPresets)):
+NameError: name 'genderPresets' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -81,55 +53,27 @@ Full traceback:
     self.update()
   File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/screen.py", line 680, in update
     self.screen.function(**self.scope)
-  File "game/screens.rpy", line 1300, in execute
-    screen preferences():
-  File "game/screens.rpy", line 1300, in execute
-    screen preferences():
-  File "game/screens.rpy", line 1311, in execute
-    use game_menu(_("Settings"), scroll="viewport"):
-  File "game/screens.rpy", line 658, in execute
-    screen game_menu(title, scroll=None):
-  File "game/screens.rpy", line 658, in execute
-    screen game_menu(title, scroll=None):
-  File "game/screens.rpy", line 669, in execute
+  File "game/screens.rpy", line 1749, in execute
+    screen gender_input(message, ok_action):
+  File "game/screens.rpy", line 1749, in execute
+    screen gender_input(message, ok_action):
+  File "game/screens.rpy", line 1761, in execute
     frame:
-  File "game/screens.rpy", line 672, in execute
+  File "game/screens.rpy", line 1763, in execute
+    vbox:
+  File "game/screens.rpy", line 1772, in execute
+    vbox:
+  File "game/screens.rpy", line 1780, in execute
     hbox:
-  File "game/screens.rpy", line 678, in execute
-    frame:
-  File "game/screens.rpy", line 681, in execute
-    if scroll == "viewport":
-  File "game/screens.rpy", line 683, in execute
-    viewport:
-  File "game/screens.rpy", line 691, in execute
+  File "game/screens.rpy", line 1781, in execute
     vbox:
-  File "game/screens.rpy", line 692, in execute
-    transclude
-  File "game/screens.rpy", line 1311, in execute
-    use game_menu(_("Settings"), scroll="viewport"):
-  File "game/screens.rpy", line 1313, in execute
-    vbox:
-  File "game/screens.rpy", line 1325, in execute
-    if ddlc_settings:
-  File "game/screens.rpy", line 1328, in execute
-    use mod_preferences
-  File "game/screens.rpy", line 1227, in execute
-    screen mod_preferences():
-  File "game/screens.rpy", line 1227, in execute
-    screen mod_preferences():
-  File "game/screens.rpy", line 1228, in execute
-    hbox:
-  File "game/screens.rpy", line 1248, in execute
-    vbox:
-  File "game/screens.rpy", line 1268, in execute
-    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-  File "game/screens.rpy", line 1268, in keywords
-    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-  File "game/screens.rpy", line 1268, in <module>
-    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-NameError: name 'FinishEnterGender' is not defined
+  File "game/screens.rpy", line 1784, in execute
+    for i in range(len(genderPresets)):
+  File "game/screens.rpy", line 1784, in <module>
+    for i in range(len(genderPresets)):
+NameError: name 'genderPresets' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
-Thu Jun 29 11:39:21 2023
+Thu Jun 29 11:54:38 2023
