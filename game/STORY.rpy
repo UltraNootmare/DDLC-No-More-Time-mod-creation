@@ -1,18 +1,18 @@
 label STORY:
-    # "What is your gender?"
-    # menu:
-    #     "Male":
-    #         $ persistent.he = "he"
-    #         $ persistent.hes = "he's"
-    #         $ persistent.him = "him"
-    #     "Female":
-    #         $ persistent.he = "she"
-    #         $ persistent.hes = "she's"
-    #         $ persistent.him = "her"
-    #     "Other":
-    #         $ persistent.he = "they"
-    #         $ persistent.hes = "they"
-    #         $ persistent.him = "them"
+    "What is your gender?"
+    menu:
+        "Male":
+            $ persistent.he = "he"
+            $ persistent.hes = "he's"
+            $ persistent.him = "him"
+        "Female":
+            $ persistent.he = "she"
+            $ persistent.hes = "she's"
+            $ persistent.him = "her"
+        "Other":
+            $ persistent.he = "they"
+            $ persistent.hes = "they"
+            $ persistent.him = "them"
     
     play music t9g fadein 1.0
     mc "Ugh, what happened?"
@@ -135,26 +135,26 @@ label STORY:
         m 3i "Hello Doctor"
         m 3g "So what's the problem??"
         show monika 3o at t42 zorder 1
-        md 1p "your friend seems to have heart disease and will not live to see next week..."
+        md 1p "[player] has heart disease and will not live to see next week.."
         show monika doctor 1o at t41 zorder 4
         "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}.{nw}"
         show monika 1horrified at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
-        n 1v "WHAT DO YOU MEAN HE WON'T LIVE TO SEE NEXT WEEK????????"
+        n 1v "WHAT DO YOU MEAN [heC] WON'T LIVE TO SEE NEXT WEEK??!"
         show natsuki 1horrified at t44 zorder 2
-        md 2g "he can survive if he gets surgery-{nw}"
+        md 2g "[heC] can live if he gets surgery-{nw}"
         show monika doctor 1q at t41 zorder 4
         show monika 1horrified at t42 zorder 1
         show sayori 2p at t43 zorder 3
         show natsuki 1v at t44 zorder 2
-        d "HOW MUCH IS IT?!?!?!"
+        d "HOW MUCH IS IT??!"
         show monika 1horrified at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
         md 2r "95 million yen..."
         show monika doctor 1q at t41 zorder 4
-        d "HUH?!?!"
+        d "HUH?!"
         show monika 1horrified at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
