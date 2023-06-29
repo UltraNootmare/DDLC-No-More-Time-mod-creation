@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 483: invalid syntax
-        match str(gender):
-                 ^
+File "game/screens.rpy", line 484: invalid syntax
+            $ persistent.he = "he"
+             ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Thu Jun 29 11:49:37 2023
+Thu Jun 29 12:54:30 2023

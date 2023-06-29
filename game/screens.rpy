@@ -478,20 +478,22 @@ init python:
             renpy.jump_out_of_context("start")
     
     def FinishEnterGender(launchGame=True):
-        if not player: return
-        persistent.gender = gender
+        if not gender: return
         if gender == "Male":
             persistent.he = "he"
             persistent.hes = "he's"
             persistent.him = "him"
+            persistent.himself = "himself"
         elif gender == "Female":
             persistent.he = "she"
             persistent.hes = "she's"
             persistent.him = "her"
+            persistent.himself = "herself"
         elif gender == "Other":
             persistent.he = "they"
             persistent.hes = "they're"
             persistent.him = "them"
+            persistent.himself = "themselves"
         renpy.save_persistent()
         renpy.hide_screen("gender_input")
         if launchGame:
@@ -512,9 +514,9 @@ screen navigation():
             if main_menu:
 
                 if persistent.playthrough == 1:
-                    textbutton _("ŔŗñĮ¼»ŧþŀÂŻŕěōì«") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName))) and If(persistent.playername, true=Start(), false=Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender)))
+                    textbutton _("ŔŗñĮ¼»ŧþŀÂŻŕěōì«") action [If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName))), If(persistent.playername, true=Start(), false=Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender)))]
                 else:
-                    textbutton _("New Game") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName))) and If(persistent.gender, true=Start(), false=Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender)))
+                    textbutton _("New Game") action [If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName))), If(persistent.gender, true=Start(), false=Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender)))]
 
             else:
 
@@ -1282,11 +1284,10 @@ screen mod_preferences():
                 label _("Player Gender")
                 if gender == "":
                     text _("No Gender Set") xalign 0.5
+                    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
+                        text_style "navigation_button_text"
                 else:
                     text "[gender]" xalign 0.5
-                
-                textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-                    text_style "navigation_button_text"
 
             null height (4 * gui.pref_spacing)
 
@@ -1780,10 +1781,10 @@ screen gender_input(message, ok_action):
                         style_prefix "radio"
 
                         for i in range(len(genderPresets)):
-                            $ gender = genderPresets[i]
+                            $ genders = genderPresets[i]
 
-                            textbutton _(gender["id"]):
-                                action SetField(preferences, "gender", i), pUpdatePronouns(genderPresets)
+                            textbutton _(genders):
+                                action SetField(persistent, "genderNum", i)
 
                     null width (2 * gui.pref_spacing)
 
@@ -1791,10 +1792,9 @@ screen gender_input(message, ok_action):
                         yalign 0.5
 
                         hbox:
-                            $ name = genderPresets[preferences.gender]["id"]
-                            $ description = genderPresets[preferences.gender]["description"]
+                            $ gender = genderPresets[genderNum]
 
-                            text _("{b}Selected: '%s'{/b}\nDescription: %s" % (name, description)):
+                            text _("{b}Selected: '%s'" % (gender)):
                                 size 18
 
                         null height (2 * gui.pref_spacing)

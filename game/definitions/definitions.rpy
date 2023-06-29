@@ -1618,21 +1618,26 @@ define persistent.genderPresets = [
 ]
 
 define persistent.gender = ""
+define persistent.genderNum = 0
 default persistent.he = ""
 default persistent.him = ""
 default persistent.are = ""
 default persistent.hes = ""
+default persistent.himself = ""
 
 define genderPresets = persistent.genderPresets
-default gender = persistent.gender
+default gender = persistent.genderPresets[persistent.genderNum]
+default genderNum = persistent.genderNum
 default he = persistent.he
 default him = persistent.him
 default are = persistent.are
 default hes = persistent.hes
+default himself = persistent.himself
 default heC = he.capitalize()
 default himC = him.capitalize()
 default areC = are.capitalize()
 default hesC = hes.capitalize()
+default himselfC = himself.capitalize()
 
 ## Extra Settings Variables
 # This section controls whether the mod is censored or is in let's play mode.
