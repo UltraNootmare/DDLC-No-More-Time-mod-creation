@@ -37,7 +37,7 @@ label STORY:
     y 1v "Ehm I heard about what happened to [player]-{w=1}{nw}"
     show yuri 1p at t44 zorder 4
     show natsuki 2horrified at t43 zorder 2
-    s 1p "[heCAPS] MIGHT DIE!!!{w=1}"
+    s 1p "HE MIGHT DIE!!!{w=1}"
     show sayori 1u at t42 zorder 3
     y 3i "Sayori stop saying that or I'll put you in the same position [player] is in."
     show monika 3o at t41 zorder 1
@@ -45,11 +45,11 @@ label STORY:
     "*One extremely long complaint at Sayori for overexaggerating later*{w=1}{nw}"
     show natsuki 2g at t43 zorder 2
     if persistent.gender == "Other":
-        y 1v "Well... How are [persistent.he] doing?"
+        y 1v "Well... How are he doing?"
     else:
-        y 1v "Well... How's [persistent.he] doing?"
+        y 1v "Well... How's he doing?"
     show yuri 1u at t44 zorder 4
-    m 3p "The doctor says [persistent.hes] in stable condition..."
+    m 3p "The doctor says he's in stable condition..."
     m 3p "They say they'll get back to us in the next 30 minutes."
     show monika 3o at t41 zorder 1
     scene black
@@ -92,7 +92,7 @@ label STORY:
     mc "IS THERE A WAY TO STOP IT??!{w=1}{nw}"
     md doctor 1p "There is - surgery - but it's very expensive.."
     show monika doctor 1o at f43 zorder 1
-    "[playerC] calms [persistent.himself] down before replying.."
+    "[playerC] calms himself down before replying.."
     mc "*sigh* How much?"
     md doctor 1p "95 million yen.."
     show monika doctor 1o at f43 zorder 1
@@ -130,7 +130,7 @@ label STORY:
         show yuri 1horrified at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
-        n 1v "WHAT DO YOU MEAN [heCAPS] WON'T LIVE TO SEE NEXT WEEK??!"
+        n 1v "WHAT DO YOU MEAN HE WON'T LIVE TO SEE NEXT WEEK??!"
         show natsuki 1horrified at t44 zorder 2
         md doctor 2r "[heC] can live if he gets surgery-{nw}"
         show monika doctor 1q at t41 zorder 4

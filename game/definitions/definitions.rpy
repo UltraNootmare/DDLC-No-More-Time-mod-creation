@@ -57,40 +57,6 @@ define config.gestures = { "n" : 'game_menu', "s" : "hide_windows", "e" : 'toggl
 # This init python statement sets up the functions, keymaps and channels
 # for the game.
 init python:
-    ## Update gender
-
-    def UpdateGender():
-        persistent.gender = persistent.genderPresets[persistent.genderNum]
-        if persistent.gender == "Male":
-            persistent.he = "he"
-            persistent.hes = "he's"
-            persistent.him = "him"
-            persistent.himself = "himself"
-        elif persistent.gender == "Female":
-            persistent.he = "she"
-            persistent.hes = "she's"
-            persistent.him = "her"
-            persistent.himself = "herself"
-        elif persistent.gender == "Other":
-            persistent.he = "they"
-            persistent.hes = "they're"
-            persistent.him = "them"
-            persistent.himself = "themselves"
-        
-        heC = persistent.he.capitalize()
-        himC = persistent.him.capitalize()
-        areC = persistent.are.capitalize()
-        hesC = persistent.hes.capitalize()
-        himselfC = persistent.himself.capitalize()
-        heCAPS = persistent.he.upper()
-        himCAPS = persistent.him.upper()
-        areCAPS = persistent.are.upper()
-        hesCAPS = persistent.hes.upper()
-        himselfCAPS = persistent.himself.upper()
-
-        renpy.save_persistent()
-        
-
     ## More Android Gestures
     # This variable makes a keymap for the history screen.
     if renpy.android:
@@ -1643,37 +1609,6 @@ define d = Character('Dokis', what_prefix='"', what_suffix='"', ctc="ctc", ctc_p
 # By default this is set by config.developer which is normally set to false
 # once you packaged your mod.
 define _dismiss_pause = config.developer
-
-## [BETA] Pronoun Variables
-# This section adds the feature to use player pronouns within the game text easily.
-# To use this feature, simply ask the user for their pronoun and use it here.
-# For capitalization, use heC, himC, areC and hesC
-define persistent.initialised = False
-
-define persistent.genderPresets = [
-    "Male",
-    "Female",
-    "Other"
-]
-
-define persistent.gender = ""
-define persistent.genderNum = 0
-default persistent.he = ""
-default persistent.him = ""
-default persistent.are = ""
-default persistent.hes = ""
-default persistent.himself = ""
-
-default heC = persistent.he.capitalize()
-default himC = persistent.him.capitalize()
-default areC = persistent.are.capitalize()
-default hesC = persistent.hes.capitalize()
-default himselfC = persistent.himself.capitalize()
-default heCAPS = persistent.he.upper()
-default himCAPS = persistent.him.upper()
-default areCAPS = persistent.are.upper()
-default hesCAPS = persistent.hes.upper()
-default himselfCAPS = persistent.himself.upper()
 
 ## Extra Settings Variables
 # This section controls whether the mod is censored or is in let's play mode.
