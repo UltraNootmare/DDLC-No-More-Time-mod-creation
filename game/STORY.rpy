@@ -17,11 +17,11 @@ label STORY:
             "Other":
                 $ genderNum = 2
                 $ persistent.he = "they"
-                $ persistent.hes = "they"
+                $ persistent.hes = "they're"
                 $ persistent.him = "them"
                 $ persistent.himself = "themselves"
     $ gender = persistent.genderPresets[persistent.genderNum]
-    
+
     play music t9g fadein 1.0
     mc "Ugh, what happened?"
     mc "My head is throbbing..."
@@ -59,14 +59,17 @@ label STORY:
     y 1v "Ehm I heard about what happened to [player]-{w=1}{nw}"
     show yuri 1p at t44 zorder 4
     show natsuki 2horrified at t43 zorder 2
-    s 1p "[heC] MIGHT DIE!!!{w=1}"
+    s 1p "[heCAPS] MIGHT DIE!!!{w=1}"
     show sayori 1u at t42 zorder 3
     m 3i "Sayori stop saying that or I'll put you in the same position [player] is in."
     show monika 3o at t41 zorder 1
     n 5v "{b}I SWEAR TO GOD SAYORI, YOU WERE ABOUT TO GIVE ME A HEARTATTACK!!..{/b}"
     "*One extremely long complaint at Sayori for overexaggerating later*{w=1}{nw}"
     show natsuki 2g at t43 zorder 2
-    y 1v "Well... How's [he] doing?"
+    if gender == "Other":
+        y 1v "Well... How are [he] doing?"
+    else:
+        y 1v "Well... How's [he] doing?"
     show yuri 1u at t44 zorder 4
     m 3p "The doctor says [hes] in stable condition..."
     m 3p "They say they'll get back to us in the next 30 minutes."
@@ -149,7 +152,7 @@ label STORY:
         show monika 1horrified at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
-        n 1v "WHAT DO YOU MEAN [heC] WON'T LIVE TO SEE NEXT WEEK??!"
+        n 1v "WHAT DO YOU MEAN [heCAPS] WON'T LIVE TO SEE NEXT WEEK??!"
         show natsuki 1horrified at t44 zorder 2
         md 2r "[heC] can live if he gets surgery-{nw}"
         show monika doctor 1q at t41 zorder 4
