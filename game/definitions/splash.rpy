@@ -23,6 +23,7 @@ init -100 python:
 ## Splash Message
 # This python statement is where the splash messages reside in.
 init python:
+    print(persistent.themeIndex, persistent.theme)
     # This variable is the default splash message that people will see when
     # the game launches.
     splash_message_default = "This game is an unofficial fan game that is unaffiliated with Team Salvato."
@@ -72,30 +73,38 @@ image menu_logo:
     menu_logo_move
 
 # This image shows the main menu polka-dot image.
-image menu_bg:
-    topleft
-    if persistent.themeIndex == 1:
+if persistent.theme == "Dark":
+    image menu_bg:
+        topleft
         recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
-    else:
+        menu_bg_move
+elif persistent.theme == "Light":
+    image menu_bg:
+        topleft
         "mod_assets/gui/menu_bg.png"
-    menu_bg_move
+        menu_bg_move
 
 # This image shows the pause menu polka-dot image.
-image game_menu_bg:
-    topleft
-    if persistent.themeIndex == 1:
+if persistent.themeIndex == 1:
+    image game_menu_bg:
+        topleft
         recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
-    else:
+        menu_bg_loop
+elif persistent.themeIndex == 0:
+    image game_menu_bg:
+        topleft
         "mod_assets/gui/menu_bg.png"
-    menu_bg_loop
+        menu_bg_loop
 
 # This image transform shows the white fading effect in the main menu.
-image menu_fade:
-    if persistent.themeIndex == 1:
+if persistent.themeIndex == 1:
+    image menu_fade:
         "black"
-    else:
+        menu_fadeout
+elif persistent.themeIndex == 0:
+    image menu_fade:
         "white"
-    menu_fadeout
+        menu_fadeout
 
 # These images show each respective characters' menu sprite and positions/animations.
 image menu_art_y:
@@ -174,12 +183,14 @@ image menu_art_s_glitch:
     menu_art_move(.8, 470, .8)
 
 # This image shows the main menu screen in the main/pause menu.
-image menu_nav:
-    if persistent.themeIndex == 1:
+if persistent.themeIndex == 1:
+    image menu_nav:
         recolorize("gui/overlay/main_menu_d.png", "#ffbde1")
-    else:
+        menu_nav_move
+elif persistent.themeIndex == 0:
+    image menu_nav:
         "gui/overlay/main_menu.png"
-    menu_nav_move
+        menu_nav_move
 
 ## Main Menu Effects
 # These transforms and image transform store the effects that appear in the
@@ -258,38 +269,21 @@ transform menu_art_move(z, x, z2):
 ## Team Salvato Splash Screen
 # This image stores the Tean Salvato logo image that appears when the game starts.
 image intro:
-    truecenter
-    if persistent.themeIndex == 1:
-        "black"
-        0.5
-        "bg/splash-white.png" with Dissolve(0.5, alpha=True)
-        2.5
-        "black" with Dissolve(0.5, alpha=True)
-        0.5
-    else:
-        "white"
-        0.5
-        "bg/splash.png" with Dissolve(0.5, alpha=True)
-        2.5
-        "white" with Dissolve(0.5, alpha=True)
-        0.5
+    "white"
+    0.5
+    "bg/splash.png" with Dissolve(0.5, alpha=True)
+    2.5
+    "white" with Dissolve(0.5, alpha=True)
+    0.5
 
 # This image is a left over from DDLC's development that shows the splash message
 # when the game starts.
 image warning:
-    truecenter
-    if persistent.themeIndex == 1:
-        "black"
-        "splash_warning" with Dissolve(0.5, alpha=True)
-        2.5
-        "black" with Dissolve(0.5, alpha=True)
-        0.5
-    else:
-        "white"
-        "splash_warning" with Dissolve(0.5, alpha=True)
-        2.5
-        "white" with Dissolve(0.5, alpha=True)
-        0.5
+    "white"
+    "splash_warning" with Dissolve(0.5, alpha=True)
+    2.5
+    "white" with Dissolve(0.5, alpha=True)
+    0.5
 
 ## This init python statement checks if the character files are present in-game
 ## and writes them to the characters folder depending on the playthrough.
@@ -413,7 +407,7 @@ label splashscreen:
 
         menu:
             "By playing [config.name] you agree to not sue us because the characters don't act cannon because we honestly don't care.
-            And also don't sue us because we're not medical experts (at all)."
+            And also don't sue us because we're not medical experts (at all)"
             "I agree.":
                 pass
 
