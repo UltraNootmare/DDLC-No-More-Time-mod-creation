@@ -66,4 +66,5 @@ label STORY:
     scene black
     "close enough to 30 minutes later..."
 
+    scene bg hospital_room with fade
     
