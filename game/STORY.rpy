@@ -69,21 +69,34 @@ label STORY:
     scene bg hospital_room with fade
     show monika doctor 1f at f43 zorder 1
     mc "Uh..."
-    mc "Heya Doc"
+    mc "Hey doctor."
     md 1g "Hello [player]."
     show monika doctor 1h at f43 zorder 1
-    mc "So... What seems to be the problem?"
-    md 1g "Well.... do you wanna hear the good news or the bad news?"
+    mc "So.. What seems to be the problem?"
+    md 1g "Well.. do you wanna hear the good news or the bad news?"
     show monika doctor 1h at f43 zorder 1
-    mc "Ehhh... good news?"
-    md 1i "We can help stop the fainting with an antibiotic..."
-    show monika doctor 1h at f43 zorder 1
-    mc "And the bad news..?"
-    show monika doctor 1h at f43 zorder 1
-    md 1g "You have heart disease.."
-    md 1g "..and it's close to killing you."
-    show monika doctor 1h at f43 zorder 1
-    mc "W-What???"
+    mc "Uhhh.."
+    menu:
+        "Good News":
+            mc "The good news."
+            md 1i "We can help stop the fainting with an antibiotic.."
+            show monika doctor 1h at f43 zorder 1
+            mc "And the bad news..?"
+            show monika doctor 1h at f43 zorder 1
+            md 1g "You have heart disease.."
+            md 1g "..and it's close to killing you."
+            show monika doctor 1h at f43 zorder 1
+            mc "W-What??"
+        "Bad News":
+            mc "The bad news."
+            show monika doctor 1h at f43 zorder 1
+            md 1g "You have heart disease.."
+            md 1g "..and it's close to killing you."
+            show monika doctor 1h at f43 zorder 1
+            mc "W-What??"
+            mc "A-and the good news??!"
+            md 1i "We can help stop the fainting with an antibiotic.."
+            show monika doctor 1h at f43 zorder 1
     mc "HOW MANY DAYS DO I HAVE LEFT TO LIVE??!{w=1}{nw}"
     md 1i "7"
     show monika doctor 1h at f43 zorder 1
