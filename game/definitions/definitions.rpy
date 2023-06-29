@@ -1608,51 +1608,23 @@ define _dismiss_pause = config.developer
 # This section adds the feature to use player pronouns within the game text easily.
 # To use this feature, simply ask the user for their pronoun and use it here.
 # For capitalization, use heC, himC, areC and hesC
-<<<<<<< HEAD
-<<<<<<< HEAD
 define persistent.initialised = False
 
-## Personal pronouns
-define persistent.pperp = "they"
-define persistent.pperp2 = "they're"
-define persistent.pperp3 = "them"
-
-## Possessive pronouns
-define persistent.pposp = "their"
-define persistent.pposp2 = "theirs"
-
-## Reflexive pronoun
-define persistent.refl = "themself"
-
-## Alternative names
-define persistent.palt = "person"
-define persistent.palt2 = "person"
-define persistent.palt3 = "date"
-
-
-=======
-=======
->>>>>>> parent of b04e293 (a)
+define persistent.gender = ""
 default persistent.he = ""
 default persistent.him = ""
 default persistent.are = ""
 default persistent.hes = ""
+
+default gender = persistent.gender
 default he = persistent.he
 default him = persistent.him
 default are = persistent.are
 default hes = persistent.hes
-<<<<<<< HEAD
-default he_capital = he.capitalize()
-default him_capital = him.capitalize()
-default are_capital = are.capitalize()
-default hes_capital = hes.capitalize()
->>>>>>> parent of cc6a68e (Adding gender in settings..)
-=======
 default heC = he.capitalize()
 default himC = him.capitalize()
 default areC = are.capitalize()
 default hesC = hes.capitalize()
->>>>>>> parent of b04e293 (a)
 
 ## Extra Settings Variables
 # This section controls whether the mod is censored or is in let's play mode.

@@ -1224,17 +1224,7 @@ screen ddlc_preferences():
                     action Preference("all mute", "toggle")
                     style "mute_all_button"
 
-<<<<<<< HEAD
 screen mod_preferences():
-<<<<<<< HEAD
-    python:
-        pronounPresets = pLoadPresets()
-    
-=======
-screen template_preferences():
->>>>>>> parent of cc6a68e (Adding gender in settings..)
-=======
->>>>>>> parent of b04e293 (a)
     hbox:
         box_wrap True
 
@@ -1268,43 +1258,8 @@ screen template_preferences():
             
             textbutton _("Change Name") action Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName, launchGame=False)):
                 text_style "navigation_button_text"
-<<<<<<< HEAD
             
             label _("Player Gender")
-
-<<<<<<< HEAD
-                    label _("Preferred Pronoun")
-
-                hbox:
-                    vbox:
-                        style_prefix "radio"
-
-                        for i in range(len(pronounPresets)):
-                            $ pronoun = pronounPresets[i]
-
-                            textbutton _(pronoun["id"]):
-                                action SetField(preferences, "pronoun", i), pUpdatePronouns(pronounPresets)
-
-                    vbox:
-                        yalign 0.5
-
-                        hbox:
-                            $ name = pronounPresets[preferences.pronoun]["id"]
-                            $ description = pronounPresets[preferences.pronoun]["description"]
-
-                            text _("{b}Selected: '%s'{/b}\nDescription: %s" % (name, description)):
-                                size 18
-
-
-                        vbox:
-                            text _("Note: your preferences will only be applied"):
-                                size 20
-
-                            text _("when you start a new chapter (or game.)"):
-                                size 20
-=======
->>>>>>> parent of cc6a68e (Adding gender in settings..)
-=======
             if he == "":
                 text _("No Gender Set") xalign 0.5
             else:
@@ -1312,7 +1267,6 @@ screen template_preferences():
             
             textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
                 text_style "navigation_button_text"
->>>>>>> parent of b04e293 (a)
 
         null height (4 * gui.pref_spacing)
 
@@ -1364,14 +1318,14 @@ screen preferences():
                 xoffset 150
                 spacing 5
                 textbutton _("DDLC Settings") action [SetScreenVariable("ddlc_settings", True), SensitiveIf(not ddlc_settings)]
-                textbutton _("Template Settings") action [SetScreenVariable("ddlc_settings", False), SensitiveIf(ddlc_settings)]
+                textbutton _("Mod Settings") action [SetScreenVariable("ddlc_settings", False), SensitiveIf(ddlc_settings)]
             
             null height 10
 
             if ddlc_settings:
                 use ddlc_preferences
             else:
-                use template_preferences
+                use mod_preferences
                             
     text "v[config.version]":
                 xalign 1.0 yalign 1.0
@@ -1763,6 +1717,74 @@ screen name_input(message, ok_action):
                 xalign 0.5
 
             input default "" value VariableInputValue("player") length 12 allow "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+            hbox:
+                xalign 0.5
+                spacing 100
+
+                textbutton _("OK") action ok_action
+
+screen name_input(message, ok_action):
+
+    ## Ensure other screens do not get input while this screen is displayed.
+    modal True
+
+    zorder 200
+
+    style_prefix "confirm"
+
+    add "gui/overlay/confirm.png"
+    key "K_RETURN" action [Play("sound", gui.activate_sound), ok_action]
+
+    frame:
+
+        vbox:
+            xalign .5
+            yalign .5
+            spacing 30
+
+            label _(message):
+                style "confirm_prompt"
+                xalign 0.5
+
+                        vbox:
+                hbox:
+                    box_wrap True
+                    style_prefix "radio"
+
+                    label _("Preferred Pronoun")
+                    null width (2 * gui.pref_spacing)
+
+                hbox:
+                    vbox:
+                        style_prefix "radio"
+
+                        for i in range(len(genderPresets)):
+                            $ gender = genderPresets[i]
+
+                            textbutton _(gender["id"]):
+                                action SetField(preferences, "gender", i), pUpdatePronouns(genderPresets)
+
+                    null width (2 * gui.pref_spacing)
+
+                    vbox:
+                        yalign 0.5
+
+                        hbox:
+                            $ name = genderPresets[preferences.gender]["id"]
+                            $ description = genderPresets[preferences.gender]["description"]
+
+                            text _("{b}Selected: '%s'{/b}\nDescription: %s" % (name, description)):
+                                size 18
+
+                        null height (2 * gui.pref_spacing)
+
+                        vbox:
+                            text _("Note: your preferences will only be applied"):
+                                size 20
+
+                            text _("when you start a new chapter (or game.)"):
+                                size 20
 
             hbox:
                 xalign 0.5
