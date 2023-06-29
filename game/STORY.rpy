@@ -162,10 +162,12 @@ label STORY:
         show sayori 1u at t43 zorder 3
         show natsuki 1u at t44 zorder 2
         show yuri 1p at t42 zorder 4
+        show monika 3o at t41 zorder 1
         mc "So did you guys hear the news?"
         y 1o "Y-yes we-uh did.."
         show yuri 1p at t42 zorder 4
-        show natsuki 1u at t44 zorder 2
+        show natsuki 3u at t44 zorder 2
+        show monika 2o at t41 zorder 1
         s 1w "I DON'T WANT YOU TO DIE!!"
         scene cg sayorihospital with fade
         "Sayori hugs [player] with tears running down her face.."
