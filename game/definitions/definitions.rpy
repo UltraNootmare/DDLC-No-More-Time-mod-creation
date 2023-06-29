@@ -1611,12 +1611,19 @@ define _dismiss_pause = config.developer
 # For capitalization, use heC, himC, areC and hesC
 define persistent.initialised = False
 
+define persistent.genderPresets = [
+    "Male",
+    "Female",
+    "Other"
+]
+
 define persistent.gender = ""
 default persistent.he = ""
 default persistent.him = ""
 default persistent.are = ""
 default persistent.hes = ""
 
+define genderPresets = persistent.genderPresets
 default gender = persistent.gender
 default he = persistent.he
 default him = persistent.him
