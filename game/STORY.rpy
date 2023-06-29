@@ -112,6 +112,7 @@ label STORY:
     mc "I DON'T EVEN HAVE THAT MUCH!!{w=1}{nw}"
     md 1p "I know you're under pressure right now. Should I tell your friends?"
     show monika doctor 1o at f43 zorder 1
+    mc "..."
     menu:
         "Yes":
             $ tell_friends = True
@@ -125,7 +126,38 @@ label STORY:
             md 1p "Alright then.."
     if tell_friends:
         scene bg hospital with fade
-        "Characters here"
+        show monika doctor 1o at t41 zorder 4
+        show monika 3o at t42 zorder 1
+        show sayori 1u at t43 zorder 3
+        show natsuki 2p at t44 zorder 2
+        md 1p "Hello Monika"
+        show monika doctor 1o at t41 zorder 4
+        m 3i "Hello Doctor"
+        m 3g "So what's the problem??"
+        show monika 3o at t42 zorder 1
+        md 1p "your friend seems to have heart disease and will not live to see next week..."
+        show monika doctor 1o at t41 zorder 4
+        "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}.{nw}"
+        show monika 1horrified at t42 zorder 1
+        show sayori 2horrified at t43 zorder 3
+        show natsuki 1horrified at t44 zorder 2
+        n 1v "WHAT DO YOU MEAN HE WON'T LIVE TO SEE NEXT WEEK????????"
+        show natsuki 1horrified at t44 zorder 2
+        md 2g "he can survive if he gets surgery-{nw}"
+        show monika doctor 1q at t41 zorder 4
+        show monika 1horrified at t42 zorder 1
+        show sayori 2p at t43 zorder 3
+        show natsuki 1v at t44 zorder 2
+        d "HOW MUCH IS IT?!?!?!"
+        show monika 1horrified at t42 zorder 1
+        show sayori 2horrified at t43 zorder 3
+        show natsuki 1horrified at t44 zorder 2
+        md 2r "95 million yen..."
+        show monika doctor 1q at t41 zorder 4
+        d "HUH?!?!"
+        show monika 1horrified at t42 zorder 1
+        show sayori 2horrified at t43 zorder 3
+        show natsuki 1horrified at t44 zorder 2
     else:
         scene bg hospital with fade
         "Bad ending"
