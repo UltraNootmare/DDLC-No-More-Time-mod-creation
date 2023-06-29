@@ -72,38 +72,30 @@ image menu_logo:
     menu_logo_move
 
 # This image shows the main menu polka-dot image.
-if persistent.themeIndex == 1:
-    image menu_bg:
-        topleft
+image menu_bg:
+    topleft
+    if persistent.themeIndex == 1:
         recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
-        menu_bg_move
-else:
-    image menu_bg:
-        topleft
+    else:
         "mod_assets/gui/menu_bg.png"
-        menu_bg_move
+    menu_bg_move
 
 # This image shows the pause menu polka-dot image.
-if persistent.themeIndex == 1:
-    image game_menu_bg:
-        topleft
+image game_menu_bg:
+    topleft
+    if persistent.themeIndex == 1:
         recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
-        menu_bg_loop
-else:
-    image game_menu_bg:
-        topleft
+    else:
         "mod_assets/gui/menu_bg.png"
-        menu_bg_loop
+    menu_bg_loop
 
 # This image transform shows the white fading effect in the main menu.
-if persistent.themeIndex == 1:
-    image menu_fade:
+image menu_fade:
+    if persistent.themeIndex == 1:
         "black"
-        menu_fadeout
-else:
-    image menu_fade:
+    else:
         "white"
-        menu_fadeout
+    menu_fadeout
 
 # These images show each respective characters' menu sprite and positions/animations.
 image menu_art_y:
@@ -182,14 +174,12 @@ image menu_art_s_glitch:
     menu_art_move(.8, 470, .8)
 
 # This image shows the main menu screen in the main/pause menu.
-if persistent.themeIndex == 1:
-    image menu_nav:
+image menu_nav:
+    if persistent.themeIndex == 1:
         recolorize("gui/overlay/main_menu_d.png", "#ffbde1")
-        menu_nav_move
-else:
-    image menu_nav:
+    else:
         "gui/overlay/main_menu.png"
-        menu_nav_move
+    menu_nav_move
 
 ## Main Menu Effects
 # These transforms and image transform store the effects that appear in the
@@ -267,17 +257,16 @@ transform menu_art_move(z, x, z2):
 
 ## Team Salvato Splash Screen
 # This image stores the Tean Salvato logo image that appears when the game starts.
-if persistent.themeIndex == 1:
-    image intro:
-        truecenter
+image intro:
+    truecenter
+    if persistent.themeIndex == 1:
         "black"
         0.5
         "bg/splash-white.png" with Dissolve(0.5, alpha=True)
         2.5
         "black" with Dissolve(0.5, alpha=True)
         0.5
-else:
-    image intro:
+    else:
         "white"
         0.5
         "bg/splash.png" with Dissolve(0.5, alpha=True)
@@ -287,16 +276,15 @@ else:
 
 # This image is a left over from DDLC's development that shows the splash message
 # when the game starts.
-if persistent.themeIndex == 1:
-    image warning:
-        truecenter
+image warning:
+    truecenter
+    if persistent.themeIndex == 1:
         "black"
         "splash_warning" with Dissolve(0.5, alpha=True)
         2.5
         "black" with Dissolve(0.5, alpha=True)
         0.5
-else:
-    image warning:
+    else:
         "white"
         "splash_warning" with Dissolve(0.5, alpha=True)
         2.5
@@ -425,7 +413,7 @@ label splashscreen:
 
         menu:
             "By playing [config.name] you agree to not sue us because the characters don't act cannon because we honestly don't care.
-            And also don't sue us because we're not medical experts (at all)"
+            And also don't sue us because we're not medical experts (at all)."
             "I agree.":
                 pass
 
