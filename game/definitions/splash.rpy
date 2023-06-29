@@ -287,7 +287,7 @@ image tos2 = "bg/warning2.png"
 default persistent.has_chosen_language = False
 
 ## This sets the first run variable to False to show the disclaimer.
-default persistent.first_run = False
+define persistent.first_run = False
 
 ## This sets the lockdown check variable to False to show the warning for developers.
 default persistent.lockdown_warning = False
@@ -380,7 +380,12 @@ label splashscreen:
         "Game files for Doki Doki Literature Club are required to play this mod and can be downloaded for free at: https://ddlc.moe or on Steam."
 
         menu:
-            "By playing [config.name] you agree that you have completed Doki Doki Literature Club and accept any spoilers contained within."
+            "By playing [config.name] you agree that you have completed DDLC and accept any spoilers contained within."
+            "I agree.":
+                pass
+
+        menu:
+            "By playing [config.name] you agree to not sue us because the characters don't act cannon because we honestly don't care."
             "I agree.":
                 pass
 
