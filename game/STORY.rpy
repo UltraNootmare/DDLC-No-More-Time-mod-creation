@@ -1,18 +1,21 @@
 label STORY:
-    if gender == "":
+    if gender == "" or config.developer == True:
         "What is your gender?"
         menu:
             "Male":
+                $ genderNum = 0
                 $ persistent.he = "he"
                 $ persistent.hes = "he's"
                 $ persistent.him = "him"
                 $ persistent.himself = "himself"
             "Female":
+                $ genderNum = 1
                 $ persistent.he = "she"
                 $ persistent.hes = "she's"
                 $ persistent.him = "her"
                 $ persistent.himself = "herself"
             "Other":
+                $ genderNum = 2
                 $ persistent.he = "they"
                 $ persistent.hes = "they"
                 $ persistent.him = "them"
@@ -74,72 +77,72 @@ label STORY:
     show monika doctor 1o at f43 zorder 1
     mc "Uh..."
     mc "Hey doctor."
-    md 1g "Hello [player]."
+    dm 1g "Hello [player]."
     show monika doctor 1h at f43 zorder 1
     mc "So.. What seems to be the problem?"
-    md 1g "Well.. do you wanna hear the good news or the bad news?"
+    dm 1g "Well.. do you wanna hear the good news or the bad news?"
     show monika doctor 1h at f43 zorder 1
     mc "Uhhh.."
     menu:
         "Good News":
             mc "The good news."
-            md 1i "We can help stop the fainting with an antibiotic.."
+            dm 1i "We can help stop the fainting with an antibiotic.."
             show monika doctor 1o at f43 zorder 1
             mc "And the bad news..?"
             show monika doctor 1o at f43 zorder 1
-            md 1g "You have heart disease.."
-            md 1g "..and it's close to killing you."
+            dm 1g "You have heart disease.."
+            dm 1g "..and it's close to killing you."
             show monika doctor 1o at f43 zorder 1
             mc "W-What??"
         "Bad News":
             mc "The bad news."
             show monika doctor 1o at f43 zorder 1
-            md 1g "You have heart disease.."
-            md 1g "..and it's close to killing you."
+            dm 1g "You have heart disease.."
+            dm 1g "..and it's close to killing you."
             show monika doctor 1o at f43 zorder 1
             mc "W-What??"
             mc "A-and the good news??!"
-            md 1i "We can help stop the fainting with an antibiotic.."
+            dm 1i "We can help stop the fainting with an antibiotic.."
             show monika doctor 1o at f43 zorder 1
     mc "HOW MANY DAYS DO I HAVE LEFT TO LIVE??!{w=1}{nw}"
-    md 1p "7"
+    dm 1p "7"
     show monika doctor 1o at f43 zorder 1
     mc "IS THERE A WAY TO STOP IT??!{w=1}{nw}"
-    md 1p "There is - surgery - but it's very expensive.."
+    dm 1p "There is - surgery - but it's very expensive.."
     show monika doctor 1o at f43 zorder 1
     "[playerC] calms [himself] down before replying.."
     mc "*sigh* How much?"
-    md 1p "95 million yen.."
+    dm 1p "95 million yen.."
     show monika doctor 1o at f43 zorder 1
     "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}.{nw}"
     mc "WHAT??!!"
     mc "I DON'T EVEN HAVE THAT MUCH!!{w=1}{nw}"
-    md 1p "I know you're under pressure right now. Should I tell your friends?"
+    dm 1p "I know you're under pressure right now. Should I tell your friends?"
     show monika doctor 1o at f43 zorder 1
     mc "..."
     menu:
         "Yes":
             $ tell_friends = True
             mc "Tell them the news."
-            md 1p "You made a good choice."
+            dm 1p "You made a good choice."
         "No":
             $ tell_friends = False
             mc "Don't tell them."
-            md 1p "Are you sure?"
+            dm 1p "Are you sure?"
             mc "Yes."
-            md 1p "Alright then.."
+            dm 1p "Alright then.."
     if tell_friends:
         scene bg hospital with fade
         show monika doctor 1o at t41 zorder 4
         show monika 3o at t42 zorder 1
         show sayori 1u at t43 zorder 3
         show natsuki 2p at t44 zorder 2
-        md 1p "Hello Monika"
+        dm 1p "Hello Monika"
         show monika doctor 1o at t41 zorder 4
         m 3i "Hello Doctor"
         m 3g "So what's the problem??"
         show monika 3o at t42 zorder 1
-        md 1p "[player] has heart disease and will not live to see next week.."
+        dm 1p "[player] has heart disease and will not live to see next week.."
         show monika doctor 1o at t41 zorder 4
         "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}.{nw}"
         show monika 1horrified at t42 zorder 1
@@ -147,7 +150,7 @@ label STORY:
         show natsuki 1horrified at t44 zorder 2
         n 1v "WHAT DO YOU MEAN [heC] WON'T LIVE TO SEE NEXT WEEK??!"
         show natsuki 1horrified at t44 zorder 2
-        md 2r "[heC] can live if he gets surgery-{nw}"
+        dm 2r "[heC] can live if he gets surgery-{nw}"
         show monika doctor 1q at t41 zorder 4
         show monika 1horrified at t42 zorder 1
         show sayori 2p at t43 zorder 3
@@ -156,7 +159,7 @@ label STORY:
         show monika 1horrified at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
-        md 2r "95 million yen..."
+        dm 2r "95 million yen..."
         show monika doctor 1q at t41 zorder 4
         d "HUH?!"
         show monika 1horrified at t42 zorder 1
