@@ -476,13 +476,6 @@ init python:
         renpy.hide_screen("name_input")
         if launchGame:
             renpy.jump_out_of_context("start")
-    
-    def FinishEnterGender(launchGame=True):
-        if not persistent.gender: return
-        UpdateGender()
-        renpy.hide_screen("gender_input")
-        if launchGame:
-            renpy.jump_out_of_context("start")
 
 screen navigation():
 
@@ -499,9 +492,9 @@ screen navigation():
             if main_menu:
 
                 if persistent.playthrough == 1:
-                    textbutton _("ŔŗñĮ¼»ŧþŀÂŻŕěōì«") action [If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName))), If(persistent.playername, true=Start(), false=Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender)))]
+                    textbutton _("ŔŗñĮ¼»ŧþŀÂŻŕěōì«") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
                 else:
-                    textbutton _("New Game") action [If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName))), If(persistent.gender, true=Start(), false=Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender)))]
+                    textbutton _("New Game") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
 
             else:
 
@@ -1265,16 +1258,7 @@ screen mod_preferences():
                 
                 textbutton _("Change Name") action Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName, launchGame=False)):
                     text_style "navigation_button_text"
-                
-                label _("Player Gender")
-                if persistent.gender == "":
-                    text _("No Gender Set") xalign 0.5
-                    
-                    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-                        text_style "navigation_button_text"
-                else:
-                    text "[persistent.gender]" xalign 0.5
-
+            
             null height (4 * gui.pref_spacing)
 
         hbox:
@@ -1776,13 +1760,7 @@ screen gender_input(message, ok_action):
 
                     vbox:
                         yalign 0.5
-
-                        hbox:
-                            $ gender = genderPresets[genderNum]
-
-                            text _("{b}Selected: '%s'" % (gender)):
-                                size 18
-
+                        
                         null height (2 * gui.pref_spacing)
 
                         vbox:
