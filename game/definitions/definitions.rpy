@@ -1583,7 +1583,7 @@ image doctor_monika g2:
     repeat
 
 #######################
-
+ 
 ## Character Variables
 # This is where the characters are declared in the mod.
 # To define a new character with assets, declare a character variable like in this example:

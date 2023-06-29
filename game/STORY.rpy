@@ -159,12 +159,16 @@ label STORY:
         show monika 1horrified at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
-        dm 2r "95 million yen..."
+        md 2r "95 million yen..."
+        show monika 1horrified at t42 zorder 1
+        show sayori 2p at t43 zorder 3
+        show natsuki 1v at t44 zorder 2
         show monika doctor 1q at t41 zorder 4
         d "HUH?!"
         show monika 1horrified at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
+        
     else:
         scene bg hospital with fade
         "Bad ending"
