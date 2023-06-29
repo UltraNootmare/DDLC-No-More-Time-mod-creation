@@ -131,7 +131,6 @@ label STORY:
             md 1p "Are you sure?"
             mc "Yes."
             md 1p "Alright then.."
-    
     if tell_friends:
         scene bg hospital with fade
         show monika doctor 1o at t41 zorder 4
@@ -169,7 +168,7 @@ label STORY:
         show monika 1horrified at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
-        
+        md 2p "[playerC] had the same reaction.... heh"
     else:
         scene bg hospital with fade
         "Bad ending"
