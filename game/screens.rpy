@@ -135,37 +135,37 @@ style vbar:
 
 style bar:
     ysize 18
-    base_bar Frame("gui/scrollbar/horizontal_poem_bar.png", tile=False)
-    thumb Frame("gui/scrollbar/horizontal_poem_thumb.png", top=6, right=6, tile=True)
+    base_bar Frame("mod_assets/gui/scrollbar/horizontal_poem_bar_d.png", tile=False)
+    thumb Frame("gui/scrollbar/horizontal_poem_thumb_d.png", top=6, right=6, tile=True)
 
 style scrollbar:
     ysize 18
-    base_bar Frame("gui/scrollbar/horizontal_poem_bar.png", tile=False)
+    base_bar Frame("mod_assets/gui/scrollbar/horizontal_poem_bar_d.png", tile=False)
     thumb Frame("gui/scrollbar/horizontal_poem_thumb.png", top=6, right=6, tile=True)
     unscrollable "hide"
     bar_invert True
 
 style vscrollbar:
     xsize 18
-    base_bar Frame("gui/scrollbar/vertical_poem_bar.png", tile=False)
+    base_bar Frame("mod_assets/gui/scrollbar/vertical_poem_bar_d.png", tile=False)
     thumb Frame("gui/scrollbar/vertical_poem_thumb.png", left=6, top=6, tile=True)
     unscrollable "hide"
     bar_invert True
 
 style slider:
     ysize 18
-    base_bar Frame("gui/scrollbar/horizontal_poem_bar.png", tile=False)
+    base_bar Frame("mod_assets/gui/scrollbar/horizontal_poem_bar_d.png", tile=False)
     thumb "gui/slider/horizontal_hover_thumb.png"
 
 style vslider:
     xsize gui.slider_size
-    base_bar Frame("gui/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
+    base_bar Frame("mod_assets/gui/slider/vertical_[prefix_]bar_d.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/slider/vertical_[prefix_]thumb.png"
 
 
 style frame:
     padding gui.frame_borders.padding
-    background Frame("gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
+    background Frame("mod_assets/gui/frame_d.png", gui.frame_borders, tile=gui.frame_tile)
     # background Frame(recolorize("gui/frame.png"), gui.frame_borders, tile=gui.frame_tile)
 
 ################################################################################
@@ -223,10 +223,10 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Transform("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Transform("mod_assets/gui/textbox_d.png", xalign=0.5, yalign=1.0)
 
 style window_monika is window:
-    background Transform("gui/textbox_monika.png", xalign=0.5, yalign=1.0)
+    background Transform("mod_assets/gui/textbox_monika_d.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos
@@ -235,7 +235,7 @@ style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("mod_assets/gui/namebox_d.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
@@ -348,9 +348,9 @@ screen choice(items):
                     $ arg2 = kwarg[-1]
                     
                     textbutton caption:
-                        idle_background Frame(im.MatrixColor(im.MatrixColor("gui/button/choice_idle_background.png", im.matrix.desaturate() * im.matrix.contrast(1.29) * im.matrix.colorize("#00f", "#fff") * im.matrix.saturation(120)), 
+                        idle_background Frame(im.MatrixColor(im.MatrixColor("mod_assets/gui/button/choice_dark_idle_background.png", im.matrix.desaturate() * im.matrix.contrast(1.29) * im.matrix.colorize("#00f", "#fff") * im.matrix.saturation(120)), 
                             im.matrix.desaturate() * im.matrix.colorize(arg1, arg2)), gui.choice_button_borders)
-                        hover_background Frame(im.MatrixColor(im.MatrixColor("gui/button/choice_hover_background.png", im.matrix.desaturate() * im.matrix.contrast(1.29) * im.matrix.colorize("#00f", "#fff") * im.matrix.saturation(120)), 
+                        hover_background Frame(im.MatrixColor(im.MatrixColor("mod_assets/gui/button/choice_dark_hover_background.png", im.matrix.desaturate() * im.matrix.contrast(1.29) * im.matrix.colorize("#00f", "#fff") * im.matrix.saturation(120)), 
                             im.matrix.desaturate() * im.matrix.colorize(arg1, "#fff")), gui.choice_button_borders)
                         action i.action
 
@@ -385,8 +385,8 @@ style choice_button is default:
     properties gui.button_properties("choice_button")
     hover_sound gui.hover_sound
     activate_sound gui.activate_sound
-    idle_background Frame("gui/button/choice_idle_background.png", gui.choice_button_borders)
-    hover_background Frame("gui/button/choice_hover_background.png", gui.choice_button_borders)
+    idle_background Frame("mod_assets/ui/button/choice_dark_idle_background.png", gui.choice_button_borders)
+    hover_background Frame("mod_assets/gui/button/choice_dark_hover_background.png", gui.choice_button_borders)
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
@@ -474,14 +474,6 @@ init python:
         persistent.playername = player
         renpy.save_persistent()
         renpy.hide_screen("name_input")
-        if launchGame:
-            renpy.jump_out_of_context("start")
-    
-    def FinishEnterTheme(launchGame=True):
-        theme = persistent.themePresets[persistent.themeIndex]
-        persistent.theme = theme
-        renpy.save_persistent()
-        renpy.hide_screen("theme_input")
         if launchGame:
             renpy.jump_out_of_context("start")
 
@@ -750,7 +742,7 @@ style game_menu_outer_frame:
     bottom_padding 30
     top_padding 120
 
-    background "gui/overlay/game_menu.png"
+    background "mod_assets/gui/overlay/game_menu_d.png"
     # background recolorize("gui/overlay/game_menu.png")
 
 style game_menu_navigation_frame:
@@ -1009,7 +1001,7 @@ screen viewframe_options(title):
 
     style_prefix "viewframe"
 
-    add "gui/overlay/confirm.png"
+    add "mod_assets/gui/overlay/confirm_d.png"
 
     frame:
 
@@ -1266,13 +1258,6 @@ screen mod_preferences():
                 
                 textbutton _("Change Name") action Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName, launchGame=False)):
                     text_style "navigation_button_text"
-                
-                label _("Theme")
-
-                text "[persistent.theme]" xalign 0.5
-
-                textbutton _("Change Theme") action Show(screen="theme_input", message="Please enter your theme", ok_action=Function(FinishEnterTheme, launchGame=False)):
-                    text_style "navigation_button_text"
 
             
             null height (4 * gui.pref_spacing)
@@ -1384,7 +1369,7 @@ style radio_vbox:
 
 style radio_button:
     properties gui.button_properties("radio_button")
-    foreground "gui/button/check_[prefix_]foreground.png"
+    foreground "gui/button/check_[prefix_]foreground_d.png"
 
 style radio_button_text:
     properties gui.button_text_properties("radio_button")
@@ -1396,7 +1381,7 @@ style check_vbox:
 
 style check_button:
     properties gui.button_properties("check_button")
-    foreground "gui/button/check_[prefix_]foreground.png"
+    foreground "gui/button/check_[prefix_]foreground_d.png"
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
@@ -1709,7 +1694,7 @@ screen name_input(message, ok_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
+    add "mod_assets/gui/overlay/confirm_d.png"
     key "K_RETURN" action [Play("sound", gui.activate_sound), ok_action]
 
     frame:
@@ -1731,67 +1716,6 @@ screen name_input(message, ok_action):
 
                 textbutton _("OK") action ok_action
 
-screen theme_input(message, ok_action):
-
-    ## Ensure other screens do not get input while this screen is displayed.
-    modal True
-
-    zorder 200
-
-    style_prefix "confirm"
-
-    add "gui/overlay/confirm.png"
-    key "K_RETURN" action [Play("sound", gui.activate_sound), ok_action]
-
-    frame:
-
-        vbox:
-            xalign .5
-            yalign .5
-            spacing 30
-
-            label _(message):
-                style "confirm_prompt"
-                xalign 0.5
-
-            vbox:
-                hbox:
-                    box_wrap True
-                    style_prefix "radio"
-
-                    label _("Preferred Theme")
-                    null width (2 * gui.pref_spacing)
-
-                hbox:
-                    vbox:
-                        style_prefix "radio"
-
-                        for i in range(len(persistent.themePresets)):
-                            $ themes = persistent.themePresets[i]
-
-                            textbutton _(themes):
-                                action SetField(persistent, "themeIndex", i)
-
-                    null width (2 * gui.pref_spacing)
-
-                    vbox:
-                        yalign 0.5
-
-                        null height (2 * gui.pref_spacing)
-
-                        vbox:
-                            text _("Note: Your preferences will only be applied"):
-                                size 20
-
-                            text _("when you start a new chapter (or game.)"):
-                                size 20
-
-            hbox:
-                xalign 0.5
-                spacing 100
-
-                textbutton _("OK") action ok_action
-
 screen dialog(message, ok_action):
 
     ## Ensure other screens do not get input while this screen is displayed.
@@ -1801,7 +1725,7 @@ screen dialog(message, ok_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
+    add "mod_assets/gui/overlay/confirm_d.png"
 
     frame:
 
@@ -1842,7 +1766,7 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
+    add "mod_assets/gui/overlay/confirm_d.png"
 
     frame:
 
@@ -1885,7 +1809,7 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame("gui/frame.png", gui.confirm_frame_borders, tile=gui.frame_tile)
+    background Frame("mod_assets/gui/frame_d.png", gui.confirm_frame_borders, tile=gui.frame_tile)
     # background Frame(recolorize("gui/frame.png"), gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
@@ -2125,7 +2049,7 @@ screen choose_language():
     modal True
     style_prefix "radio"
 
-    add "gui/overlay/confirm.png"
+    add "mod_assets/gui/overlay/confirm_d.png"
 
     frame:
         style "confirm_frame"

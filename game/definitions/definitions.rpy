@@ -16,16 +16,6 @@ define persistent.steam = ("steamapps" in config.basedir.lower())
 # This variable declares whether Developer Mode is on or off in the mod.
 define config.developer = False
 
-## Themes ##
-# Light(0) Dark(1)
-define persistent.themeIndex = 0
-define persistent.themePresets = [
-    "Light",
-    "Dark"
-]
-define persistent.theme = ""
-$ persistent.theme = persistent.themePresets[persistent.themeIndex]
-
 # This python statement starts singleton to make sure only one copy of the mod
 # is running.
 python early:

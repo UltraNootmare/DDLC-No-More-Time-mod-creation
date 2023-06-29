@@ -23,7 +23,6 @@ init -100 python:
 ## Splash Message
 # This python statement is where the splash messages reside in.
 init python:
-    print(persistent.themeIndex, persistent.theme)
     # This variable is the default splash message that people will see when
     # the game launches.
     splash_message_default = "This game is an unofficial fan game that is unaffiliated with Team Salvato."
@@ -40,7 +39,7 @@ init python:
     ##
     ## Syntax to use: recolorize("path/to/your/image", "#color1hex", "#color2hex", contrast value)
     ## Example: recolorize("gui/menu_bg.png", "#bdfdff", "#e6ffff", 1.25)
-    def recolorize(path, blackCol="#ffbde1", whiteCol="#ffe6f4", contr=1.29):
+    def recolorize(path, blackCol="#181818", whiteCol="#b86aa4", contr=1.29):
         return im.MatrixColor(im.MatrixColor(im.MatrixColor(path, im.matrix.desaturate() * im.matrix.contrast(contr)), im.matrix.colorize("#00f", "#fff")
             * im.matrix.saturation(120)), im.matrix.desaturate() * im.matrix.colorize(blackCol, whiteCol))
 
@@ -73,38 +72,21 @@ image menu_logo:
     menu_logo_move
 
 # This image shows the main menu polka-dot image.
-if persistent.theme == "Dark":
-    image menu_bg:
-        topleft
-        recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
-        menu_bg_move
-elif persistent.theme == "Light":
-    image menu_bg:
-        topleft
-        "mod_assets/gui/menu_bg.png"
-        menu_bg_move
+image menu_bg:
+    topleft
+    "mod_assets/gui/menu_bg_d.png"
+    menu_bg_move
 
 # This image shows the pause menu polka-dot image.
-if persistent.themeIndex == 1:
-    image game_menu_bg:
-        topleft
-        recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
-        menu_bg_loop
-elif persistent.themeIndex == 0:
-    image game_menu_bg:
-        topleft
-        "mod_assets/gui/menu_bg.png"
-        menu_bg_loop
+image game_menu_bg:
+    topleft
+    "mod_assets/gui/menu_bg_d.png"
+    menu_bg_loop
 
 # This image transform shows the white fading effect in the main menu.
-if persistent.themeIndex == 1:
-    image menu_fade:
-        "black"
-        menu_fadeout
-elif persistent.themeIndex == 0:
-    image menu_fade:
-        "white"
-        menu_fadeout
+image menu_fade:
+    "white"
+    menu_fadeout
 
 # These images show each respective characters' menu sprite and positions/animations.
 image menu_art_y:
@@ -183,14 +165,9 @@ image menu_art_s_glitch:
     menu_art_move(.8, 470, .8)
 
 # This image shows the main menu screen in the main/pause menu.
-if persistent.themeIndex == 1:
-    image menu_nav:
-        recolorize("gui/overlay/main_menu_d.png", "#ffbde1")
-        menu_nav_move
-elif persistent.themeIndex == 0:
-    image menu_nav:
-        "gui/overlay/main_menu.png"
-        menu_nav_move
+image menu_nav:
+    "mod_assets/gui/overlay/main_menu_d.png"
+    menu_nav_move
 
 ## Main Menu Effects
 # These transforms and image transform store the effects that appear in the
@@ -375,10 +352,7 @@ label splashscreen:
 
     if not persistent.first_run:
         $ quick_menu = False
-        if persistent.themeIndex == 1:
-            scene black
-        else:
-            scene white
+        scene white
         pause 0.5
         scene tos
         with Dissolve(1.0)
@@ -547,10 +521,7 @@ label splashscreen:
     #     pause
     #     $ renpy.quit()
 
-    if persistent.themeIndex == 1:
-        show black
-    else:
-        show white
+    show white
     $ persistent.ghost_menu = False
     $ splash_message = splash_message_default
     $ config.main_menu_music = audio.t1
