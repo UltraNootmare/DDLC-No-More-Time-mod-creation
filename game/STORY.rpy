@@ -44,10 +44,7 @@ label STORY:
     n 5v "{b}I SWEAR TO GOD SAYORI, YOU WERE ABOUT TO GIVE ME A HEARTATTACK!!..{/b}"
     "*One extremely long complaint at Sayori for overexaggerating later*{w=1}{nw}"
     show natsuki 2g at t43 zorder 2
-    if persistent.gender == "Other":
-        y 1v "Well... How are he doing?"
-    else:
-        y 1v "Well... How's he doing?"
+    y 1v "Well... How's he doing?"
     show yuri 1u at t44 zorder 4
     m 3p "The doctor says he's in stable condition..."
     m 3p "They say they'll get back to us in the next 30 minutes."
