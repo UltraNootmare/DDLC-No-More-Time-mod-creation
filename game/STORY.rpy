@@ -110,6 +110,24 @@ label STORY:
     "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}.{nw}"
     mc "WHAT??!!"
     mc "I DON'T EVEN HAVE THAT MUCH!!{w=1}{nw}"
-    md 1p "I understand you are under alot of pressure right now but I need you to make a descision on if I should tell your friends about the situation or not."
+    md 1p "I know you're under pressure right now. Should I tell your friends?"
     show monika doctor 1o at f43 zorder 1
     mc "..."
+    menu:
+        "Yes":
+            $ tell_friends = True
+            mc "Tell them the news."
+            md 1p "You made a good choice."
+        "No":
+            $ tell_friends = False
+            mc "Don't tell them."
+            md 1p "Are you sure?"
+            mc "Yes."
+            md 1p "Alright then.."
+    if tell_friends:
+        scene bg hospital with fade
+        "Characters here"
+    else:
+        scene bg hospital with fade
+        "Bad ending"
+            
