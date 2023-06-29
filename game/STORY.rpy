@@ -176,17 +176,17 @@ label STORY:
         show monika doctor 1q at t41 zorder 4
         n 1q "well can we see [him] atleast???"
         show natsuki 1n at t44 zorder 2
-        md 2p "Its cute how much you care for him..."
+        md 2p "Its cute how much you care for [him]..."
         show monika doctor 1q at t41 zorder 4
         n 1p "DON'T CALL ME CUTE...!"
         show natsuki 1n at t44 zorder 2
-        md 2p "well you can go in and see him"
+        md 2p "well you can go in and see [him]"
 
         scene bg hospital_room with fade
-        "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk they all hug him..."
+        "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk they all hug [him]..."
         show monika 1o at t41 zorder 1
-        show sayori 1u at t43 zorder 3
-        show natsuki 1u at t44 zorder 2
+        show sayori 1u at t42 zorder 3
+        show natsuki 1u at t43 zorder 2
         show yuri 1u at t44 zorder 4
         
     else:
