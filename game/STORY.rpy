@@ -112,7 +112,6 @@ label STORY:
     mc "I DON'T EVEN HAVE THAT MUCH!!{w=1}{nw}"
     md 1p "I know you're under pressure right now. Should I tell your friends?"
     show monika doctor 1o at f43 zorder 1
-    mc "..."
     menu:
         "Yes":
             $ tell_friends = True
