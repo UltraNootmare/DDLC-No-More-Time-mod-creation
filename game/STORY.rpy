@@ -171,7 +171,7 @@ label STORY:
         md 2p "You can go in and see him."
 
         scene bg hospital_room with fade
-        "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk they all hug him..."
+        "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk they all hug him.."
         
     else:
         scene bg hospital with fade
