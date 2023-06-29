@@ -1,50 +1,65 @@
-Thu Jun 29 11:22:27 2023
+Thu Jun 29 11:28:37 2023
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
 
-Bootstrap to the start of init.init. took 0.05s
+Bootstrap to the start of init.init. took 0.08s
 Early init. took 0.00s
-Loader init. took 0.12s
-Loading error handling. took 0.02s
-Loading script. took 0.67s
-Loading save slot metadata. took 0.06s
+Loader init. took 0.26s
+Loading error handling. took 0.04s
+Loading script. took 1.31s
+Loading save slot metadata. took 0.05s
 Loading persistent. took 0.00s
-Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.11s
-Loading analysis data. took 0.04s
-Analyze and compile ATL. took 0.07s
-Reloading save slot metadata. took 0.06s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
-Dump and make backups. took 0.08s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.05s
+
+File "game/definitions/definitions.rpy", line 1612: expected statement.
+    <<<<<<< HEAD
+                ^
+
+File "game/definitions/definitions.rpy", line 1613: expected statement.
+    <<<<<<< HEAD
+                ^
+
+File "game/definitions/definitions.rpy", line 1634: expected statement.
+    =======
+          ^
+
+File "game/definitions/definitions.rpy", line 1635: expected statement.
+    =======
+          ^
+
+File "game/definitions/definitions.rpy", line 1636: expected statement.
+    >>>>>>> parent of b04e293 (a)
+                              ^
+
+File "game/definitions/definitions.rpy", line 1645: expected statement.
+    <<<<<<< HEAD
+                ^
+
+File "game/definitions/definitions.rpy", line 1650: expected statement.
+    >>>>>>> parent of cc6a68e (Adding gender in settings..)
+                              ^
+
+File "game/definitions/definitions.rpy", line 1651: expected statement.
+    =======
+          ^
+
+File "game/definitions/definitions.rpy", line 1656: expected statement.
+    >>>>>>> parent of b04e293 (a)
+                              ^
+
+File "game/screens.rpy", line 1278: Indentation mismatch.
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.06s
-Save bytecode. took 0.08s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.16s
+Interface start. took 0.22s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 2560, 1440)
+primary display bounds: (0, 0, 1600, 900)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 530'
+Version: '4.6.0 - Build 31.0.101.2111'
 Display Info: None
 Number of texture units: 32
 Using shader environment.
@@ -60,133 +75,6 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1433, 806) drawable=(1433, 806)
+Screen sizes: virtual=(1280, 720) physical=(1419, 798) drawable=(1419, 798)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-
-Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
-  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/core.py", line 4052, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/screen.py", line 476, in visit_all
-    callback(self)
-  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/core.py", line 4052, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/screen.py", line 487, in per_interact
-    self.update()
-  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/display/screen.py", line 680, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 1300, in execute
-    screen preferences():
-  File "game/screens.rpy", line 1300, in execute
-    screen preferences():
-  File "game/screens.rpy", line 1311, in execute
-    use game_menu(_("Settings"), scroll="viewport"):
-  File "game/screens.rpy", line 658, in execute
-    screen game_menu(title, scroll=None):
-  File "game/screens.rpy", line 658, in execute
-    screen game_menu(title, scroll=None):
-  File "game/screens.rpy", line 669, in execute
-    frame:
-  File "game/screens.rpy", line 672, in execute
-    hbox:
-  File "game/screens.rpy", line 678, in execute
-    frame:
-  File "game/screens.rpy", line 681, in execute
-    if scroll == "viewport":
-  File "game/screens.rpy", line 683, in execute
-    viewport:
-  File "game/screens.rpy", line 691, in execute
-    vbox:
-  File "game/screens.rpy", line 692, in execute
-    transclude
-  File "game/screens.rpy", line 1311, in execute
-    use game_menu(_("Settings"), scroll="viewport"):
-  File "game/screens.rpy", line 1313, in execute
-    vbox:
-  File "game/screens.rpy", line 1325, in execute
-    if ddlc_settings:
-  File "game/screens.rpy", line 1328, in execute
-    use mod_preferences
-  File "game/screens.rpy", line 1227, in execute
-    screen mod_preferences():
-  File "game/screens.rpy", line 1227, in execute
-    screen mod_preferences():
-  File "game/screens.rpy", line 1228, in execute
-    hbox:
-  File "game/screens.rpy", line 1248, in execute
-    vbox:
-  File "game/screens.rpy", line 1268, in execute
-    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-  File "game/screens.rpy", line 1268, in keywords
-    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-  File "game/screens.rpy", line 1268, in <module>
-    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-NameError: name 'FinishEnterGender' is not defined
-
-While running game code:
-  File "game/screens.rpy", line 1300, in execute
-    screen preferences():
-  File "game/screens.rpy", line 1300, in execute
-    screen preferences():
-  File "game/screens.rpy", line 1311, in execute
-    use game_menu(_("Settings"), scroll="viewport"):
-  File "game/screens.rpy", line 658, in execute
-    screen game_menu(title, scroll=None):
-  File "game/screens.rpy", line 658, in execute
-    screen game_menu(title, scroll=None):
-  File "game/screens.rpy", line 669, in execute
-    frame:
-  File "game/screens.rpy", line 672, in execute
-    hbox:
-  File "game/screens.rpy", line 678, in execute
-    frame:
-  File "game/screens.rpy", line 681, in execute
-    if scroll == "viewport":
-  File "game/screens.rpy", line 683, in execute
-    viewport:
-  File "game/screens.rpy", line 691, in execute
-    vbox:
-  File "game/screens.rpy", line 692, in execute
-    transclude
-  File "game/screens.rpy", line 1311, in execute
-    use game_menu(_("Settings"), scroll="viewport"):
-  File "game/screens.rpy", line 1313, in execute
-    vbox:
-  File "game/screens.rpy", line 1325, in execute
-    if ddlc_settings:
-  File "game/screens.rpy", line 1328, in execute
-    use mod_preferences
-  File "game/screens.rpy", line 1227, in execute
-    screen mod_preferences():
-  File "game/screens.rpy", line 1227, in execute
-    screen mod_preferences():
-  File "game/screens.rpy", line 1228, in execute
-    hbox:
-  File "game/screens.rpy", line 1248, in execute
-    vbox:
-  File "game/screens.rpy", line 1268, in execute
-    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-  File "game/screens.rpy", line 1268, in keywords
-    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-  File "game/screens.rpy", line 1268, in <module>
-    textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
-NameError: name 'FinishEnterGender' is not defined
