@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/STORY.rpy", line 11: expected statement.
-    UpdateGender()
-                  ^
+File "game/definitions/definitions.rpy", line 91: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Thu Jun 29 15:15:52 2023
+Thu Jun 29 15:36:30 2023

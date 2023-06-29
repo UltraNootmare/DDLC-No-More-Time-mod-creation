@@ -56,22 +56,34 @@ init python:
     ## Update gender
 
     def UpdateGender():
-        gender = genderPresets[genderNum]
-        if gender == "Male":
+        persistent.gender = persistent.genderPresets[persistent.genderNum]
+        if persistent.gender == "Male":
             persistent.he = "he"
             persistent.hes = "he's"
             persistent.him = "him"
             persistent.himself = "himself"
-        elif gender == "Female":
+        elif persistent.gender == "Female":
             persistent.he = "she"
             persistent.hes = "she's"
             persistent.him = "her"
             persistent.himself = "herself"
-        elif gender == "Other":
+        elif persistent.gender == "Other":
             persistent.he = "they"
             persistent.hes = "they're"
             persistent.him = "them"
             persistent.himself = "themselves"
+        
+        heC = persistent.he.capitalize()
+        himC = persistent.him.capitalize()
+        areC = persistent.are.capitalize()
+        hesC = persistent.hes.capitalize()
+        himselfC = persistent.himself.capitalize()
+        heCAPS = persistent.he.upper()
+        himCAPS = persistent.him.upper()
+        areCAPS = persistent.are.upper()
+        hesCAPS = persistent.hes.upper()
+        himselfCAPS = persistent.himself.upper()
+
         renpy.save_persistent()
         
 
@@ -1648,24 +1660,16 @@ default persistent.are = ""
 default persistent.hes = ""
 default persistent.himself = ""
 
-define genderPresets = persistent.genderPresets
-default gender = persistent.genderPresets[persistent.genderNum]
-default genderNum = persistent.genderNum
-default he = persistent.he
-default him = persistent.him
-default are = persistent.are
-default hes = persistent.hes
-default himself = persistent.himself
-default heC = he.capitalize()
-default himC= him.capitalize()
-default areC = are.capitalize()
-default hesC = hes.capitalize()
-default himselfC = himself.capitalize()
-default heCAPS = he.upper()
-default himCAPS = him.upper()
-default areCAPS = are.upper()
-default hesCAPS = hes.upper()
-default himselfCAPS = himself.upper()
+default heC = persistent.he.capitalize()
+default himC = persistent.him.capitalize()
+default areC = persistent.are.capitalize()
+default hesC = persistent.hes.capitalize()
+default himselfC = persistent.himself.capitalize()
+default heCAPS = persistent.he.upper()
+default himCAPS = persistent.him.upper()
+default areCAPS = persistent.are.upper()
+default hesCAPS = persistent.hes.upper()
+default himselfCAPS = persistent.himself.upper()
 
 ## Extra Settings Variables
 # This section controls whether the mod is censored or is in let's play mode.

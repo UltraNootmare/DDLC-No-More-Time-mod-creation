@@ -1,13 +1,13 @@
 label STORY:
-    if gender == "" or config.developer == True:
+    if persistent.gender == "" or config.developer == True:
         "What is your gender?"
         menu:
             "Male":
-                $ genderNum = 0
+                $ persistent.genderNum = 0
             "Female":
-                $ genderNum = 1
+                $ persistent.genderNum = 1
             "Other":
-                $ genderNum = 2
+                $ persistent.genderNum = 2
         $ UpdateGender()
 
     play music t9g fadein 1.0
@@ -54,12 +54,12 @@ label STORY:
     n 5v "{b}I SWEAR TO GOD SAYORI, YOU WERE ABOUT TO GIVE ME A HEARTATTACK!!..{/b}"
     "*One extremely long complaint at Sayori for overexaggerating later*{w=1}{nw}"
     show natsuki 2g at t43 zorder 2
-    if gender == "Other":
-        y 1v "Well... How are [he] doing?"
+    if persistent.gender == "Other":
+        y 1v "Well... How are [persistent.he] doing?"
     else:
-        y 1v "Well... How's [he] doing?"
+        y 1v "Well... How's [persistent.he] doing?"
     show yuri 1u at t44 zorder 4
-    m 3p "The doctor says [hes] in stable condition..."
+    m 3p "The doctor says [persistent.hes] in stable condition..."
     m 3p "They say they'll get back to us in the next 30 minutes."
     show monika 3o at t41 zorder 1
     scene black
@@ -102,7 +102,7 @@ label STORY:
     mc "IS THERE A WAY TO STOP IT??!{w=1}{nw}"
     md 1p "There is - surgery - but it's very expensive.."
     show monika doctor 1o at f43 zorder 1
-    "[playerC] calms [himself] down before replying.."
+    "[playerC] calms [persistent.himself] down before replying.."
     mc "*sigh* How much?"
     md 1p "95 million yen.."
     show monika doctor 1o at f43 zorder 1
@@ -160,18 +160,18 @@ label STORY:
         show monika 1o at t42 zorder 1
         show sayori 2k at t43 zorder 3
         show natsuki 1n at t44 zorder 2
-        md 2p "[playerC] had the same reaction.... heh"
+        md 2p "[playerC] had the same reaction.. heh"
         show monika doctor 1q at t41 zorder 4
-        n 1q "well can we see [him] atleast???"
+        n 1q "Well can we see [persistent.him]??"
         show natsuki 1n at t44 zorder 2
-        md 2p "Its cute how much you care for him..."
+        md 2p "Its cute how much you care for [persistent.him].."
         show monika doctor 1q at t41 zorder 4
-        n 1p "DON'T CALL ME CUTE...!"
+        n 1p "DON'T CALL ME CUTE..!"
         show natsuki 1n at t44 zorder 2
-        md 2p "well you can go in and see him"
+        md 2p "You can go in."
 
         scene bg hospital_room with fade
-        "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk they all hug him..."
+        "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk, they all hug [him]..."
         
     else:
         scene bg hospital with fade

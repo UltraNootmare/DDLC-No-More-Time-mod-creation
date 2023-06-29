@@ -478,7 +478,7 @@ init python:
             renpy.jump_out_of_context("start")
     
     def FinishEnterGender(launchGame=True):
-        if not gender: return
+        if not persistent.gender: return
         UpdateGender()
         renpy.hide_screen("gender_input")
         if launchGame:
@@ -1267,12 +1267,13 @@ screen mod_preferences():
                     text_style "navigation_button_text"
                 
                 label _("Player Gender")
-                if gender == "":
+                if persistent.gender == "":
                     text _("No Gender Set") xalign 0.5
+                    
                     textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
                         text_style "navigation_button_text"
                 else:
-                    text "[gender]" xalign 0.5
+                    text "[persistent.gender]" xalign 0.5
 
             null height (4 * gui.pref_spacing)
 
