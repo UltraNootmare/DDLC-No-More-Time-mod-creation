@@ -78,25 +78,25 @@ label STORY:
     mc "Ehhh... good news?"
     md 1i "We can help stop the fainting with an antibiotic..."
     show monika doctor 1h at f43 zorder 1
-    mc "the bad news.."
+    mc "And the bad news..?"
     show monika doctor 1h at f43 zorder 1
-    md 1g "you have heart disease..."
-    md 1g "...and its close to killing you"
+    md 1g "You have heart disease.."
+    md 1g "..and it's close to killing you."
     show monika doctor 1h at f43 zorder 1
     mc "W-What???"
-    mc "HOW MANY DAYS DO I HAVE LEFT TO LIVE?!?!-{w=1}{nw}"
+    mc "HOW MANY DAYS DO I HAVE LEFT TO LIVE??!{w=1}{nw}"
     md 1i "7"
     show monika doctor 1h at f43 zorder 1
-    mc "IS THERE A WAY TO STOP IT?!?!-{w=1}{nw}"
-    md 1i "There is a way to stop it but it's a very expensive surgery..."
+    mc "IS THERE A WAY TO STOP IT??!{w=1}{nw}"
+    md 1i "There is - surgery - but it's very expensive.."
     show monika doctor 1h at f43 zorder 1
-    "[Player] calms [himself] down before replying..."
-    mc "how much..?"
-    md 1g "95 million yen..."
+    "[playerC] calms [himself] down before replying.."
+    mc "*sigh* How much?"
+    md 1g "95 million yen.."
     show monika doctor 1h at f43 zorder 1
     "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}.{nw}"
-    mc "WHAT!?!?!?"
-    mc "I DON'T EVEN HAVE CLOSE TO THAT AMOUNT!!!-{w=1}{nw}"
-    md 1g "I understand you are under alot of pressure right now but i need you to make a descision on if i should tell your friends about the situation or not."
+    mc "WHAT??!!"
+    mc "I DON'T EVEN HAVE THAT MUCH!!{w=1}{nw}"
+    md 1g "I understand you are under alot of pressure right now but I need you to make a descision on if I should tell your friends about the situation or not."
     show monika doctor 1h at f43 zorder 1
     mc "..."

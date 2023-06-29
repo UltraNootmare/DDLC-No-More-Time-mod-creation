@@ -1655,6 +1655,7 @@ default persistent.lets_play = False
 
 default persistent.playername = ""
 default player = persistent.playername
+default playerC = player.capitalize()
 default persistent.playthrough = 0
 default persistent.yuri_kill = 0
 default persistent.seen_eyes = None
