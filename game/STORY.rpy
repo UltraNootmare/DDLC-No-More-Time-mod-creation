@@ -90,7 +90,7 @@ label STORY:
     mc "IS THERE A WAY TO STOP IT?!?!-{w=1}{nw}"
     md 1i "There is a way to stop it but it's a very expensive surgery..."
     show monika doctor 1h at f43 zorder 1
-    "[Player] calms [himself] down before replying..."
+    "[player] calms [himself] down before replying..."
     mc "how much..?"
     md 1g "95 million yen..."
     show monika doctor 1h at f43 zorder 1
