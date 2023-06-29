@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/definitions/definitions.rpy", line 91: Indentation mismatch.
+File "game/screens.rpy", line 1264: u'else' is not a keyword argument or valid child of the vbox statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Thu Jun 29 15:36:30 2023
+Thu Jun 29 18:30:41 2023
