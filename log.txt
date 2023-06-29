@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Thu Jun 29 10:53:43 2023
+=======
+Wed Jun 28 22:08:00 2023
+>>>>>>> parent of 97f8823 (added gender settings)
 =======
 Wed Jun 28 22:08:00 2023
 >>>>>>> parent of 97f8823 (added gender settings)
@@ -25,7 +29,11 @@ Dump and make backups. took 0.07s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 <<<<<<< HEAD
+<<<<<<< HEAD
 Initial gc. took 0.07s
+=======
+Initial gc. took 0.05s
+>>>>>>> parent of 97f8823 (added gender settings)
 =======
 Initial gc. took 0.05s
 >>>>>>> parent of 97f8823 (added gender settings)

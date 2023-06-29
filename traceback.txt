@@ -2,12 +2,15 @@
 
 While running game code:
 <<<<<<< HEAD
+<<<<<<< HEAD
   File "game/script.rpy", line 52, in script call
     call STORY
   File "game/STORY.rpy", line 39, in script
     s 1p "[heC] MIGHT DIE!!!{w=1}"
 KeyError: u'heC'
 =======
+=======
+>>>>>>> parent of 97f8823 (added gender settings)
   File "game/screens.rpy", line 793, in execute
     screen about():
   File "game/screens.rpy", line 793, in execute
@@ -45,11 +48,15 @@ KeyError: u'heC'
   File "game/screens.rpy", line 810, in <module>
     add logo at t11
 NameError: name 'logo' is not defined
+<<<<<<< HEAD
+>>>>>>> parent of 97f8823 (added gender settings)
+=======
 >>>>>>> parent of 97f8823 (added gender settings)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+<<<<<<< HEAD
 <<<<<<< HEAD
   File "game/script.rpy", line 52, in script call
     call STORY
@@ -75,6 +82,8 @@ Full traceback:
   File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
 KeyError: u'heC'
 =======
+=======
+>>>>>>> parent of 97f8823 (added gender settings)
   File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
     $ ui.interact()
   File "renpy/ast.py", line 1138, in execute
@@ -142,13 +151,20 @@ KeyError: u'heC'
   File "game/screens.rpy", line 810, in <module>
     add logo at t11
 NameError: name 'logo' is not defined
+<<<<<<< HEAD
+>>>>>>> parent of 97f8823 (added gender settings)
+=======
 >>>>>>> parent of 97f8823 (added gender settings)
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
 <<<<<<< HEAD
+<<<<<<< HEAD
 Thu Jun 29 11:15:02 2023
+=======
+Wed Jun 28 22:05:55 2023
+>>>>>>> parent of 97f8823 (added gender settings)
 =======
 Wed Jun 28 22:05:55 2023
 >>>>>>> parent of 97f8823 (added gender settings)
