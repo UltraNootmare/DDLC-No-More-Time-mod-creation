@@ -1,8 +1,13 @@
+<<<<<<< Updated upstream
 Thu Jun 29 11:56:30 2023
+=======
+Thu Jun 29 12:11:44 2023
+>>>>>>> Stashed changes
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
 
+<<<<<<< Updated upstream
 Bootstrap to the start of init.init. took 0.09s
 Early init. took 0.00s
 Loader init. took 0.41s
@@ -21,11 +26,31 @@ Dump and make backups. took 0.13s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.09s
+=======
+Bootstrap to the start of init.init. took 0.05s
+Early init. took 0.00s
+Loader init. took 0.12s
+Loading error handling. took 0.02s
+Loading script. took 0.22s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.10s
+Loading analysis data. took 0.03s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+>>>>>>> Stashed changes
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object. took 0.01s
 Cleaning stores took 0.00s
+<<<<<<< Updated upstream
 Init translation took 0.21s
 Build styles took 0.03s
 Load screen analysis took 0.00s
@@ -34,9 +59,19 @@ Save screen analysis took 0.07s
 Prepare screens took 0.27s
 Save pyanalysis. took 0.13s
 Save bytecode. took 0.16s
+=======
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+>>>>>>> Stashed changes
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.18s
+Interface start. took 0.26s
 
 Initializing gl renderer:
 primary display bounds: (0, 0, 1600, 900)
