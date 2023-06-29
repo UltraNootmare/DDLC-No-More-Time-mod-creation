@@ -4,23 +4,11 @@ label STORY:
         menu:
             "Male":
                 $ genderNum = 0
-                $ persistent.he = "he"
-                $ persistent.hes = "he's"
-                $ persistent.him = "him"
-                $ persistent.himself = "himself"
             "Female":
                 $ genderNum = 1
-                $ persistent.he = "she"
-                $ persistent.hes = "she's"
-                $ persistent.him = "her"
-                $ persistent.himself = "herself"
             "Other":
                 $ genderNum = 2
-                $ persistent.he = "they"
-                $ persistent.hes = "they're"
-                $ persistent.him = "them"
-                $ persistent.himself = "themselves"
-    $ gender = persistent.genderPresets[persistent.genderNum]
+        $ UpdateGender()
 
     play music t9g fadein 1.0
     mc "Ugh, what happened?"

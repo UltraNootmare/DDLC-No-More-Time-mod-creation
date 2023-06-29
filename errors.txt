@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/STORY.rpy", line 11: expected statement.
+    UpdateGender()
+                  ^
+
+Ren'Py Version: Ren'Py 7.6.1.23060707
+Thu Jun 29 15:15:52 2023

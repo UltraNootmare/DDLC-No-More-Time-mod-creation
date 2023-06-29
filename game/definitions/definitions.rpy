@@ -53,6 +53,28 @@ define config.gestures = { "n" : 'game_menu', "s" : "hide_windows", "e" : 'toggl
 # This init python statement sets up the functions, keymaps and channels
 # for the game.
 init python:
+    ## Update gender
+
+    def UpdateGender():
+        gender = genderPresets[genderNum]
+        if gender == "Male":
+            persistent.he = "he"
+            persistent.hes = "he's"
+            persistent.him = "him"
+            persistent.himself = "himself"
+        elif gender == "Female":
+            persistent.he = "she"
+            persistent.hes = "she's"
+            persistent.him = "her"
+            persistent.himself = "herself"
+        elif gender == "Other":
+            persistent.he = "they"
+            persistent.hes = "they're"
+            persistent.him = "them"
+            persistent.himself = "themselves"
+        renpy.save_persistent()
+        
+
     ## More Android Gestures
     # This variable makes a keymap for the history screen.
     if renpy.android:

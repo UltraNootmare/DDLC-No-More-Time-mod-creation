@@ -479,22 +479,7 @@ init python:
     
     def FinishEnterGender(launchGame=True):
         if not gender: return
-        if gender == "Male":
-            persistent.he = "he"
-            persistent.hes = "he's"
-            persistent.him = "him"
-            persistent.himself = "himself"
-        elif gender == "Female":
-            persistent.he = "she"
-            persistent.hes = "she's"
-            persistent.him = "her"
-            persistent.himself = "herself"
-        elif gender == "Other":
-            persistent.he = "they"
-            persistent.hes = "they're"
-            persistent.him = "them"
-            persistent.himself = "themselves"
-        renpy.save_persistent()
+        UpdateGender()
         renpy.hide_screen("gender_input")
         if launchGame:
             renpy.jump_out_of_context("start")
