@@ -188,6 +188,17 @@ label STORY:
         show sayori 1u at t42 zorder 3
         show natsuki 1u at t43 zorder 2
         show yuri 1u at t44 zorder 4
+        mc "so you guys heard the news right..?"
+        y 1o "Y-Yes we-uh did."
+        show yuri 1u at t44 zorder 4
+        s 1w "I DON'T WANT YOU TO DIE!!"
+        scene black
+        "Sayori with tears in her eyes hugs [player] closely while more and more tears come leaking from her eyes.."
+        scene bg hospital_room with fade
+        show monika 1o at t41 zorder 1
+        show sayori 1u at t42 zorder 3
+        show natsuki 1u at t43 zorder 2
+        show yuri 1u at t44 zorder 4
         
     else:
         scene bg hospital with fade
