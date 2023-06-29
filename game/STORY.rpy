@@ -129,7 +129,7 @@ label STORY:
         show natsuki 1horrified at t44 zorder 2
         n 1v "WHAT DO YOU MEAN HE WON'T LIVE TO SEE NEXT WEEK??!"
         show natsuki 1horrified at t44 zorder 2
-        md doctor 2r "[heC] can live if he gets surgery-{nw}"
+        md doctor 2r "He can live if he gets surgery-{nw}"
         show monika doctor 1q at t41 zorder 4
         show yuri 1horrified at t42 zorder 1
         show sayori 2p at t43 zorder 3
@@ -149,7 +149,7 @@ label STORY:
         show natsuki 1n at t44 zorder 2
         md doctor 2p "[playerC] had the same reaction.. heh"
         show monika doctor 1q at t41 zorder 4
-        n 1q "Well can we see [persistent.him]??"
+        n 1q "Well can we see him??"
         show natsuki 1n at t44 zorder 2
         md doctor 2p "Its cute how much you care for him..."
         show monika doctor 1q at t41 zorder 4
