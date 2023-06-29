@@ -1357,14 +1357,14 @@ screen preferences():
                 xoffset 150
                 spacing 5
                 textbutton _("DDLC Settings") action [SetScreenVariable("ddlc_settings", True), SensitiveIf(not ddlc_settings)]
-                textbutton _("Mod Settings") action [SetScreenVariable("ddlc_settings", False), SensitiveIf(ddlc_settings)]
+                textbutton _("Template Settings") action [SetScreenVariable("ddlc_settings", False), SensitiveIf(ddlc_settings)]
             
             null height 10
 
             if ddlc_settings:
                 use ddlc_preferences
             else:
-                use mod_preferences
+                use template_preferences
                             
     text "v[config.version]":
                 xalign 1.0 yalign 1.0

@@ -1,15 +1,56 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
+<<<<<<< HEAD
   File "game/script.rpy", line 52, in script call
     call STORY
   File "game/STORY.rpy", line 39, in script
     s 1p "[heC] MIGHT DIE!!!{w=1}"
 KeyError: u'heC'
+=======
+  File "game/screens.rpy", line 793, in execute
+    screen about():
+  File "game/screens.rpy", line 793, in execute
+    screen about():
+  File "game/screens.rpy", line 800, in execute
+    use game_menu(_("Credits"), scroll="viewport"):
+  File "game/screens.rpy", line 658, in execute
+    screen game_menu(title, scroll=None):
+  File "game/screens.rpy", line 658, in execute
+    screen game_menu(title, scroll=None):
+  File "game/screens.rpy", line 669, in execute
+    frame:
+  File "game/screens.rpy", line 672, in execute
+    hbox:
+  File "game/screens.rpy", line 678, in execute
+    frame:
+  File "game/screens.rpy", line 681, in execute
+    if scroll == "viewport":
+  File "game/screens.rpy", line 683, in execute
+    viewport:
+  File "game/screens.rpy", line 691, in execute
+    vbox:
+  File "game/screens.rpy", line 692, in execute
+    transclude
+  File "game/screens.rpy", line 800, in execute
+    use game_menu(_("Credits"), scroll="viewport"):
+  File "game/screens.rpy", line 804, in execute
+    window:
+  File "game/screens.rpy", line 806, in execute
+    has fixed:
+  File "game/screens.rpy", line 809, in execute
+    vbox:
+  File "game/screens.rpy", line 810, in execute
+    add logo at t11
+  File "game/screens.rpy", line 810, in <module>
+    add logo at t11
+NameError: name 'logo' is not defined
+>>>>>>> parent of 97f8823 (added gender settings)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+<<<<<<< HEAD
   File "game/script.rpy", line 52, in script call
     call STORY
   File "game/STORY.rpy", line 39, in script
@@ -33,8 +74,81 @@ Full traceback:
   File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
   File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
 KeyError: u'heC'
+=======
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
+    $ ui.interact()
+  File "renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
+    $ ui.interact()
+  File "renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "renpy/display/core.py", line 4052, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 476, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 4052, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "renpy/display/screen.py", line 487, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 680, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 793, in execute
+    screen about():
+  File "game/screens.rpy", line 793, in execute
+    screen about():
+  File "game/screens.rpy", line 800, in execute
+    use game_menu(_("Credits"), scroll="viewport"):
+  File "game/screens.rpy", line 658, in execute
+    screen game_menu(title, scroll=None):
+  File "game/screens.rpy", line 658, in execute
+    screen game_menu(title, scroll=None):
+  File "game/screens.rpy", line 669, in execute
+    frame:
+  File "game/screens.rpy", line 672, in execute
+    hbox:
+  File "game/screens.rpy", line 678, in execute
+    frame:
+  File "game/screens.rpy", line 681, in execute
+    if scroll == "viewport":
+  File "game/screens.rpy", line 683, in execute
+    viewport:
+  File "game/screens.rpy", line 691, in execute
+    vbox:
+  File "game/screens.rpy", line 692, in execute
+    transclude
+  File "game/screens.rpy", line 800, in execute
+    use game_menu(_("Credits"), scroll="viewport"):
+  File "game/screens.rpy", line 804, in execute
+    window:
+  File "game/screens.rpy", line 806, in execute
+    has fixed:
+  File "game/screens.rpy", line 809, in execute
+    vbox:
+  File "game/screens.rpy", line 810, in execute
+    add logo at t11
+  File "game/screens.rpy", line 810, in <module>
+    add logo at t11
+NameError: name 'logo' is not defined
+>>>>>>> parent of 97f8823 (added gender settings)
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
+<<<<<<< HEAD
 Thu Jun 29 11:15:02 2023
+=======
+Wed Jun 28 22:05:55 2023
+>>>>>>> parent of 97f8823 (added gender settings)

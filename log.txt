@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Thu Jun 29 10:53:43 2023
+=======
+Wed Jun 28 22:08:00 2023
+>>>>>>> parent of 97f8823 (added gender settings)
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
@@ -11,32 +15,36 @@ Loading script. took 0.39s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
 Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.10s
+Running init code. took 0.11s
 Loading analysis data. took 0.03s
 Analyze and compile ATL. took 0.05s
-Reloading save slot metadata. took 0.04s
+Reloading save slot metadata. took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
 Dump and make backups. took 0.07s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
+<<<<<<< HEAD
 Initial gc. took 0.07s
+=======
+Initial gc. took 0.05s
+>>>>>>> parent of 97f8823 (added gender settings)
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.05s
-Build styles took 0.01s
+Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.04s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.05s
-Save bytecode. took 0.08s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.09s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.14s
+Interface start. took 0.19s
 
 Initializing gl renderer:
 primary display bounds: (0, 0, 1600, 900)
