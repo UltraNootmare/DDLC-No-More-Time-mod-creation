@@ -159,7 +159,7 @@ label STORY:
         show monika 1horrified at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
-        md 2r "95 million yen..."
+        dm 2r "95 million yen..."
         show monika 1horrified at t42 zorder 1
         show sayori 2p at t43 zorder 3
         show natsuki 1v at t44 zorder 2
