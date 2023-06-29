@@ -2,9 +2,18 @@
 errors listed below, and try again.
 
 
+<<<<<<< HEAD
 File "game/screens.rpy", line 1275: Line is indented, but the preceding text_style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
     vbox:
     ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
 Thu Jun 29 11:06:37 2023
+=======
+File "game/definitions/definitions.rpy", line 897: unexpected EOF while parsing
+    im.Composite((960, 960), (18, 22), "mod_assets/expressions/ns_horrified.png", (0, 0), "natsuki/3b.png"))
+                                                                                                            ^
+
+Ren'Py Version: Ren'Py 7.6.1.23060707
+Wed Jun 28 21:00:11 2023
+>>>>>>> parent of cc6a68e (Adding gender in settings..)
