@@ -175,6 +175,11 @@ label STORY:
         show natsuki 1n at t44 zorder 2
         md 2p "Its cute how much you care for him..."
         show monika doctor 1q at t41 zorder 4
+        n 1p "DON'T CALL ME CUTE...!"
+        show natsuki 1n at t44 zorder 2
+        md 2p "well you can go in and see him"
+
+        scene bg hospital_room with fade
         
     else:
         scene bg hospital with fade
