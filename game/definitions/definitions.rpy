@@ -1634,11 +1634,16 @@ default him = persistent.him
 default are = persistent.are
 default hes = persistent.hes
 default himself = persistent.himself
-default heC = he.upper()
-default himC = him.upper()
-default areC = are.upper()
-default hesC = hes.upper()
-default himselfC = himself.upper()
+default heC = he.capitalize()
+default himC= him.capitalize()
+default areC = are.capitalize()
+default hesC = hes.capitalize()
+default himselfC = himself.capitalize()
+default heCAPS = he.upper()
+default himCAPS = him.upper()
+default areCAPS = are.upper()
+default hesCAPS = hes.upper()
+default himselfCAPS = himself.upper()
 
 ## Extra Settings Variables
 # This section controls whether the mod is censored or is in let's play mode.
@@ -1656,7 +1661,8 @@ default persistent.lets_play = False
 
 default persistent.playername = ""
 default player = persistent.playername
-default playerC = player.upper()
+default playerC = player.capitalize()
+default playerCAPS = player.upper()
 default persistent.playthrough = 0
 default persistent.yuri_kill = 0
 default persistent.seen_eyes = None

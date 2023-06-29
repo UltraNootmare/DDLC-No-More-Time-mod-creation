@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00start.rpy", line 189, in script
+    python:
+  File "renpy/common/00start.rpy", line 190, in <module>
+    renpy.execute_default_statement(True)
+  File "game/definitions/definitions.rpy", line 1637, in execute_default
+    default he = he.capitalize()
+Exception: store.he is being given a default a second time.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 189, in script
+    python:
+  File "renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 190, in <module>
+    renpy.execute_default_statement(True)
+  File "renpy/exports.py", line 3972, in execute_default_statement
+    i.execute_default(start)
+  File "game/definitions/definitions.rpy", line 1637, in execute_default
+    default he = he.capitalize()
+Exception: store.he is being given a default a second time.
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 7.6.1.23060707
+DDLC - No More Time 0.0.1
+Thu Jun 29 15:09:59 2023
