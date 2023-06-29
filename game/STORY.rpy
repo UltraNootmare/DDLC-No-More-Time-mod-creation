@@ -158,7 +158,7 @@ label STORY:
         md doctor 2p "You can go in and see him."
 
         scene bg hospital_room with fade
-        "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk they all hug him..."
+        "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk they all hug him.."
         show sayori 1u at t43 zorder 3
         show natsuki 1u at t44 zorder 2
         show yuri 1p at t42 zorder 4
@@ -166,15 +166,15 @@ label STORY:
         y 1o "Y-yes we-uh did.."
         show yuri 1p at t42 zorder 4
         show natsuki 1u at t44 zorder 2
-        s 1w "I DON'T WANT YOU TO DIE!!!"
+        s 1w "I DON'T WANT YOU TO DIE!!"
         scene cg sayorihospital with fade
-        "Sayori hugs [player] with tears running down her face..."
-        mc "It's fine Sayori you still have the others..."
-        s "You idiot your my childhood best friend I can't just forget about you."
-        "[player] sheds a tear and waits a moment before saying..."
+        "Sayori hugs [player] with tears running down her face.."
+        mc "It's fine Sayori, you still have the others.."
+        s "You idiot, you're my childhood best friend! I can't just forget about you."
+        "[player] sheds a tear and waits a moment before saying.."
         mc "How about we spend the next seven days having the most fun we can possibly have."
         s "Ok. But can we stay like this for a while."
-        mc "hehe sure"
+        mc "Hehe sure"
         
     else:
         scene bg hospital with fade
