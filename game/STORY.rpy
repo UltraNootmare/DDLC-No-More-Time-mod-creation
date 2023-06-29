@@ -168,7 +168,7 @@ label STORY:
         show monika 1horrified at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
-        md 2p "[playerC] had the same reaction.... heh"
+        md 2p "[playerC] had the same reaction... heh"
     else:
         scene bg hospital with fade
         "Bad ending"
