@@ -23,6 +23,7 @@ init -100 python:
 ## Splash Message
 # This python statement is where the splash messages reside in.
 init python:
+    print(persistent.themeIndex, persistent.theme)
     # This variable is the default splash message that people will see when
     # the game launches.
     splash_message_default = "This game is an unofficial fan game that is unaffiliated with Team Salvato."
@@ -72,12 +73,12 @@ image menu_logo:
     menu_logo_move
 
 # This image shows the main menu polka-dot image.
-if persistent.themeIndex == 1:
+if persistent.theme == "Dark":
     image menu_bg:
         topleft
         recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
         menu_bg_move
-else:
+elif persistent.theme == "Light":
     image menu_bg:
         topleft
         "mod_assets/gui/menu_bg.png"
@@ -89,7 +90,7 @@ if persistent.themeIndex == 1:
         topleft
         recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
         menu_bg_loop
-else:
+elif persistent.themeIndex == 0:
     image game_menu_bg:
         topleft
         "mod_assets/gui/menu_bg.png"
@@ -100,7 +101,7 @@ if persistent.themeIndex == 1:
     image menu_fade:
         "black"
         menu_fadeout
-else:
+elif persistent.themeIndex == 0:
     image menu_fade:
         "white"
         menu_fadeout
@@ -186,7 +187,7 @@ if persistent.themeIndex == 1:
     image menu_nav:
         recolorize("gui/overlay/main_menu_d.png", "#ffbde1")
         menu_nav_move
-else:
+elif persistent.themeIndex == 0:
     image menu_nav:
         "gui/overlay/main_menu.png"
         menu_nav_move
@@ -267,41 +268,22 @@ transform menu_art_move(z, x, z2):
 
 ## Team Salvato Splash Screen
 # This image stores the Tean Salvato logo image that appears when the game starts.
-if persistent.themeIndex == 1:
-    image intro:
-        truecenter
-        "black"
-        0.5
-        "bg/splash-white.png" with Dissolve(0.5, alpha=True)
-        2.5
-        "black" with Dissolve(0.5, alpha=True)
-        0.5
-else:
-    image intro:
-        "white"
-        0.5
-        "bg/splash.png" with Dissolve(0.5, alpha=True)
-        2.5
-        "white" with Dissolve(0.5, alpha=True)
-        0.5
+image intro:
+    "white"
+    0.5
+    "bg/splash.png" with Dissolve(0.5, alpha=True)
+    2.5
+    "white" with Dissolve(0.5, alpha=True)
+    0.5
 
 # This image is a left over from DDLC's development that shows the splash message
 # when the game starts.
-if persistent.themeIndex == 1:
-    image warning:
-        truecenter
-        "black"
-        "splash_warning" with Dissolve(0.5, alpha=True)
-        2.5
-        "black" with Dissolve(0.5, alpha=True)
-        0.5
-else:
-    image warning:
-        "white"
-        "splash_warning" with Dissolve(0.5, alpha=True)
-        2.5
-        "white" with Dissolve(0.5, alpha=True)
-        0.5
+image warning:
+    "white"
+    "splash_warning" with Dissolve(0.5, alpha=True)
+    2.5
+    "white" with Dissolve(0.5, alpha=True)
+    0.5
 
 ## This init python statement checks if the character files are present in-game
 ## and writes them to the characters folder depending on the playthrough.
