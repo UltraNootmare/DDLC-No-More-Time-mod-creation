@@ -3,11 +3,11 @@ label STORY:
         "What is your gender?"
         menu:
             "Male":
-                $ persistent.genderNum = 0
+                $ genderNum = 0
             "Female":
-                $ persistent.genderNum = 1
+                $ genderNum = 1
             "Other":
-                $ persistent.genderNum = 2
+                $ genderNum = 2
         $ UpdateGender()
 
     play music t9g fadein 1.0
@@ -164,14 +164,14 @@ label STORY:
         show monika doctor 1q at t41 zorder 4
         n 1q "Well can we see [persistent.him]??"
         show natsuki 1n at t44 zorder 2
-        md 2p "Its cute how much you care for [persistent.him].."
+        md 2p "Its cute how much you care for him..."
         show monika doctor 1q at t41 zorder 4
         n 1p "DON'T CALL ME CUTE..!"
         show natsuki 1n at t44 zorder 2
-        md 2p "You can go in."
+        md 2p "well you can go in and see him"
 
         scene bg hospital_room with fade
-        "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk, they all hug [him]..."
+        "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk they all hug him..."
         
     else:
         scene bg hospital with fade
