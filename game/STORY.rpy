@@ -169,6 +169,12 @@ label STORY:
         s 1w "I DON'T WANT YOU TO DIE!!!"
         scene cg sayorihospital with fade
         "Sayori hugs [player] with tears running down her face..."
+        mc "It's fine Sayori you still have the others..."
+        s "You idiot your my childhood best friend I can't just forget about you."
+        "[player] sheds a tear and waits a moment before saying..."
+        mc "How about we spend the next seven days having the most fun we can possibly have."
+        s "Ok. But can we stay like this for a while."
+        mc "hehe sure"
         
     else:
         scene bg hospital with fade
