@@ -1,5 +1,7 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 While running game code:
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -52,10 +54,36 @@ NameError: name 'logo' is not defined
 >>>>>>> parent of 97f8823 (added gender settings)
 =======
 >>>>>>> parent of 97f8823 (added gender settings)
+=======
+While loading <renpy.display.im.Image object (u'mod_assets/DDLCModTemplateLogo.png') at 0x000000000874e350>:
+IOError: Couldn't find file 'mod_assets/DDLCModTemplateLogo.png'.
+>>>>>>> parent of cc6a68e (Adding gender in settings..)
+=======
+After initialization, but before game start.
+  File "game/screens.rpy", line 1311, in prepare_screen
+    screen preferences():
+  File "game/screens.rpy", line 1311, in prepare
+    screen preferences():
+  File "game/screens.rpy", line 1322, in prepare
+    use game_menu(_("Settings"), scroll="viewport"):
+  File "game/screens.rpy", line 1322, in prepare
+    use game_menu(_("Settings"), scroll="viewport"):
+  File "game/screens.rpy", line 1324, in prepare
+    vbox:
+  File "game/screens.rpy", line 1324, in prepare
+    vbox:
+  File "game/screens.rpy", line 1336, in prepare
+    if ddlc_settings:
+  File "game/screens.rpy", line 1338, in prepare
+    else:
+Exception: A screen named template_preferences does not exist.
+>>>>>>> parent of b04e293 (a)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   File "game/script.rpy", line 52, in script call
@@ -86,16 +114,23 @@ KeyError: u'heC'
 >>>>>>> parent of 97f8823 (added gender settings)
   File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
     $ ui.interact()
+=======
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+>>>>>>> parent of cc6a68e (Adding gender in settings..)
   File "renpy/ast.py", line 1138, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "renpy/python.py", line 1122, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
-    $ ui.interact()
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
   File "renpy/ui.py", line 299, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "renpy/display/core.py", line 3579, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+<<<<<<< HEAD
   File "renpy/display/core.py", line 4052, in interact_core
     root_widget.visit_all(lambda d : d.per_interact())
   File "renpy/display/core.py", line 681, in visit_all
@@ -155,10 +190,40 @@ NameError: name 'logo' is not defined
 >>>>>>> parent of 97f8823 (added gender settings)
 =======
 >>>>>>> parent of 97f8823 (added gender settings)
+=======
+  File "renpy/bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 670, in main
+    run(restart)
+  File "renpy/main.py", line 93, in run
+    renpy.display.screen.prepare_screens()
+  File "renpy/display/screen.py", line 1003, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens.rpy", line 1311, in prepare_screen
+    screen preferences():
+  File "game/screens.rpy", line 1311, in prepare
+    screen preferences():
+  File "game/screens.rpy", line 1322, in prepare
+    use game_menu(_("Settings"), scroll="viewport"):
+  File "game/screens.rpy", line 1322, in prepare
+    use game_menu(_("Settings"), scroll="viewport"):
+  File "game/screens.rpy", line 1324, in prepare
+    vbox:
+  File "game/screens.rpy", line 1324, in prepare
+    vbox:
+  File "game/screens.rpy", line 1336, in prepare
+    if ddlc_settings:
+  File "game/screens.rpy", line 1338, in prepare
+    else:
+  File "renpy/sl2/slast.py", line 2015, in prepare
+    raise Exception("A screen named {} does not exist.".format(self.target))
+Exception: A screen named template_preferences does not exist.
+>>>>>>> parent of b04e293 (a)
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Thu Jun 29 11:15:02 2023
@@ -168,3 +233,94 @@ Wed Jun 28 22:05:55 2023
 =======
 Wed Jun 28 22:05:55 2023
 >>>>>>> parent of 97f8823 (added gender settings)
+=======
+  File "renpy/display/core.py", line 4172, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2782, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/screen.py", line 731, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1339, in render
+    st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1062, in render
+    surf = render(d, rw, height - y, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1339, in render
+    st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1849, in render
+    cwidth, cheight = sizeit('c', width, height, 0, 0)
+  File "renpy/display/layout.py", line 1846, in sizeit
+    rend = renpy.display.render.render_for_size(pos_d[pos], width, height, st, at)
+  File "render.pyx", line 318, in renpy.display.render.render_for_size
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/viewport.py", line 273, in render
+    surf = renpy.display.render.render(self.child, child_width, child_height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1107, in render
+    surf = render(d, width - x, rh, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1339, in render
+    st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1107, in render
+    surf = render(d, width - x, rh, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/transform.py", line 909, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/transform.py", line 909, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "renpy/display/im.py", line 676, in render
+    return cache.get(self, render=True)
+  File "renpy/display/im.py", line 330, in get
+    surf = image.load()
+  File "renpy/display/im.py", line 803, in load
+    raise e
+IOError: Couldn't find file 'mod_assets/DDLCModTemplateLogo.png'.
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 7.6.1.23060707
+DDLC - No More Time 0.0.1-Py2
+Wed Jun 28 18:01:08 2023
+>>>>>>> parent of cc6a68e (Adding gender in settings..)
+=======
+Wed Jun 28 22:14:13 2023
+>>>>>>> parent of b04e293 (a)

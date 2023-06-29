@@ -4,9 +4,6 @@
 
 ## options.rpy
 
-## Preferred pronoun index
-default preferences.pronoun = 0
-
 # This file customizes what your mod is and and how it starts and builds!
 
 ### DEV MODE - REMOVE AFTER TESTING ###

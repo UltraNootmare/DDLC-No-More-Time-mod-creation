@@ -476,14 +476,6 @@ init python:
         renpy.hide_screen("name_input")
         if launchGame:
             renpy.jump_out_of_context("start")
-    
-    def FinishEnterGender(launchGame=True):
-        if not he: return
-        persistent.he = he
-        renpy.save_persistent()
-        renpy.hide_screen("gender_input")
-        if launchGame:
-            renpy.jump_out_of_context("start")
 
 screen navigation():
 
@@ -813,8 +805,7 @@ screen about():
                 yfit True
 
             vbox:
-                ## Adds the logo composited by the game here
-                add im.Composite((512, 512), (0, 0), recolorize("mod_assets/logo_bg.png"), (0, 0), "mod_assets/logo_fg.png")
+                add Transform("mod_assets/DDLCModTemplateLogo.png", size=(200,200)) xalign .5
 
                 null height 5
                 
@@ -1233,10 +1224,17 @@ screen ddlc_preferences():
                     action Preference("all mute", "toggle")
                     style "mute_all_button"
 
+<<<<<<< HEAD
 screen mod_preferences():
+<<<<<<< HEAD
     python:
         pronounPresets = pLoadPresets()
     
+=======
+screen template_preferences():
+>>>>>>> parent of cc6a68e (Adding gender in settings..)
+=======
+>>>>>>> parent of b04e293 (a)
     hbox:
         box_wrap True
 
@@ -1259,7 +1257,6 @@ screen mod_preferences():
         
         vbox:
             style_prefix "name"
-            label _("Player")
             label _("Player Name")
             
             null height 3
@@ -1271,12 +1268,11 @@ screen mod_preferences():
             
             textbutton _("Change Name") action Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName, launchGame=False)):
                 text_style "navigation_button_text"
+<<<<<<< HEAD
             
-            vbox:
-                hbox:
-                    box_wrap True
-                    style_prefix "radio"
+            label _("Player Gender")
 
+<<<<<<< HEAD
                     label _("Preferred Pronoun")
 
                 hbox:
@@ -1306,6 +1302,17 @@ screen mod_preferences():
 
                             text _("when you start a new chapter (or game.)"):
                                 size 20
+=======
+>>>>>>> parent of cc6a68e (Adding gender in settings..)
+=======
+            if he == "":
+                text _("No Gender Set") xalign 0.5
+            else:
+                text "[he]" xalign 0.5
+            
+            textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
+                text_style "navigation_button_text"
+>>>>>>> parent of b04e293 (a)
 
         null height (4 * gui.pref_spacing)
 
@@ -1756,37 +1763,6 @@ screen name_input(message, ok_action):
                 xalign 0.5
 
             input default "" value VariableInputValue("player") length 12 allow "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-
-            hbox:
-                xalign 0.5
-                spacing 100
-
-                textbutton _("OK") action ok_action
-
-screen gender_input(message, ok_action):
-
-    ## Ensure other screens do not get input while this screen is displayed.
-    modal True
-
-    zorder 200
-
-    style_prefix "confirm"
-
-    add "gui/overlay/confirm.png"
-    key "K_RETURN" action [Play("sound", gui.activate_sound), ok_action]
-
-    frame:
-
-        vbox:
-            xalign .5
-            yalign .5
-            spacing 30
-
-            label _(message):
-                style "confirm_prompt"
-                xalign 0.5
-
-            input default "" value VariableInputValue("he") length 12 allow "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
             hbox:
                 xalign 0.5
