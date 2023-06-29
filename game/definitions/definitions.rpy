@@ -1,5 +1,9 @@
 ## definitions.rpy
 
+#Custom Cg's
+
+image cg sayorihospital = "mod_assets/cg/Sayorihospitalcg.png"
+
 # This file defines important stuff for DDLC and your mod!
 
 # This variable declares if the mod is a demo or not.

@@ -183,7 +183,7 @@ label STORY:
         s 1w "I DON'T WANT YOU TO DIE!!!"
         scene black
         "Sayori hugs [player] with tears running down her face..."
-        
+        scene cg sayorihospital with fade
     else:
         scene bg hospital with fade
         "Bad ending"
