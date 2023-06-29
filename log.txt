@@ -1,23 +1,23 @@
-Thu Jun 29 13:04:50 2023
+Thu Jun 29 13:10:10 2023
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
 
 Bootstrap to the start of init.init. took 0.08s
 Early init. took 0.00s
-Loader init. took 0.39s
+Loader init. took 0.26s
 Loading error handling. took 0.04s
-Loading script. took 0.57s
+Loading script. took 1.84s
 Loading save slot metadata. took 0.06s
 Loading persistent. took 0.00s
 Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.19s
+Running init code. took 0.17s
 Loading analysis data. took 0.06s
-Analyze and compile ATL. took 0.12s
-Reloading save slot metadata. took 0.05s
+Analyze and compile ATL. took 0.09s
+Reloading save slot metadata. took 0.06s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Ultra Nootmare\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
-Dump and make backups. took 0.16s
+Dump and make backups. took 0.15s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.10s
@@ -27,16 +27,16 @@ nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.15s
-Build styles took 0.03s
+Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.09s
-Prepare screens took 0.27s
+Analyze screens took 0.03s
+Save screen analysis took 0.06s
+Prepare screens took 0.19s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
+Save bytecode. took 0.14s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.16s
+Interface start. took 0.21s
 
 Initializing gl renderer:
 primary display bounds: (0, 0, 1600, 900)
@@ -63,35 +63,3 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1419, 798) drawable=(1419, 798)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-
-Full traceback:
-  File "game/script.rpy", line 52, in script call
-    call STORY
-  File "game/STORY.rpy", line 93, in script
-    "[Player] calms [himself] down before replying..."
-  File "renpy/ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "renpy/exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "renpy/character.py", line 1337, in __call__
-    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "renpy/character.py", line 1247, in prefix_suffix
-    return pattern.replace(thingvar, sub(body))
-  File "renpy/character.py", line 1231, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "renpy/substitutions.py", line 278, in substitute
-    s = formatter.vformat(s, (), kwargs) # type: ignore
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
-  File "renpy/substitutions.py", line 168, in get_field
-    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
-KeyError: u'Player'
-
-While running game code:
-  File "game/script.rpy", line 52, in script call
-    call STORY
-  File "game/STORY.rpy", line 93, in script
-    "[Player] calms [himself] down before replying..."
-KeyError: u'Player'

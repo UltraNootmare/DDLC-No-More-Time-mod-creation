@@ -67,36 +67,36 @@ label STORY:
     "Around 30 minutes later..."
 
     scene bg hospital_room with fade
-    show monika doctor 1f at f43 zorder 1
+    show monika doctor 1o at f43 zorder 1
     mc "Uh..."
     mc "Heya Doc"
-    md 1g "Hello [player]."
-    show monika doctor 1h at f43 zorder 1
+    md 1p "Hello [player]."
+    show monika doctor 1o at f43 zorder 1
     mc "So... What seems to be the problem?"
-    md 1g "Well.... do you wanna hear the good news or the bad news?"
-    show monika doctor 1h at f43 zorder 1
+    md 1p "Well.... do you wanna hear the good news or the bad news?"
+    show monika doctor 1o at f43 zorder 1
     mc "Ehhh... good news?"
-    md 1i "We can help stop the fainting with an antibiotic..."
-    show monika doctor 1h at f43 zorder 1
+    md 1p "We can help stop the fainting with an antibiotic..."
+    show monika doctor 1o at f43 zorder 1
     mc "And the bad news..?"
-    show monika doctor 1h at f43 zorder 1
-    md 1g "You have heart disease.."
-    md 1g "..and it's close to killing you."
-    show monika doctor 1h at f43 zorder 1
+    show monika doctor 1o at f43 zorder 1
+    md 1p "You have heart disease.."
+    md 1p "..and it's close to killing you."
+    show monika doctor 1o at f43 zorder 1
     mc "W-What???"
     mc "HOW MANY DAYS DO I HAVE LEFT TO LIVE??!{w=1}{nw}"
-    md 1i "7"
-    show monika doctor 1h at f43 zorder 1
+    md 1p "7"
+    show monika doctor 1o at f43 zorder 1
     mc "IS THERE A WAY TO STOP IT??!{w=1}{nw}"
-    md 1i "There is - surgery - but it's very expensive.."
-    show monika doctor 1h at f43 zorder 1
+    md 1p "There is - surgery - but it's very expensive.."
+    show monika doctor 1o at f43 zorder 1
     "[playerC] calms [himself] down before replying.."
     mc "*sigh* How much?"
-    md 1g "95 million yen.."
-    show monika doctor 1h at f43 zorder 1
+    md 1p "95 million yen.."
+    show monika doctor 1o at f43 zorder 1
     "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}.{nw}"
     mc "WHAT??!!"
     mc "I DON'T EVEN HAVE THAT MUCH!!{w=1}{nw}"
-    md 1g "I understand you are under alot of pressure right now but I need you to make a descision on if I should tell your friends about the situation or not."
-    show monika doctor 1h at f43 zorder 1
+    md 1p "I understand you are under alot of pressure right now but I need you to make a descision on if I should tell your friends about the situation or not."
+    show monika doctor 1o at f43 zorder 1
     mc "..."
