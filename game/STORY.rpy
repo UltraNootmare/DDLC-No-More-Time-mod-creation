@@ -124,27 +124,27 @@ label STORY:
         md doctor 1p "[player] has heart disease and will not live to see next week.."
         show monika doctor 1o at t41 zorder 4
         "{w=1}.{w=1}.{w=1}.{w=1}.{w=1}.{nw}"
-        show yuri 1horrified at t42 zorder 1
+        show yuri 1p at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
         n 1v "WHAT DO YOU MEAN HE WON'T LIVE TO SEE NEXT WEEK??!"
         show natsuki 1horrified at t44 zorder 2
         md doctor 2r "He can live if he gets surgery-{nw}"
         show monika doctor 1q at t41 zorder 4
-        show yuri 1horrified at t42 zorder 1
+        show yuri 1p at t42 zorder 1
         show sayori 2p at t43 zorder 3
         show natsuki 1v at t44 zorder 2
         d "HOW MUCH IS IT??!"
-        show yuri 1horrified at t42 zorder 1
+        show yuri 1p at t42 zorder 1
         show sayori 2horrified at t43 zorder 3
         show natsuki 1horrified at t44 zorder 2
         md doctor 2r "95 million yen..."
-        show yuri 1horrified at t42 zorder 1
+        show yuri 1p at t42 zorder 1
         show sayori 2p at t43 zorder 3
         show natsuki 1v at t44 zorder 2
         show monika doctor 1q at t41 zorder 4
         d "HUH?!"
-        show yuri 1o at t42 zorder 1
+        show yuri 1p at t42 zorder 1
         show sayori 2k at t43 zorder 3
         show natsuki 1n at t44 zorder 2
         md doctor 2p "[playerC] had the same reaction.. heh"
@@ -161,10 +161,10 @@ label STORY:
         "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk they all hug him..."
         show sayori 1u at t43 zorder 3
         show natsuki 1u at t44 zorder 2
-        show yuri 1u at t42 zorder 4
+        show yuri 1p at t42 zorder 4
         mc "So did you guys hear the news?"
         y 1o "Y-yes we-uh did.."
-        show yuri 1u at t42 zorder 4
+        show yuri 1p at t42 zorder 4
         show natsuki 1u at t44 zorder 2
         s 1w "I DON'T WANT YOU TO DIE!!!"
         scene cg sayorihospital with fade
