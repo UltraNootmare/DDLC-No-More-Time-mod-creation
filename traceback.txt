@@ -3,38 +3,30 @@
 While running game code:
   File "game/script.rpy", line 52, in script call
     call STORY
-  File "game/STORY.rpy", line 93, in script
-    "[Player] calms [himself] down before replying..."
-KeyError: u'Player'
+  File "game/STORY.rpy", line 75, in script
+    show monika doctor 1h at f43 zorder 1
+Exception: Say has image attributes (u'1g',), but there's no image tag associated with the speaking character.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 52, in script call
     call STORY
-  File "game/STORY.rpy", line 93, in script
-    "[Player] calms [himself] down before replying..."
-  File "renpy/ast.py", line 930, in execute
+  File "game/STORY.rpy", line 75, in script
+    show monika doctor 1h at f43 zorder 1
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/ast.py", line 930, in execute
     renpy.exports.say(who, what, *args, **kwargs)
-  File "renpy/exports.py", line 1473, in say
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/exports.py", line 1473, in say
     who(what, *args, **kwargs)
-  File "renpy/character.py", line 1337, in __call__
-    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "renpy/character.py", line 1247, in prefix_suffix
-    return pattern.replace(thingvar, sub(body))
-  File "renpy/character.py", line 1231, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "renpy/substitutions.py", line 278, in substitute
-    s = formatter.vformat(s, (), kwargs) # type: ignore
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
-  File "renpy/substitutions.py", line 168, in get_field
-    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
-KeyError: u'Player'
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/character.py", line 1290, in __call__
+    old_attr_state = self.handle_say_attributes(False, interact)
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/character.py", line 1109, in handle_say_attributes
+    if self.resolve_say_attributes(predicting, attrs):
+  File "C:\Users\NZXT\Desktop\renpy-7.6.1-sdk/renpy/character.py", line 1035, in resolve_say_attributes
+    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
+Exception: Say has image attributes (u'1g',), but there's no image tag associated with the speaking character.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
-Thu Jun 29 13:06:36 2023
+Thu Jun 29 14:04:31 2023

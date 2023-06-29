@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 484: invalid syntax
-            $ persistent.he = "he"
-             ^
+File "game/definitions/definitions.rpy", line 1661: expected statement.
+    playerC = player[0].capitalize()
+            ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Thu Jun 29 12:54:30 2023
+Thu Jun 29 14:00:58 2023
