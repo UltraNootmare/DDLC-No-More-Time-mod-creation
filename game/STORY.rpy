@@ -131,6 +131,7 @@ label STORY:
             md 1p "Are you sure?"
             mc "Yes."
             md 1p "Alright then.."
+    
     if tell_friends:
         scene bg hospital with fade
         show monika doctor 1o at t41 zorder 4
