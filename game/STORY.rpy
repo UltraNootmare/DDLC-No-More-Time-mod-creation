@@ -147,7 +147,7 @@ label STORY:
         show natsuki 1horrified at t44 zorder 2
         n 1v "WHAT DO YOU MEAN [heC] WON'T LIVE TO SEE NEXT WEEK??!"
         show natsuki 1horrified at t44 zorder 2
-        md 2g "[heC] can live if he gets surgery-{nw}"
+        md 2r "[heC] can live if he gets surgery-{nw}"
         show monika doctor 1q at t41 zorder 4
         show monika 1horrified at t42 zorder 1
         show sayori 2p at t43 zorder 3
