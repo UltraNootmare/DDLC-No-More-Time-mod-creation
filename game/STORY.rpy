@@ -48,7 +48,7 @@ label STORY:
     "Monika and Sayori are sitting in the waiting room until-"
     show yuri 1u at t44 zorder 4
     show natsuki 2p at t43 zorder 2
-    y 1v "Ehm i heard about what happened to [player]-{w=1}{nw}"
+    y 1v "Ehm I heard about what happened to [player]-{w=1}{nw}"
     show yuri 1p at t44 zorder 4
     show natsuki 2horrified at t43 zorder 2
     s 1p "[heC] MIGHT DIE!!!{w=1}"
@@ -56,7 +56,7 @@ label STORY:
     m 3i "Sayori stop saying that or I'll put you in the same position [player] is in."
     show monika 3o at t41 zorder 1
     n 5v "{b}I SWEAR TO GOD SAYORI, YOU WERE ABOUT TO GIVE ME A HEARTATTACK!!..{/b}"
-    "*one extremely long complaint at Sayori for overexaggerating later*{w=1}{nw}"
+    "*One extremely long complaint at Sayori for overexaggerating later*{w=1}{nw}"
     show natsuki 2g at t43 zorder 2
     y 1v "Well... How's [he] doing?"
     show yuri 1u at t44 zorder 4
