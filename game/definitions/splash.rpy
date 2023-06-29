@@ -412,7 +412,8 @@ label splashscreen:
                 pass
 
         menu:
-            "By playing [config.name] you agree to not sue us because the characters don't act cannon because we honestly don't care."
+            "By playing [config.name] you agree to not sue us because the characters don't act cannon because we honestly don't care.
+            And also don't sue us because we're not medical experts (at all)"
             "I agree.":
                 pass
 
