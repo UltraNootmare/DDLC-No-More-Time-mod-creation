@@ -1,4 +1,4 @@
-Thu Jun 29 17:21:43 2023
+Thu Jun 29 17:29:29 2023
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
@@ -7,20 +7,20 @@ Bootstrap to the start of init.init. took 0.05s
 Early init. took 0.00s
 Loader init. took 0.11s
 Loading error handling. took 0.02s
-Loading script. took 1.16s
+Loading script. took 1.95s
 Loading save slot metadata. took 0.04s
 Loading persistent. took 0.00s
 Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.13s
+Running init code. took 0.10s
 Loading analysis data. took 0.04s
-Analyze and compile ATL. took 0.05s
-Reloading save slot metadata. took 0.07s
+Analyze and compile ATL. took 0.07s
+Reloading save slot metadata. took 0.06s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
-Dump and make backups. took 0.08s
+Dump and make backups. took 0.07s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.06s
+Initial gc. took 0.07s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
@@ -29,14 +29,14 @@ Cleaning stores took 0.00s
 Init translation took 0.09s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.05s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.10s
+Save bytecode. took 0.13s
+Running _start took 0.01s
 Performance test:
-Interface start. took 0.21s
+Interface start. took 0.22s
 
 Initializing gl renderer:
 primary display bounds: (0, 0, 2560, 1440)
@@ -63,230 +63,3 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1447, 814) drawable=(1447, 814)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Resetting cache.
-Bootstrap to the start of init.init. took 101.11s
-Early init. took 0.00s
-Loader init. took 0.11s
-Loading error handling. took 0.02s
-Loading script. took 0.26s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.08s
-Loading analysis data. took 0.06s
-Analyze and compile ATL. took 0.07s
-Reloading save slot metadata. took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
-Dump and make backups. took 0.08s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.10s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.09s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
-Display Info: None
-Number of texture units: 32
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 16384
-Screen sizes: virtual=(1280, 720) physical=(1447, 814) drawable=(1447, 814)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Resetting cache.
-Bootstrap to the start of init.init. took 144.77s
-Early init. took 0.00s
-Loader init. took 0.12s
-Loading error handling. took 0.01s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.08s
-Loading analysis data. took 0.07s
-Analyze and compile ATL. took 0.07s
-Reloading save slot metadata. took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
-Dump and make backups. took 0.07s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.10s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
-Display Info: None
-Number of texture units: 32
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 16384
-Screen sizes: virtual=(1280, 720) physical=(1447, 814) drawable=(1447, 814)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Resetting cache.
-Bootstrap to the start of init.init. took 154.29s
-Early init. took 0.00s
-Loader init. took 0.11s
-Loading error handling. took 0.01s
-Loading script. took 0.25s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.09s
-Loading analysis data. took 0.08s
-Analyze and compile ATL. took 0.06s
-Reloading save slot metadata. took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
-Dump and make backups. took 0.07s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.10s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
-Display Info: None
-Number of texture units: 32
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 16384
-Screen sizes: virtual=(1280, 720) physical=(1447, 814) drawable=(1447, 814)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Resetting cache.
-Bootstrap to the start of init.init. took 168.37s
-Early init. took 0.00s
-Loader init. took 0.13s
-Loading error handling. took 0.02s
-Loading script. took 0.30s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.08s
-Loading analysis data. took 0.07s
-Analyze and compile ATL. took 0.06s
-Reloading save slot metadata. took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
-Dump and make backups. took 0.07s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.08s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
-Display Info: None
-Number of texture units: 32
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 16384
-Screen sizes: virtual=(1280, 720) physical=(1447, 814) drawable=(1447, 814)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
