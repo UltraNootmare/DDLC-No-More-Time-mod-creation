@@ -64,7 +64,7 @@ label STORY:
     m 3p "They say they'll get back to us in the next 30 minutes."
     show monika 3o at t41 zorder 1
     scene black
-    "close enough to 30 minutes later..."
+    "Around 30 minutes later..."
 
     scene bg hospital_room with fade
     
