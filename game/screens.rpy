@@ -1274,7 +1274,7 @@ screen mod_preferences():
             if he == "":
                 text _("No Gender Set") xalign 0.5
             else:
-                text "[player]" xalign 0.5
+                text "[he]" xalign 0.5
             
             textbutton _("Change Gender") action Show(screen="gender_input", message="Please enter your gender", ok_action=Function(FinishEnterGender, launchGame=False)):
                 text_style "navigation_button_text"
