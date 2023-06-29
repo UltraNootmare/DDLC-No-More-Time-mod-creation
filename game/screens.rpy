@@ -476,6 +476,14 @@ init python:
         renpy.hide_screen("name_input")
         if launchGame:
             renpy.jump_out_of_context("start")
+    
+    def FinishEnterTheme(launchGame=True):
+        theme = persistent.themePresets[persistent.themeIndex]
+        persistent.theme = theme
+        renpy.save_persistent()
+        renpy.hide_screen("theme_input")
+        if launchGame:
+            renpy.jump_out_of_context("start")
 
 screen navigation():
 
@@ -1258,6 +1266,14 @@ screen mod_preferences():
                 
                 textbutton _("Change Name") action Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName, launchGame=False)):
                     text_style "navigation_button_text"
+                
+                label _("Theme")
+
+                text "[persistent.theme]" xalign 0.5
+
+                textbutton _("Change Theme") action Show(screen="theme_input", message="Please enter your theme", ok_action=Function(FinishEnterTheme, launchGame=False)):
+                    text_style "navigation_button_text"
+
             
             null height (4 * gui.pref_spacing)
 
@@ -1715,7 +1731,7 @@ screen name_input(message, ok_action):
 
                 textbutton _("OK") action ok_action
 
-screen gender_input(message, ok_action):
+screen theme_input(message, ok_action):
 
     ## Ensure other screens do not get input while this screen is displayed.
     modal True
@@ -1743,28 +1759,28 @@ screen gender_input(message, ok_action):
                     box_wrap True
                     style_prefix "radio"
 
-                    label _("Preferred Pronoun")
+                    label _("Preferred Theme")
                     null width (2 * gui.pref_spacing)
 
                 hbox:
                     vbox:
                         style_prefix "radio"
 
-                        for i in range(len(genderPresets)):
-                            $ genders = genderPresets[i]
+                        for i in range(len(persistent.themePresets)):
+                            $ themes = persistent.themePresets[i]
 
-                            textbutton _(genders):
-                                action SetField(persistent, "genderNum", i)
+                            textbutton _(themes):
+                                action SetField(persistent, "themeIndex", i)
 
                     null width (2 * gui.pref_spacing)
 
                     vbox:
                         yalign 0.5
-                        
+
                         null height (2 * gui.pref_spacing)
 
                         vbox:
-                            text _("Note: your preferences will only be applied"):
+                            text _("Note: Your preferences will only be applied"):
                                 size 20
 
                             text _("when you start a new chapter (or game.)"):

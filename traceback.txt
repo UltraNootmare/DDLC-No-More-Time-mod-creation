@@ -1,73 +1,42 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object (u'mod_assets/cg/Sayorihospitalcg.png') at 0x0000000007674f50>:
-  File "game/script.rpy", line 52, in script call
-    call STORY
-  File "game/STORY.rpy", line 186, in script
-    scene cg sayorihospital with fade
-IOError: Couldn't find file 'mod_assets/cg/Sayorihospitalcg.png'.
+While running game code:
+  File "renpy/common/00start.rpy", line 212, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 529, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 529, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 540, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 52, in script call
-    call STORY
-  File "game/STORY.rpy", line 186, in script
-    scene cg sayorihospital with fade
-  File "renpy/ast.py", line 1678, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "renpy/exports.py", line 1757, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "renpy/display/core.py", line 2978, in do_with
-    clear=clear)
-  File "renpy/display/core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "renpy/display/core.py", line 4172, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2782, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/transition.py", line 186, in render
-    renpy.display.render.render(self.transitions[-1], width, height, 0, 0)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/transition.py", line 379, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/transform.py", line 909, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/image.py", line 513, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "renpy/display/image.py", line 316, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "renpy/display/im.py", line 676, in render
-    return cache.get(self, render=True)
-  File "renpy/display/im.py", line 330, in get
-    surf = image.load()
-  File "renpy/display/im.py", line 803, in load
-    raise e
-IOError: Couldn't find file 'mod_assets/cg/Sayorihospitalcg.png'.
+  File "renpy/common/00start.rpy", line 212, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 529, in script
+    python hide:
+  File "renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 529, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 540, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+  File "renpy/loadsave.py", line 813, in load
+    log.unfreeze(roots, label="_after_load")
+  File "renpy/rollback.py", line 1108, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "renpy/rollback.py", line 908, in rollback
+    self.load_failed()
+  File "renpy/rollback.py", line 826, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
-Thu Jun 29 16:59:38 2023
+Thu Jun 29 18:35:09 2023

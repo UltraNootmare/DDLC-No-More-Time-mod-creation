@@ -74,20 +74,27 @@ image menu_logo:
 # This image shows the main menu polka-dot image.
 image menu_bg:
     topleft
-    "gui/menu_bg.png"
-    # recolorize("gui/menu_bg.png", "#ffdbf0", "#fff", 1)
+    if persistent.themeIndex == 1:
+        recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
+    else:
+        "mod_assets/gui/menu_bg.png"
     menu_bg_move
 
 # This image shows the pause menu polka-dot image.
 image game_menu_bg:
     topleft
-    "gui/menu_bg.png"
-    # recolorize("gui/menu_bg.png", "#ffdbf0", "#fff", 1)
+    if persistent.themeIndex == 1:
+        recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
+    else:
+        "mod_assets/gui/menu_bg.png"
     menu_bg_loop
 
 # This image transform shows the white fading effect in the main menu.
 image menu_fade:
-    "white"
+    if persistent.themeIndex == 1:
+        "black"
+    else:
+        "white"
     menu_fadeout
 
 # These images show each respective characters' menu sprite and positions/animations.
@@ -168,8 +175,10 @@ image menu_art_s_glitch:
 
 # This image shows the main menu screen in the main/pause menu.
 image menu_nav:
-    "gui/overlay/main_menu.png"
-    #recolorize("gui/overlay/main_menu.png", "#ffbde1")
+    if persistent.themeIndex == 1:
+        recolorize("gui/overlay/main_menu_d.png", "#ffbde1")
+    else:
+        "gui/overlay/main_menu.png"
     menu_nav_move
 
 ## Main Menu Effects
@@ -250,22 +259,37 @@ transform menu_art_move(z, x, z2):
 # This image stores the Tean Salvato logo image that appears when the game starts.
 image intro:
     truecenter
-    "white"
-    0.5
-    "bg/splash.png" with Dissolve(0.5, alpha=True)
-    2.5
-    "white" with Dissolve(0.5, alpha=True)
-    0.5
+    if persistent.themeIndex == 1:
+        "black"
+        0.5
+        "bg/splash-white.png" with Dissolve(0.5, alpha=True)
+        2.5
+        "black" with Dissolve(0.5, alpha=True)
+        0.5
+    else:
+        "white"
+        0.5
+        "bg/splash.png" with Dissolve(0.5, alpha=True)
+        2.5
+        "white" with Dissolve(0.5, alpha=True)
+        0.5
 
 # This image is a left over from DDLC's development that shows the splash message
 # when the game starts.
 image warning:
     truecenter
-    "white"
-    "splash_warning" with Dissolve(0.5, alpha=True)
-    2.5
-    "white" with Dissolve(0.5, alpha=True)
-    0.5
+    if persistent.themeIndex == 1:
+        "black"
+        "splash_warning" with Dissolve(0.5, alpha=True)
+        2.5
+        "black" with Dissolve(0.5, alpha=True)
+        0.5
+    else:
+        "white"
+        "splash_warning" with Dissolve(0.5, alpha=True)
+        2.5
+        "white" with Dissolve(0.5, alpha=True)
+        0.5
 
 ## This init python statement checks if the character files are present in-game
 ## and writes them to the characters folder depending on the playthrough.
@@ -357,7 +381,10 @@ label splashscreen:
 
     if not persistent.first_run:
         $ quick_menu = False
-        scene white
+        if persistent.themeIndex == 1:
+            scene black
+        else:
+            scene white
         pause 0.5
         scene tos
         with Dissolve(1.0)
@@ -520,7 +547,10 @@ label splashscreen:
     #     pause
     #     $ renpy.quit()
 
-    show white
+    if persistent.themeIndex == 1:
+        show black
+    else:
+        show white
     $ persistent.ghost_menu = False
     $ splash_message = splash_message_default
     $ config.main_menu_music = audio.t1
