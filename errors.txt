@@ -2,37 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1227: expected statement.
-    <<<<<<< HEAD
-                ^
-
-File "game/screens.rpy", line 1228: screen expects a non-empty block.
-    screen mod_preferences():
-                             ^
-
-File "game/screens.rpy", line 1229: expected statement.
-    <<<<<<< HEAD
-                ^
-
-File "game/screens.rpy", line 1233: expected statement.
-    =======
-          ^
-
-File "game/screens.rpy", line 1234: screen expects a non-empty block.
-    screen template_preferences():
-                                  ^
-
-File "game/screens.rpy", line 1235: expected statement.
-    >>>>>>> parent of cc6a68e (Adding gender in settings..)
-                              ^
-
-File "game/screens.rpy", line 1236: expected statement.
-    =======
-          ^
-
-File "game/screens.rpy", line 1237: expected statement.
-    >>>>>>> parent of b04e293 (a)
-                              ^
+File "game/screens.rpy", line 1750: Line is indented, but the preceding xalign statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    vbox:
+    ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Thu Jun 29 11:21:05 2023
+Thu Jun 29 11:31:16 2023

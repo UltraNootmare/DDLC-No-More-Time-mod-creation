@@ -1747,7 +1747,7 @@ screen name_input(message, ok_action):
                 style "confirm_prompt"
                 xalign 0.5
 
-                        vbox:
+            vbox:
                 hbox:
                     box_wrap True
                     style_prefix "radio"
