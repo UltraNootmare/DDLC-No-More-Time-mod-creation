@@ -172,6 +172,17 @@ label STORY:
 
         scene bg hospital_room with fade
         "Monika, Sayori, Natsuki and Yuri rush into the room and before [player] can talk they all hug him..."
+        show monika 1o at t42 zorder 1
+        show sayori 1u at t43 zorder 3
+        show natsuki 1u at t44 zorder 2
+        show yuri 1u at t44 zorder 4
+        mc "So did you guys hear the news?"
+        y 1o "Y-yes we-uh did.."
+        show yuri 1u at t44 zorder 4
+        show natsuki 1u at t44 zorder 2
+        s 1w "I DON'T WANT YOU TO DIE!!!"
+        scene black
+        "Sayori hugs [player] with tears running down her face..."
         
     else:
         scene bg hospital with fade
