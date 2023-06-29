@@ -805,7 +805,7 @@ screen about():
                 yfit True
 
             vbox:
-                add Transform("mod_assets/DDLCModTemplateLogo.png", size=(200,200)) xalign .5
+                add Transform(im.Composite((512, 512), (0, 0), recolorize("mod_assets/logo_bg.png"), (0, 0), "mod_assets/logo_fg.png"), size=(200,200)) xalign .5
 
                 null height 5
                 
