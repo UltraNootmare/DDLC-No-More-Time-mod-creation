@@ -165,10 +165,16 @@ label STORY:
         show natsuki 1v at t44 zorder 2
         show monika doctor 1q at t41 zorder 4
         d "HUH?!"
-        show monika 1horrified at t42 zorder 1
-        show sayori 2horrified at t43 zorder 3
-        show natsuki 1horrified at t44 zorder 2
+        show monika 1o at t42 zorder 1
+        show sayori 2k at t43 zorder 3
+        show natsuki 1n at t44 zorder 2
         md 2p "[playerC] had the same reaction.... heh"
+        show monika doctor 1q at t41 zorder 4
+        n 1q "well can we see [him] atleast???"
+        show natsuki 1n at t44 zorder 2
+        md 2p "Its cute how much you care for him..."
+        show monika doctor 1q at t41 zorder 4
+        
     else:
         scene bg hospital with fade
         "Bad ending"
