@@ -218,7 +218,7 @@ label STORY:
         mc "Sorry, it's not like I was trying."
         show sayori 1bb at t11
         mc "Anyways, what do you want to do today?"
-        s 1bc "I heard there's a parade near that theme park beside the school."
+        s 1bc "I heard there's a parade going on in that theme park beside the school."
         show sayori 1bb at t11
         mc "Well, let's go!"
         s 1bh "What about breakfast?"  
