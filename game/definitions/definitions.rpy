@@ -199,6 +199,10 @@ define audio.closet_close = "sfx/closet-close.ogg"
 define audio.page_turn = "sfx/pageflip.ogg"
 define audio.fall = "sfx/fall.ogg"
 
+#Custom audio
+
+define audio.crowd_noises = "mod_assets/backgroud_noises/Crowdnoises.ogg"
+
 ## Backgrounds
 # This section declares the backgrounds available to be shown in the mod.
 # To define a new color background, declare a new image statement like in this example:
@@ -253,6 +257,7 @@ image bg hospital = "mod_assets/backgrounds/hospital.png"
 image bg hospital_room = "mod_assets/backgrounds/hospitalroom.png"
 image bg mc_livingroom = "mod_assets/backgrounds/House/Living_Room/Day/MC_livingroom.png"
 image bg themepark1 = "mod_assets/backgrounds/themepark1.png"
+image bg rollercoaster = "mod_assets/backgrounds/rollercoaster.png"
 
 # Day Transitions #
 

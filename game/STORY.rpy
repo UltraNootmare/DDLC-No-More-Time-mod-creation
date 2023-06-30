@@ -229,6 +229,7 @@ label STORY:
         "[playerC] and Sayori went to the theme park and got crêpes on the way.."
         
         scene bg themepark1 with fade
+        play audio crowd_noises fadein 1.0
         show sayori 1bb at t11
         s 1bc "So.."
         s 1bc "What do you want to do first?"
@@ -239,9 +240,20 @@ label STORY:
 
         scene black
         "Sayori and [player] head over to the carousel."
-        "[playerC] paid for the tickets."
+        "[playerC] paid for the tickets{w=1} and Sayori had a blast."
 
-        scene 
+        scene bg themepark1 with fade
+        play audio crowd_noises fadein 1.0
+        show sayori 1bq at t11
+        s 1br "That was so much fun!!!"
+        show sayori 1ba at t11
+        mc "I'm glad you enjoyed it hehe..."
+        mc "so onto the rollercoasters?"
+        s 1bx "Onto the rollercoasters!!"
+
+        scene bg rollercoaster with fade
+        play audio crowd_noises fadein 1.0
+        
     else:
         scene bg hospital with fade
         "Bad ending"
