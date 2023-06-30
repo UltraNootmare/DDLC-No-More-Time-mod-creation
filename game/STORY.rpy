@@ -201,7 +201,7 @@ label STORY:
 
         scene black
         "[player] goes to his room before passing out on his bed..."
-        $ renpy.movie_cutscene(transition day7end)
+        $ renpy.movie_cutscene(day7end)
 
         scene bg bedroom with fade
         mc "Ahh.."
