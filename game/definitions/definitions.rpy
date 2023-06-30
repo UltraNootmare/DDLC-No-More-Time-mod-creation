@@ -201,7 +201,7 @@ define audio.fall = "sfx/fall.ogg"
 
 #Custom audio
 
-define audio.crowd_noises = "mod_assets/backgroud_noises/Crowdnoises.ogg"
+define audio.crowd_noises = "mod_assets/background_noises/Crowdnoises.ogg"
 
 ## Backgrounds
 # This section declares the backgrounds available to be shown in the mod.
