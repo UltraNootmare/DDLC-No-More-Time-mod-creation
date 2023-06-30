@@ -230,16 +230,16 @@ label STORY:
         
         scene bg themepark1 with fade
         show sayori 1bb at t11
-        s 1bc "So..."
-        s 1bc "What do you want to do first.?"
+        s 1bc "So.."
+        s 1bc "What do you want to do first?"
         show sayori 1bb at t11
         show sayori 1bn at t11
-        mc "How about the carousel beind you."
-        s 1br "Sure"
+        mc "How about the carousel?"
+        s 1br "Sure!"
 
         scene black
         "Sayori and [player] head over to the carousel."
-        "And [player] paid for the tickets."
+        "[playerC] paid for the tickets."
 
         
     else:
