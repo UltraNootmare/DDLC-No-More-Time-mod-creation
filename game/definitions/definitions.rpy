@@ -252,6 +252,7 @@ image bg glitch = LiveTile("bg/glitch.jpg")
 image bg hospital = "mod_assets/backgrounds/hospital.png"
 image bg hospital_room = "mod_assets/backgrounds/hospitalroom.png"
 image bg mc_livingroom = "mod_assets/backgrounds/House/Living_Room/Day/MC_livingroom.png"
+image bg themepark1 = "mod_assets/backgrounds/themepark1.png"
 
 # Day Transitions #
 
