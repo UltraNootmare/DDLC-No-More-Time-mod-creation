@@ -217,6 +217,16 @@ label STORY:
         show sayori 1bi at t11 
         mc "It's not like i was trying"
         show sayori 1bb at t11
+        mc "Anyways what do you want to do today??"
+        s 1bc "I heard there will be a parade going through that theme park that's just beside the school."
+        show sayori 1bb at t11
+        mc "Well then let's go."
+        s 1bh "What about breakfast."  
+        show sayori 1bg at t11
+        mc "We'll get some on the way."
+
+        scene black
+        "[playerC] and Sayori went to the theme park and got crepes on the way..."
         
     else:
         scene bg hospital with fade
