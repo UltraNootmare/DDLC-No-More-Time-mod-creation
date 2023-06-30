@@ -206,16 +206,16 @@ label STORY:
         scene bg bedroom with fade
         mc "Ahh.."
         mc "I had an amazing sleep last night."
-        "After getting dressed [player] went down to the living room."
+        "After getting dressed, [player] went down to the living room."
         
-        scene MC_livingroom with fade
-        "Once [player] gets to the living room he sees Sayori watching the TV."
+        scene bg mc_livingroom with fade
+        "Once [player] gets to the living room, he sees Sayori watching the TV."
         show sayori 1ba at t11 
-        mc "Eh... Sayori?"
-        s 1bm "Gah!"
-        s 1bj "Hey you scared me."
-        show sayori 1bi at t11 
-        mc "It's not like I was trying"
+        mc "Uh.. Sayori?"
+        s 1bm "Ah!"
+        s 1bj "You scared me."
+        show sayori 1bi at t11
+        mc "Sorry, it's not like I was trying."
         show sayori 1bb at t11
         
     else:

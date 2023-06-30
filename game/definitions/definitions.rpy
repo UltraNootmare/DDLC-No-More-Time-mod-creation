@@ -245,12 +245,15 @@ image bg notebook-glitch = "bg/notebook-glitch.png" # Glitched Poem Game BG
 # This image shows a glitched screen during Act 2 poem sharing with Yuri.
 image bg glitch = LiveTile("bg/glitch.jpg")
 
-# Custom backgrounds
+## CUSTOM ##
+
+# Backgrounds #
+
 image bg hospital = "mod_assets/backgrounds/hospital.png"
 image bg hospital_room = "mod_assets/backgrounds/hospitalroom.png"
-image bg MC_livingroom = "mod_assets/backgrounds/House/Living_Room/Day/MC_livingroom.png"
+image bg mc_livingroom = "mod_assets/backgrounds/House/Living_Room/Day/MC_livingroom.png"
 
-#Day transitions (custom)
+# Day Transitions #
 
 define day7end = "mod_assets/transitions/Day7end.mpg"
 define day6end = "mod_assets/transitions/Day6end.mpg"
