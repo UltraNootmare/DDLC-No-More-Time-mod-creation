@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 Fri Jun 30 13:45:15 2023
+=======
+Fri Jun 30 13:37:49 2023
+>>>>>>> Stashed changes
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
@@ -7,6 +11,7 @@ Bootstrap to the start of init.init. took 0.05s
 Early init. took 0.00s
 Loader init. took 0.10s
 Loading error handling. took 0.02s
+<<<<<<< Updated upstream
 Loading script. took 1.45s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
@@ -21,11 +26,27 @@ Dump and make backups. took 0.07s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.04s
+=======
+Loading script. took 0.63s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.12s
+Loading analysis data. took 0.03s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+>>>>>>> Stashed changes
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
+<<<<<<< Updated upstream
 Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
@@ -37,11 +58,28 @@ Save bytecode. took 0.10s
 Running _start took 0.00s
 Performance test:
 Interface start. took 0.17s
+=======
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.20s
+>>>>>>> Stashed changes
 
 Initializing gl renderer:
 primary display bounds: (0, 0, 2560, 1440)
 swap interval: 1 frames
+<<<<<<< Updated upstream
 Windowed mode.
+=======
+Fullscreen mode.
+>>>>>>> Stashed changes
 Vendor: 'ATI Technologies Inc.'
 Renderer: 'Radeon RX 570 Series'
 Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
@@ -60,6 +98,22 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
+<<<<<<< Updated upstream
 Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
+=======
+Screen sizes: virtual=(1280, 720) physical=(2560, 1440) drawable=(2560, 1440)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.08s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+>>>>>>> Stashed changes
