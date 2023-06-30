@@ -1,5 +1,10 @@
 ## cgs.rpy
 
+#Custom Cg's
+
+image cg sayorihospital = "mod_assets/cg/Sayorihospitalcg.png"
+image cg rollercoaster = "mod_assets/cg/Rollercoastercg.png"
+
 # This file defines all the character graphics (CGs) in DDLC such as Yuri's
 # Chocolate CG and Natsuki's Manga CG.
 

@@ -253,6 +253,20 @@ label STORY:
 
         scene bg rollercoaster with fade
         play audio crowd_noises fadein 1.0
+        show sayori 1ba at t11
+        mc "Which one do you want to go on?"
+        s 1bs "The big one!!"
+        show sayori 1ba at t11
+        mc "Oh no..."
+
+        scene black
+        "They got tickets and went on the ride."
+        "They got their picture taken while on the ride."
+
+        scene cg rollercoaster with fade
+        s "Weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+        mc "Ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+
         
     else:
         scene bg hospital with fade
