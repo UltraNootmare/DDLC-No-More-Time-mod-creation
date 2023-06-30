@@ -199,9 +199,6 @@ define audio.closet_close = "sfx/closet-close.ogg"
 define audio.page_turn = "sfx/pageflip.ogg"
 define audio.fall = "sfx/fall.ogg"
 
-define audio.clock_tick = "<loop 0>mod_assets/music/clock.ogg"
-
-
 ## Backgrounds
 # This section declares the backgrounds available to be shown in the mod.
 # To define a new color background, declare a new image statement like in this example:
