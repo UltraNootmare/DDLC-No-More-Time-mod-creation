@@ -2,29 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/definitions/splash.rpy", line 78: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
-    ^
-
-File "game/definitions/splash.rpy", line 87: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    recolorize("mod_assets/gui/menu_bg_d.png", "#ffdbf0", "#fff", 1)
-    ^
-
-File "game/definitions/splash.rpy", line 95: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "black"
-    ^
-
-File "game/definitions/splash.rpy", line 179: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    recolorize("gui/overlay/main_menu_d.png", "#ffbde1")
-    ^
-
-File "game/definitions/splash.rpy", line 263: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "black"
-    ^
-
-File "game/definitions/splash.rpy", line 282: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "black"
-    ^
+File "game/definitions/splash.rpy", line 191: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    play music clock_tick
+               ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Thu Jun 29 19:08:03 2023
+Thu Jun 29 20:28:54 2023
