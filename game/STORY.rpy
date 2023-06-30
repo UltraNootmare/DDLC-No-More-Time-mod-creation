@@ -180,17 +180,17 @@ label STORY:
         mc "Hehe sure"
 
         scene black
-        "A very long time later..."
-        "infact such a long time that they ended up back home."
+        "A very long time later.."
+        "in fact, such a long time that they ended up back home."
 
         scene bg kitchen with fade
         show sayori 1bd at t11 
-        s 1bc "So what do you want to do first??"
-        mc "Ehh... Sayori it is 9pm and i want to sleep like a normal person so-"
+        s 1bc "So, what do you want to do first??"
+        mc "Sayori, it's 9pm and I want to sleep like a normal person."
         mc "Let's wait till tomorrow."
-        s 1be "aww.."
+        s 1be "Aww.."
         s 1bc "Can I atleast stay here?"
-        mc "Uhh why?"
+        mc "Why?"
         show sayori 1bu at t11 
         mc "Ok-ok"
         show sayori 1ba at t11 
@@ -217,16 +217,16 @@ label STORY:
         show sayori 1bi at t11
         mc "Sorry, it's not like I was trying."
         show sayori 1bb at t11
-        mc "Anyways what do you want to do today??"
-        s 1bc "I heard there will be a parade going through that theme park that's just beside the school."
+        mc "Anyways, what do you want to do today?"
+        s 1bc "I heard there's a parade near that theme park beside the school."
         show sayori 1bb at t11
-        mc "Well then let's go."
-        s 1bh "What about breakfast."  
+        mc "Well, let's go!"
+        s 1bh "What about breakfast?"  
         show sayori 1bg at t11
         mc "We'll get some on the way."
 
         scene black
-        "[playerC] and Sayori went to the theme park and got crepes on the way..."
+        "[playerC] and Sayori went to the theme park and got crêpes on the way.."
         
     else:
         scene bg hospital with fade
