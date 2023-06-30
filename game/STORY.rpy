@@ -209,7 +209,7 @@ label STORY:
         "After getting dressed, [player] went down to the living room."
         
         scene bg mc_livingroom with fade
-        "Once [player] gets to the living room, he sees Sayori watching the TV."
+        "Once [player] enters to the living room, he sees Sayori watching the TV."
         show sayori 1ba at t11 
         mc "Uh.. Sayori?"
         s 1bm "Ah!"
@@ -228,6 +228,7 @@ label STORY:
         scene black
         "[playerC] and Sayori went to the theme park and got crêpes on the way.."
         
+        scene 
     else:
         scene bg hospital with fade
         "Bad ending"
