@@ -248,6 +248,7 @@ image bg glitch = LiveTile("bg/glitch.jpg")
 # Custom backgrounds
 image bg hospital = "mod_assets/backgrounds/hospital.png"
 image bg hospital_room = "mod_assets/backgrounds/hospitalroom.png"
+image bg MC_livingroom = "mod_assets/backgrounds/House/Living_Room/Day/MC_livingroom.png"
 
 #Day transitions (custom)
 
