@@ -50,7 +50,7 @@ default enable_languages = False
 
 # This controls the color of outlines in the game like
 # text, say, navigation, labels and such.
-define -2 text_outline_color = "#b59"
+define -2 text_outline_color = "#814071"
 
 ## Styles
 ################################################################################
@@ -104,7 +104,7 @@ style poemgame_text:
     outlines []
 
     hover_xoffset -3
-    hover_outlines [(3, "#fef", 0, 0), (2, "#fcf", 0, 0), (1, "#faf", 0, 0)]
+    hover_outlines [(3, "#f7dbf0", 0, 0), (2, "#ecaadc", 0, 0), (1, "#b86aa4", 0, 0)]
 
 style gui_text:
     font gui.interface_font
@@ -275,7 +275,7 @@ image ctc:
 ## http://www.renpy.org/doc/html/screen_special.html#input
 
 image input_caret:
-    Solid("#b59")
+    Solid("#b86aa4")
     size (2,25) subpixel True
     block:
         linear 0.35 alpha 0
@@ -548,8 +548,8 @@ style navigation_button_text:
     color "#fff"
     outlines [(4, text_outline_color, 0, 0), (2, text_outline_color, 2, 2)]
     #outlines [(4, "#b59", 0, 0), (2, "#b59", 2, 2)]
-    hover_outlines [(4, "#fac", 0, 0), (2, "#fac", 2, 2)]
-    insensitive_outlines [(4, "#fce", 0, 0), (2, "#fce", 2, 2)]
+    hover_outlines [(4, "#ecaadc", 0, 0), (2, "#ecaadc", 2, 2)]
+    insensitive_outlines [(4, "#b86aa4", 0, 0), (2, "#b86aa4", 2, 2)]
 
 
 ## Main Menu screen ############################################################
@@ -613,7 +613,7 @@ style main_menu_vbox is vbox
 style main_menu_text is gui_text
 style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text:
-    color "#000000"
+    color "#ffffff"
     size 16
     outlines []
 
@@ -833,13 +833,13 @@ style about_label_text is gui_label_text
 style about_text is gui_text
 
 style about_label_text:
-    color "#000"
+    color "#ffffff"
     outlines []
     text_align 0.5
     size gui.label_text_size
 
 style about_text:
-    color "#000"
+    color "#ffffff"
     outlines []
     size gui.text_size
     text_align 0.5
@@ -974,7 +974,7 @@ style page_label:
     ypadding 3
 
 style page_label_text:
-    color "#000"
+    color "#ffffff"
     outlines []
     text_align 0.5
     layout "subtitle"
@@ -1413,7 +1413,7 @@ style name_text:
 
 style value_text:
     size 18
-    color "#000"
+    color "#ffffff"
     outlines []
     yalign 0.65
 
@@ -1816,7 +1816,7 @@ style confirm_frame:
     yalign .5
 
 style confirm_prompt_text:
-    color "#000"
+    color "#ffffff"
     outlines []
     text_align 0.5
     layout "subtitle"
