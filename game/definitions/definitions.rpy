@@ -252,7 +252,13 @@ image bg MC_livingroom = "mod_assets/backgrounds/House/Living_Room/Day/MC_living
 
 #Day transitions (custom)
 
-define day7end = "mod_assets/day_transitions/Day7end.mpg"
+define day7end = "mod_assets/transitions/Day7end.mpg"
+define day6end = "mod_assets/transitions/Day6end.mpg"
+define day5end = "mod_assets/transitions/Day5end.mpg"
+define day4end = "mod_assets/transitions/Day4end.mpg"
+define day3end = "mod_assets/transitions/Day3end.mpg"
+define day2end = "mod_assets/transitions/Day2end.mpg"
+define day1end = "mod_assets/transitions/Day1end.mpg"
 
 # This image transform shows a glitched scene effect
 # during Act 3 when we delete Monika.

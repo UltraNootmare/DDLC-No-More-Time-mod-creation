@@ -201,11 +201,11 @@ label STORY:
 
         scene black
         "[player] goes to his room before passing out on his bed..."
-        $ renpy.movie_cutscene(day7end)
+        $ renpy.movie_cutscene(transition day7end)
 
         scene bg bedroom with fade
         mc "Ahh.."
-        mc "I slept like a baby last night."
+        mc "I had an amazing sleep last night."
         "After getting dressed [player] went down to the living room."
         
         scene MC_livingroom with fade
@@ -215,7 +215,7 @@ label STORY:
         s 1bm "Gah!"
         s 1bj "Hey you scared me."
         show sayori 1bi at t11 
-        mc "It's not like i was trying"
+        mc "It's not like I was trying"
         show sayori 1bb at t11
         
     else:
