@@ -241,7 +241,7 @@ label STORY:
         "Sayori and [player] head over to the carousel."
         "And [player] paid for the tickets."
 
-        
+        scene 
     else:
         scene bg hospital with fade
         "Bad ending"
