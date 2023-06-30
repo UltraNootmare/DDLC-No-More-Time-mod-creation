@@ -251,7 +251,7 @@ image bg hospital_room = "mod_assets/backgrounds/hospitalroom.png"
 
 #Day transitions (custom)
 
-define day7end = "mod_assets/day_transitions/Day7end.avi"
+define day7end = "mod_assets/day_transitions/Day7end.mpg"
 
 # This image transform shows a glitched scene effect
 # during Act 3 when we delete Monika.

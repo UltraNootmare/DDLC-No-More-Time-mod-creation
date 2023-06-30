@@ -203,6 +203,7 @@ label STORY:
         "[player] goes to his room before passing out on his bed..."
         $ renpy.movie_cutscene(day7end)
         
+        
     else:
         scene bg hospital with fade
         "Bad ending"
