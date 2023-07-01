@@ -267,6 +267,12 @@ label STORY:
         s "Weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         mc "Ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
 
+        scene bg rollercoaster with fade
+        play audio crowd_noises fadein 1.0
+        show sayori 1ba at t11
+        s 1bs "Let's do the shooting gallery next!!"
+        mc "*sighs* ok.."
+
         
     else:
         scene bg hospital with fade
