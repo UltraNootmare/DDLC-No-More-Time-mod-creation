@@ -5,13 +5,11 @@ While running game code:
     call STORY
   File "game/STORY.rpy", line 283, in script call
     call gun_start
-  File "game/gun-minigame.rpy", line 39, in script
-    call screen gun_minigame with fade
-  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/gun-minigame.rpy", line 13, in UpdateGun
-    cg_pos = (cg_pos[0], cg_opos[1] + int((mousePos[1] - config.screen_height / 2) / 7))
-NameError: global name 'cg_opos' is not defined
+  File "game/gun-minigame.rpy", line 60, in script
+    $ targetSM = SpriteManager(update=UpdateTarget)
+  File "game/gun-minigame.rpy", line 60, in <module>
+    $ targetSM = SpriteManager(update=UpdateTarget)
+NameError: name 'UpdateTarget' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -20,39 +18,17 @@ Full traceback:
     call STORY
   File "game/STORY.rpy", line 283, in script call
     call gun_start
-  File "game/gun-minigame.rpy", line 39, in script
-    call screen gun_minigame with fade
-  File "renpy/ast.py", line 2259, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 2241, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 342, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/exports.py", line 3345, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "renpy/ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3595, in interact
-    scene_lists.replace_transient()
-  File "renpy/display/core.py", line 1069, in replace_transient
-    self.remove(layer, tag, prefix=prefix)
-  File "renpy/display/core.py", line 1397, in remove
-    self.hide_or_replace(layer, remove_index, prefix)
-  File "renpy/display/core.py", line 1308, in hide_or_replace
-    d = oldsle.displayable._in_current_store()._hide(now - st, now - at, prefix)
-  File "renpy/display/screen.py", line 574, in _hide
-    c = d._hide(st, at, kind)
-  File "renpy/display/transform.py", line 802, in _hide
-    self.update_state()
-  File "renpy/display/transform.py", line 878, in update_state
-    fr = self.function(self, self.st, self.at)
-  File "game/gun-minigame.rpy", line 13, in UpdateGun
-    cg_pos = (cg_pos[0], cg_opos[1] + int((mousePos[1] - config.screen_height / 2) / 7))
-NameError: global name 'cg_opos' is not defined
+  File "game/gun-minigame.rpy", line 60, in script
+    $ targetSM = SpriteManager(update=UpdateTarget)
+  File "renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/gun-minigame.rpy", line 60, in <module>
+    $ targetSM = SpriteManager(update=UpdateTarget)
+NameError: name 'UpdateTarget' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
-Sat Jul  1 15:55:16 2023
+Sat Jul  1 16:30:14 2023
