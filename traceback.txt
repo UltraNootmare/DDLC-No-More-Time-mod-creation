@@ -3,29 +3,29 @@
 While running game code:
   File "game/script.rpy", line 52, in script call
     call STORY
-  File "game/STORY.rpy", line 247, in script
-    $ fading_pause(channel="sound", fade=1.0)
-  File "game/STORY.rpy", line 247, in <module>
-    $ fading_pause(channel="sound", fade=1.0)
-  File "game/definitions/definitions.rpy", line 75, in fading_pause
-    renpy.music.play(fn, channel, fadein = fade)
-Exception: Parsing audio spec u'<from 11.989><loop 1.532>bgm/9g.ogg': expected float, got u'11.989><loop'..
+  File "game/STORY.rpy", line 254, in script
+    $ fading_pause(channel="sound", fade_input=1.0)
+  File "game/STORY.rpy", line 254, in <module>
+    $ fading_pause(channel="sound", fade_input=1.0)
+  File "game/definitions/definitions.rpy", line 78, in fading_pause
+    renpy.music.play(fn, channel, fadein = fade_input)
+Exception: Parsing audio spec u'<from 3.025><loop 1.532>bgm/9g.ogg': expected float, got u'3.025><loop'..
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 52, in script call
     call STORY
-  File "game/STORY.rpy", line 247, in script
-    $ fading_pause(channel="sound", fade=1.0)
+  File "game/STORY.rpy", line 254, in script
+    $ fading_pause(channel="sound", fade_input=1.0)
   File "renpy/ast.py", line 1138, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "renpy/python.py", line 1122, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/STORY.rpy", line 247, in <module>
-    $ fading_pause(channel="sound", fade=1.0)
-  File "game/definitions/definitions.rpy", line 75, in fading_pause
-    renpy.music.play(fn, channel, fadein = fade)
+  File "game/STORY.rpy", line 254, in <module>
+    $ fading_pause(channel="sound", fade_input=1.0)
+  File "game/definitions/definitions.rpy", line 78, in fading_pause
+    renpy.music.play(fn, channel, fadein = fade_input)
   File "renpy/audio/music.py", line 131, in play
     c.enqueue(filenames, loop=loop, synchro_start=synchro_start, fadein=fadein, tight=tight, relative_volume=relative_volume)
   File "renpy/audio/audio.py", line 676, in enqueue
@@ -34,9 +34,9 @@ Full traceback:
     start = expect_float()
   File "renpy/audio/audio.py", line 366, in expect_float
     raise exception("expected float, got {!r}.".format(v))
-Exception: Parsing audio spec u'<from 11.989><loop 1.532>bgm/9g.ogg': expected float, got u'11.989><loop'..
+Exception: Parsing audio spec u'<from 3.025><loop 1.532>bgm/9g.ogg': expected float, got u'3.025><loop'..
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
-Sat Jul  1 15:25:03 2023
+Sat Jul  1 15:22:33 2023
