@@ -282,6 +282,7 @@ label STORY:
         stop audio
         call gun_start
         
+        
     else:
         scene bg hospital with fade
         "Bad ending"
