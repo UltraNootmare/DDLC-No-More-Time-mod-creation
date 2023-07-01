@@ -271,7 +271,7 @@ label STORY:
         mc "Ahhhhh!"
 
         scene bg rollercoaster with fade
-        play sound crowd_noises fadein 0.5
+        stop audio
         show sayori 1ba at t11
         s 1bs "Let's do the shooting gallery next!!"
         mc "*sighs* ok.."
