@@ -273,7 +273,7 @@ label STORY:
         call gun_start
 
         scene bg rollercoaster with fade
-        play audio crowd_noises fadein 1.0
+        renpy.music.set_pause(False, "sound")
         show sayori 1ba at t11
         s 1bs "Let's do the shooting gallery next!!"
         mc "*sighs* ok.."
