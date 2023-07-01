@@ -116,7 +116,7 @@ label STORY:
         show yuri 3o at t42 zorder 1
         show sayori 1u at t43 zorder 3
         show natsuki 2p at t44 zorder 2
-        md doctor 1p "Hello Monika"
+        md doctor 1p "Hello Yuri"
         show monika doctor 1o at t41 zorder 4
         y 3i "Hello Doctor"
         y 3g "So what's the problem??"
