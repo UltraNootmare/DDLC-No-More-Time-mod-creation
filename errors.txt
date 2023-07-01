@@ -2,29 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/STORY.rpy", line 256: end of line expected.
-    scene bg rollercoaster at zoom 1.5 with fade
-                                   ^
-
-File "game/STORY.rpy", line 242: invalid syntax
-    renpy.music.set_pause(True, "sound") with fade
-                                             ^
-
-File "game/STORY.rpy", line 247: invalid syntax
-    renpy.music.set_pause(False, "sound") with fade
-                                              ^
-
-File "game/STORY.rpy", line 254: invalid syntax
-    renpy.music.set_pause(True, "sound") with fade
-                                             ^
-
-File "game/STORY.rpy", line 257: invalid syntax
-    renpy.music.set_pause(False, "sound") with fade
-                                              ^
-
-File "game/STORY.rpy", line 265: invalid syntax
-    renpy.music.set_pause(True, "sound") with fade
-                                             ^
+File "game/STORY.rpy", line 279: end of line expected.
+    call gun_start with fade
+                   ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Sat Jul  1 15:06:31 2023
+Sat Jul  1 15:15:29 2023
