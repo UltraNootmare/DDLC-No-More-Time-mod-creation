@@ -239,22 +239,22 @@ label STORY:
         s 1br "Sure!"
 
         scene black
-        renpy.music.set_pause(True, "sound") with 
+        $ renpy.music.set_pause(True, "sound")
         "Sayori and [player] head over to the carousel."
         "[playerC] paid for the tickets{w=1} and Sayori had a blast."
 
         scene bg themepark1 with fade
-        renpy.music.set_pause(False, "sound")
+        $ renpy.music.set_pause(False, "sound")
         show sayori 1bq at t11
         s 1br "That was so much fun!!!"
         show sayori 1ba at t11
         mc "I'm glad you enjoyed it hehe.."
         mc "Look at the rollercoasters!"
         s 1bx "Let's go on one!"
-        renpy.music.set_pause(True, "sound")
+        $ renpy.music.set_pause(True, "sound")
 
         scene bg rollercoaster with fade
-        renpy.music.set_pause(False, "sound")
+        $ renpy.music.set_pause(False, "sound")
         show sayori 1ba at t11
         mc "Which one do you want to go on?"
         s 1bs "The big one!!"
@@ -262,7 +262,7 @@ label STORY:
         mc "Oh no..."
 
         scene black
-        renpy.music.set_pause(True, "sound")
+        $ renpy.music.set_pause(True, "sound")
         "They got tickets and went on the ride."
         "They got their picture taken while on the ride."
 
@@ -270,13 +270,13 @@ label STORY:
         s "Weeeee!"
         mc "Ahhhhh!"
 
-        call gun_start
-
         scene bg rollercoaster with fade
-        renpy.music.set_pause(False, "sound")
+        $ renpy.music.set_pause(False, "sound")
         show sayori 1ba at t11
         s 1bs "Let's do the shooting gallery next!!"
         mc "*sighs* ok.."
+
+        call gun_start with fade
 
         
     else:

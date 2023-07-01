@@ -1,14 +1,14 @@
-Sat Jul  1 15:12:19 2023
+Sat Jul  1 14:59:08 2023
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
 
-Bootstrap to the start of init.init. took 0.08s
+Bootstrap to the start of init.init. took 0.05s
 Early init. took 0.00s
-Loader init. took 0.48s
-Loading error handling. took 0.04s
-Loading script. took 0.74s
-Loading save slot metadata. took 0.08s
+Loader init. took 0.12s
+Loading error handling. took 0.05s
+Loading script. took 1.45s
+Loading save slot metadata. took 0.07s
 Loading persistent. took 0.00s
 
 File "game/STORY.rpy", line 242: expected statement.
@@ -37,15 +37,15 @@ File "game/STORY.rpy", line 276: expected statement.
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start. took 0.20s
+Interface start. took 0.18s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1600, 900)
+primary display bounds: (0, 0, 2560, 1440)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 530'
-Version: '4.6.0 - Build 31.0.101.2111'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
 Display Info: None
 Number of texture units: 32
 Using shader environment.
@@ -61,6 +61,1243 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1419, 798) drawable=(1419, 798)
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 33.70s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.02s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/STORY.rpy", line 242: expected statement.
+    renpy.music.set_pause(True, channel="sound") with 
+                                                 ^
+
+File "game/STORY.rpy", line 247: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 254: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 257: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 265: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 276: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Interface start. took 0.09s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 34.47s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.02s
+Loading script. took 0.29s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/STORY.rpy", line 242: expected statement.
+    renpy.music.set_pause(True, channel="sound") with 
+                                                 ^
+
+File "game/STORY.rpy", line 247: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 254: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 257: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 265: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 276: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Interface start. took 0.13s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 51.05s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.02s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/STORY.rpy", line 242: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 247: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 254: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 257: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 265: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 276: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 83.09s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.02s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/STORY.rpy", line 242: expected statement.
+    renpy.music.set_pause(value=True, channel="sound")
+                                                      ^
+
+File "game/STORY.rpy", line 247: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 254: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 257: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 265: expected statement.
+    renpy.music.set_pause(value=True, channel="sound")
+                                                      ^
+
+File "game/STORY.rpy", line 276: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 83.87s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.02s
+Loading script. took 0.31s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/STORY.rpy", line 242: expected statement.
+    renpy.music.set_pause(value=True, channel="sound")
+                                                      ^
+
+File "game/STORY.rpy", line 247: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 254: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 257: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 265: expected statement.
+    renpy.music.set_pause(value=True, channel="sound")
+                                                      ^
+
+File "game/STORY.rpy", line 276: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Interface start. took 0.12s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 84.75s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.02s
+Loading script. took 0.27s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/STORY.rpy", line 242: expected statement.
+    renpy.music.set_pause(value=True, channel="sound")
+                                                      ^
+
+File "game/STORY.rpy", line 247: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 254: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 257: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 265: expected statement.
+    renpy.music.set_pause(value=True, channel="sound")
+                                                      ^
+
+File "game/STORY.rpy", line 276: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Interface start. took 0.12s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 101.75s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.02s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/STORY.rpy", line 242: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 247: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 254: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 257: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 265: expected statement.
+    renpy.music.set_pause(True, channel='sound')
+                                                ^
+
+File "game/STORY.rpy", line 276: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 102.61s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.03s
+Loading script. took 0.32s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/STORY.rpy", line 242: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 247: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 254: expected statement.
+    renpy.music.set_pause(True, channel="sound")
+                                                ^
+
+File "game/STORY.rpy", line 257: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+
+File "game/STORY.rpy", line 265: expected statement.
+    renpy.music.set_pause(True, channel='sound')
+                                                ^
+
+File "game/STORY.rpy", line 276: expected statement.
+    renpy.music.set_pause(False, channel="sound")
+                                                 ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 266.58s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.02s
+Loading script. took 0.27s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.29s
+Loading analysis data. took 0.04s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.01s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 762) drawable=(1280, 762)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 732) drawable=(1280, 732)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 713) drawable=(1280, 713)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 718) drawable=(1280, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 723) drawable=(1280, 723)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 718) drawable=(1280, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(2560, 1377) drawable=(2560, 1377)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 718) drawable=(1280, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 443.06s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.27s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/STORY.rpy", line 256: end of line expected.
+    scene bg rollercoaster at zoom 1.5 with fade
+                                   ^
+
+File "game/STORY.rpy", line 242: invalid syntax
+    renpy.music.set_pause(True, "sound") with fade
+                                             ^
+
+File "game/STORY.rpy", line 247: invalid syntax
+    renpy.music.set_pause(False, "sound") with fade
+                                              ^
+
+File "game/STORY.rpy", line 254: invalid syntax
+    renpy.music.set_pause(True, "sound") with fade
+                                             ^
+
+File "game/STORY.rpy", line 257: invalid syntax
+    renpy.music.set_pause(False, "sound") with fade
+                                              ^
+
+File "game/STORY.rpy", line 265: invalid syntax
+    renpy.music.set_pause(True, "sound") with fade
+                                             ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Interface start. took 0.13s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1276, 718) drawable=(1276, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 479.52s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.29s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.08s
+Loading analysis data. took 0.03s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.09s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1276, 718) drawable=(1276, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 507.14s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.01s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.08s
+Loading analysis data. took 0.06s
+Analyze and compile ATL. took 0.08s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.08s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.13s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.05s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1276, 718) drawable=(1276, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 530.27s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.28s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.08s
+Loading analysis data. took 0.06s
+Analyze and compile ATL. took 0.07s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.05s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1276, 718) drawable=(1276, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 541.31s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.27s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.08s
+Loading analysis data. took 0.07s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.10s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.15s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.11s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1276, 718) drawable=(1276, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 553.87s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.28s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.08s
+Loading analysis data. took 0.07s
+Analyze and compile ATL. took 0.10s
+Reloading save slot metadata. took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.08s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.09s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1276, 718) drawable=(1276, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 556.00s
+Early init. took 0.00s
+Loader init. took 0.12s
+Loading error handling. took 0.02s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.08s
+Loading analysis data. took 0.07s
+Analyze and compile ATL. took 0.07s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.09s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1276, 718) drawable=(1276, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 559.60s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.02s
+Loading script. took 0.25s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.12s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.07s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.08s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.05s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1276, 718) drawable=(1276, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 579.73s
+Early init. took 0.00s
+Loader init. took 0.12s
+Loading error handling. took 0.01s
+Loading script. took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.12s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.08s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1276, 718) drawable=(1276, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 605.95s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.32s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.09s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.09s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1276, 718) drawable=(1276, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Traceback (most recent call last):
+  File "renpy/common/00console.rpy", line 715, in run
+    result = renpy.python.py_eval(code)
+  File "renpy/python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 'call' is not defined
+
+Full traceback:
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 279, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 30, in script call
+    call screen gun_minigame
+  File "renpy/common/00console.rpy", line 1163, in script call
+    python in _console:
+  File "<string>", line 1, in script call
+  File "game/gun-minigame.rpy", line 22, in script
+    stop all
+  File "renpy/ast.py", line 2259, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 263, in execute_stop_music
+    renpy.music.stop(fadeout=eval(p["fadeout"]), channel=channel)
+  File "renpy/audio/music.py", line 296, in stop
+    c = get_channel(channel)
+  File "renpy/audio/audio.py", line 945, in get_channel
+    raise Exception("Audio channel %r is unknown." % name)
+Exception: Audio channel u'all' is unknown.
+
+While running game code:
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 279, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 30, in script call
+    call screen gun_minigame
+  File "renpy/common/00console.rpy", line 1163, in script call
+    python in _console:
+  File "game/gun-minigame.rpy", line 22, in script
+    stop all
+  File "renpy/common/000statements.rpy", line 263, in execute_stop_music
+    renpy.music.stop(fadeout=eval(p["fadeout"]), channel=channel)
+Exception: Audio channel u'all' is unknown.
+Resetting cache.
+Bootstrap to the start of init.init. took 639.75s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.08s
+Loading analysis data. took 0.07s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.09s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1276, 718) drawable=(1276, 718)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 643.36s
+Early init. took 0.00s
+Loader init. took 0.12s
+Loading error handling. took 0.01s
+Loading script. took 0.29s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.09s
+Loading analysis data. took 0.07s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1276, 718) drawable=(1276, 718)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
