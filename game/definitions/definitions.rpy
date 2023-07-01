@@ -12,6 +12,10 @@ define persistent.steam = ("steamapps" in config.basedir.lower())
 # This variable declares whether Developer Mode is on or off in the mod.
 define config.developer = False
 
+# Pause dictionary for fading_pause func
+
+default pauseddict = {}
+
 # This python statement starts singleton to make sure only one copy of the mod
 # is running.
 python early:
@@ -53,6 +57,26 @@ define config.gestures = { "n" : 'game_menu', "s" : "hide_windows", "e" : 'toggl
 # This init python statement sets up the functions, keymaps and channels
 # for the game.
 init python:
+    ## CUSTOM PAUSE FADE ##
+    def _insert(name, time):
+        store.pauseddict[name] = time
+            
+    def fading_pause(channel = "music", pause = "toggle", fade = None, filename = None):
+        if pause == "toggle":
+            pause = renpy.music.get_playing(channel)
+            
+        
+        if pause:
+            _insert(renpy.music.get_playing(), renpy.music.get_pos())
+            renpy.music.stop(channel, fade)
+        else:
+            if filename == None:
+                name, time = store.pauseddict.popitem()
+            else:
+                name, time = store.pauseddict.pop(filename)
+            fn = "<from {}>".format(time) + name
+            renpy.music.play(fn, channel, fadein = fade)
+
     ## More Android Gestures
     # This variable makes a keymap for the history screen.
     if renpy.android:
