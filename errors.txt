@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/definitions/splash.rpy", line 191: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    play music clock_tick
-               ^
+File "game/gun-minigame.rpy", line 2: expected an indented block
+    def CorkGunTrans(t, st, at):
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Thu Jun 29 20:28:54 2023
+Sat Jul  1 14:19:35 2023

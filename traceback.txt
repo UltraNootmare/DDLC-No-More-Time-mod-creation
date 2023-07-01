@@ -3,52 +3,40 @@
 While running game code:
   File "game/script.rpy", line 52, in script call
     call STORY
-  File "game/STORY.rpy", line 234, in script
-    s 1bc "So.."
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-IOError: Couldn't find file 'mod_assets/backgroud_noises/Crowdnoises.ogg'.
+  File "game/STORY.rpy", line 273, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 20, in script call
+    call minigame
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 273, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 20, in script call
+    call minigame
+ScriptError: could not find label 'minigame'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 52, in script call
     call STORY
-  File "game/STORY.rpy", line 234, in script
-    s 1bc "So.."
-  File "renpy/ast.py", line 898, in execute
-    statement_name(stmt_name)
-  File "renpy/ast.py", line 47, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-  File "renpy/exports.py", line 1757, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "renpy/display/core.py", line 2978, in do_with
-    clear=clear)
-  File "renpy/display/core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "renpy/display/core.py", line 4376, in interact_core
-    renpy.audio.audio.periodic()
-  File "renpy/audio/audio.py", line 1222, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "renpy/audio/audio.py", line 1200, in periodic_thread_main
-    periodic_pass()
-  File "renpy/audio/audio.py", line 1142, in periodic_pass
-    c.periodic()
-  File "renpy/audio/audio.py", line 534, in periodic
-    topf = load(filename)
-  File "renpy/audio/audio.py", line 72, in load
-    rv = renpy.loader.load(fn, directory="audio")
-  File "renpy/loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'mod_assets/backgroud_noises/Crowdnoises.ogg'.
+  File "game/STORY.rpy", line 273, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 20, in script call
+    call minigame
+  File "renpy/ast.py", line 1725, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 273, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 20, in script call
+    call minigame
+  File "renpy/script.py", line 1013, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'minigame'.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
-Fri Jun 30 15:23:33 2023
+Sat Jul  1 14:27:11 2023
