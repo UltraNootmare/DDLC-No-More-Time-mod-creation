@@ -53,6 +53,7 @@ define config.gestures = { "n" : 'game_menu', "s" : "hide_windows", "e" : 'toggl
 # This init python statement sets up the functions, keymaps and channels
 # for the game.
 init python:
+    import random
     ## More Android Gestures
     # This variable makes a keymap for the history screen.
     if renpy.android:
