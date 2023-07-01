@@ -61,21 +61,21 @@ init python:
     def _insert(name, time):
         store.pauseddict[name] = time
             
-    def fading_pause(channel = "music", pause = "toggle", fade = None, filename = None):
+    def fading_pause(channel = "music", pause = "toggle", fade_input = None, filename = None):
         if pause == "toggle":
             pause = renpy.music.get_playing(channel)
             
         
         if pause:
             _insert(renpy.music.get_playing(), renpy.music.get_pos())
-            renpy.music.stop(channel, fade)
+            renpy.music.stop(channel, fade_input)
         else:
             if filename == None:
                 name, time = store.pauseddict.popitem()
             else:
                 name, time = store.pauseddict.pop(filename)
             fn = "<from {}>".format(time) + name
-            renpy.music.play(fn, channel, fadein = fade)
+            renpy.music.play(fn, channel, fadein = fade_input)
 
     ## More Android Gestures
     # This variable makes a keymap for the history screen.

@@ -3,47 +3,28 @@
 While running game code:
   File "game/script.rpy", line 52, in script call
     call STORY
-  File "game/STORY.rpy", line 279, in script call
-    call gun_start
-  File "game/gun-minigame.rpy", line 30, in script call
-    call screen gun_minigame
-  File "renpy/common/00console.rpy", line 1163, in script call
-    python in _console:
-  File "game/gun-minigame.rpy", line 22, in script
-    stop all
-  File "renpy/common/000statements.rpy", line 263, in execute_stop_music
-    renpy.music.stop(fadeout=eval(p["fadeout"]), channel=channel)
-Exception: Audio channel u'all' is unknown.
+  File "game/STORY.rpy", line 247, in script
+    $ fading_pause(channel="sound", fade=1.0)
+  File "game/STORY.rpy", line 247, in <module>
+    $ fading_pause(channel="sound", fade=1.0)
+TypeError: fading_pause() got an unexpected keyword argument 'fade'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 52, in script call
     call STORY
-  File "game/STORY.rpy", line 279, in script call
-    call gun_start
-  File "game/gun-minigame.rpy", line 30, in script call
-    call screen gun_minigame
-  File "renpy/common/00console.rpy", line 1163, in script call
-    python in _console:
-  File "<string>", line 1, in script call
-  File "game/gun-minigame.rpy", line 22, in script
-    stop all
-  File "renpy/ast.py", line 2259, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 2241, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 342, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 263, in execute_stop_music
-    renpy.music.stop(fadeout=eval(p["fadeout"]), channel=channel)
-  File "renpy/audio/music.py", line 296, in stop
-    c = get_channel(channel)
-  File "renpy/audio/audio.py", line 945, in get_channel
-    raise Exception("Audio channel %r is unknown." % name)
-Exception: Audio channel u'all' is unknown.
+  File "game/STORY.rpy", line 247, in script
+    $ fading_pause(channel="sound", fade=1.0)
+  File "renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/STORY.rpy", line 247, in <module>
+    $ fading_pause(channel="sound", fade=1.0)
+TypeError: fading_pause() got an unexpected keyword argument 'fade'
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
-Sat Jul  1 15:09:30 2023
+Sat Jul  1 15:20:41 2023
