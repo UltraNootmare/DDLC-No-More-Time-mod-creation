@@ -1,50 +1,39 @@
-Sat Jul  1 15:21:56 2023
+Sat Jul  1 15:42:38 2023
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
 
-Bootstrap to the start of init.init. took 0.09s
+Bootstrap to the start of init.init. took 0.06s
 Early init. took 0.00s
-Loader init. took 0.28s
-Loading error handling. took 0.04s
-Loading script. took 1.87s
+Loader init. took 0.11s
+Loading error handling. took 0.03s
+Loading script. took 0.94s
 Loading save slot metadata. took 0.06s
-Loading persistent. took 0.00s
-Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.17s
-Loading analysis data. took 0.06s
-Analyze and compile ATL. took 0.09s
-Reloading save slot metadata. took 0.10s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Ultra Nootmare\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
-Dump and make backups. took 0.12s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.08s
+Loading persistent. took 0.01s
+
+File "game/STORY.rpy", line 242: expected end of line
+    stop sound crowd_noises fadeout 1.0
+               ^
+
+File "game/STORY.rpy", line 254: expected end of line
+    stop sound crowd_noises fadeout 1.0
+               ^
+
+File "game/STORY.rpy", line 264: expected end of line
+    stop sound crowd_noises fadeout 1.0
+               ^
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.15s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.07s
-Prepare screens took 0.24s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.07s
-Running _start took 0.01s
-Performance test:
-Interface start. took 0.19s
+Interface start. took 0.32s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1600, 900)
+primary display bounds: (0, 0, 2560, 1440)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 530'
-Version: '4.6.0 - Build 31.0.101.2111'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
 Display Info: None
 Number of texture units: 32
 Using shader environment.
@@ -60,40 +49,6 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1419, 798) drawable=(1419, 798)
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-
-Full traceback:
-  File "game/script.rpy", line 52, in script call
-    call STORY
-  File "game/STORY.rpy", line 254, in script
-    $ fading_pause(channel="sound", fade_input=1.0)
-  File "renpy/ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/STORY.rpy", line 254, in <module>
-    $ fading_pause(channel="sound", fade_input=1.0)
-  File "game/definitions/definitions.rpy", line 78, in fading_pause
-    renpy.music.play(fn, channel, fadein = fade_input)
-  File "renpy/audio/music.py", line 131, in play
-    c.enqueue(filenames, loop=loop, synchro_start=synchro_start, fadein=fadein, tight=tight, relative_volume=relative_volume)
-  File "renpy/audio/audio.py", line 676, in enqueue
-    filename, _, _ = self.split_filename(filename, False)
-  File "renpy/audio/audio.py", line 399, in split_filename
-    start = expect_float()
-  File "renpy/audio/audio.py", line 366, in expect_float
-    raise exception("expected float, got {!r}.".format(v))
-Exception: Parsing audio spec u'<from 3.025><loop 1.532>bgm/9g.ogg': expected float, got u'3.025><loop'..
-
-While running game code:
-  File "game/script.rpy", line 52, in script call
-    call STORY
-  File "game/STORY.rpy", line 254, in script
-    $ fading_pause(channel="sound", fade_input=1.0)
-  File "game/STORY.rpy", line 254, in <module>
-    $ fading_pause(channel="sound", fade_input=1.0)
-  File "game/definitions/definitions.rpy", line 78, in fading_pause
-    renpy.music.play(fn, channel, fadein = fade_input)
-Exception: Parsing audio spec u'<from 3.025><loop 1.532>bgm/9g.ogg': expected float, got u'3.025><loop'..

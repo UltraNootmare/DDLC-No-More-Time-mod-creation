@@ -239,7 +239,7 @@ label STORY:
         s 1br "Sure!"
 
         scene black
-        stop sound crowd_noises fadeout 1.0
+        stop sound fadeout 1.0
         "Sayori and [player] head over to the carousel."
         "[playerC] paid for the tickets{w=1} and Sayori had a blast."
 
@@ -251,7 +251,7 @@ label STORY:
         mc "I'm glad you enjoyed it hehe.."
         mc "Look at the rollercoasters!"
         s 1bx "Let's go on one!"
-        stop sound crowd_noises fadeout 1.0
+        stop sound fadeout 1.0
 
         scene bg rollercoaster with fade
         play sound crowd_noises fadein 1.0
@@ -261,7 +261,7 @@ label STORY:
         show sayori 1ba at t11
         mc "Oh no..."
 
-        stop sound crowd_noises fadeout 1.0
+        stop sound fadeout 1.0
         scene black
         "They got tickets and went on the ride."
         "They got their picture taken while on the ride."
