@@ -1,91 +1,50 @@
-<<<<<<< Updated upstream
-Sat Jul  1 16:23:29 2023
-=======
-Sat Jul  1 16:29:58 2023
->>>>>>> Stashed changes
+Sat Jul  1 16:45:04 2023
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
 
-<<<<<<< Updated upstream
-Bootstrap to the start of init.init. took 0.44s
-Early init. took 0.02s
-Loader init. took 1.27s
-Loading error handling. took 0.10s
-Loading script. took 1.55s
-Loading save slot metadata. took 0.11s
-Loading persistent. took 0.00s
-Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.49s
-Loading analysis data. took 0.16s
-Analyze and compile ATL. took 0.55s
-Reloading save slot metadata. took 0.11s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Ultra Nootmare\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
-Dump and make backups. took 0.48s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.45s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.02s
-Cleaning stores took 0.00s
-Init translation took 0.37s
-Build styles took 0.02s
-Load screen analysis took 0.00s
-Analyze screens took 0.14s
-Save screen analysis took 0.30s
-Prepare screens took 0.88s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.35s
-Running _start took 0.00s
-Performance test:
-Interface start. took 1.25s
-=======
 Bootstrap to the start of init.init. took 0.06s
 Early init. took 0.00s
-Loader init. took 0.11s
-Loading error handling. took 0.03s
-Loading script. took 1.74s
+Loader init. took 0.10s
+Loading error handling. took 0.02s
+Loading script. took 0.68s
 Loading save slot metadata. took 0.04s
 Loading persistent. took 0.00s
 Set script version to: (6, 99, 12, 4) (alternate path)
-Running init code. took 0.13s
-Loading analysis data. took 0.03s
-Analyze and compile ATL. took 0.07s
-Reloading save slot metadata. took 0.04s
+Running init code. took 0.11s
+Loading analysis data. took 0.04s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.06s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
-Dump and make backups. took 0.08s
+Dump and make backups. took 0.07s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.09s
+Initial gc. took 0.07s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.07s
-Build styles took 0.01s
+Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
-Save screen analysis took 0.05s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.07s
+Save screen analysis took 0.04s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.08s
 Save bytecode. took 0.05s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.21s
->>>>>>> Stashed changes
+Interface start. took 0.19s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1600, 900)
+primary display bounds: (0, 0, 2560, 1440)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 530'
-Version: '4.6.0 - Build 31.0.101.2111'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
 Display Info: None
 Number of texture units: 32
 Using shader environment.
@@ -101,38 +60,6 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-<<<<<<< Updated upstream
-Screen sizes: virtual=(1280, 720) physical=(1419, 798) drawable=(1419, 798)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-=======
 Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-
-Full traceback:
-  File "game/script.rpy", line 52, in script call
-    call STORY
-  File "game/STORY.rpy", line 283, in script call
-    call gun_start
-  File "game/gun-minigame.rpy", line 60, in script
-    $ targetSM = SpriteManager(update=UpdateTarget)
-  File "renpy/ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/gun-minigame.rpy", line 60, in <module>
-    $ targetSM = SpriteManager(update=UpdateTarget)
-NameError: name 'UpdateTarget' is not defined
-
-While running game code:
-  File "game/script.rpy", line 52, in script call
-    call STORY
-  File "game/STORY.rpy", line 283, in script call
-    call gun_start
-  File "game/gun-minigame.rpy", line 60, in script
-    $ targetSM = SpriteManager(update=UpdateTarget)
-  File "game/gun-minigame.rpy", line 60, in <module>
-    $ targetSM = SpriteManager(update=UpdateTarget)
-NameError: name 'UpdateTarget' is not defined
->>>>>>> Stashed changes
