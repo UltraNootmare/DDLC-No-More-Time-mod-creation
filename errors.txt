@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/STORY.rpy", line 242: expected end of line
-    stop sound crowd_noises fadeout 1.0
-               ^
-
-File "game/STORY.rpy", line 254: expected end of line
-    stop sound crowd_noises fadeout 1.0
-               ^
-
-File "game/STORY.rpy", line 264: expected end of line
-    stop sound crowd_noises fadeout 1.0
-               ^
+File "game/gun-minigame.rpy", line 37: invalid syntax
+    cg_trans = Transform(child=cg_image, zoom=0.5, pos=(cg_start_pos[0], cg_start_pos[1], function=UpdateGun))
+                                                                                                   ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Sat Jul  1 15:42:40 2023
+Sat Jul  1 15:54:41 2023
