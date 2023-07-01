@@ -229,7 +229,7 @@ label STORY:
         "[playerC] and Sayori went to the theme park and got crêpes on the way.."
         
         scene bg themepark1 with fade
-        play sound crowd_noises fadein 1.0
+        play sound crowd_noises fadein 0.5
         show sayori 1bb at t11
         s 1bc "So.."
         s 1bc "What do you want to do first?"
@@ -239,29 +239,29 @@ label STORY:
         s 1br "Sure!"
 
         scene black
-        stop sound crowd_noises fadeout 1.0
+        stop sound fadeout 0.5
         "Sayori and [player] head over to the carousel."
         "[playerC] paid for the tickets{w=1} and Sayori had a blast."
 
         scene bg themepark1 with fade
-        play sound crowd_noises fadein 1.0
+        play sound crowd_noises fadein 0.5
         show sayori 1bq at t11
         s 1br "That was so much fun!!!"
         show sayori 1ba at t11
         mc "I'm glad you enjoyed it hehe.."
         mc "Look at the rollercoasters!"
         s 1bx "Let's go on one!"
-        stop sound crowd_noises fadeout 1.0
+        stop sound fadeout 0.5
 
         scene bg rollercoaster with fade
-        play sound crowd_noises fadein 1.0
+        play sound crowd_noises fadein 0.5
         show sayori 1ba at t11
         mc "Which one do you want to go on?"
         s 1bs "The big one!!"
         show sayori 1ba at t11
         mc "Oh no..."
 
-        stop sound crowd_noises fadeout 1.0
+        stop sound fadeout 0.5
         scene black
         "They got tickets and went on the ride."
         "They got their picture taken while on the ride."
@@ -271,11 +271,15 @@ label STORY:
         mc "Ahhhhh!"
 
         scene bg rollercoaster with fade
-        play sound crowd_noises fadein 1.0
+        play sound crowd_noises fadein 0.5
         show sayori 1ba at t11
         s 1bs "Let's do the shooting gallery next!!"
         mc "*sighs* ok.."
 
+        scene black with fade
+
+        stop music
+        stop audio
         call gun_start
         
     else:

@@ -1,39 +1,30 @@
-Sat Jul  1 15:42:56 2023
+Sat Jul  1 15:48:46 2023
 Windows-10-10.0.19041
 Ren'Py 7.6.1.23060707
  
 
-Bootstrap to the start of init.init. took 0.08s
+Bootstrap to the start of init.init. took 0.05s
 Early init. took 0.00s
-Loader init. took 0.25s
-Loading error handling. took 0.04s
-Loading script. took 1.61s
-Loading save slot metadata. took 0.07s
+Loader init. took 0.10s
+Loading error handling. took 0.02s
+Loading script. took 0.67s
+Loading save slot metadata. took 0.04s
 Loading persistent. took 0.00s
 
-File "game/STORY.rpy", line 242: expected end of line
-    stop sound crowd_noises fadeout 1.0
-               ^
-
-File "game/STORY.rpy", line 254: expected end of line
-    stop sound crowd_noises fadeout 1.0
-               ^
-
-File "game/STORY.rpy", line 264: expected end of line
-    stop sound crowd_noises fadeout 1.0
-               ^
+File "game/gun-minigame.rpy", line 9: invalid syntax
+            cork_gun_pos = (int(mousepos[0] - cork_gun_size[0] / 2), cork_gun_opos[1]).
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start. took 0.44s
+Interface start. took 0.21s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1600, 900)
+primary display bounds: (0, 0, 2560, 1440)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 530'
-Version: '4.6.0 - Build 31.0.101.2111'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
 Display Info: None
 Number of texture units: 32
 Using shader environment.
@@ -49,6 +40,901 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1419, 798) drawable=(1419, 798)
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 11.28s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.01s
+Loading script. took 0.21s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.10s
+Loading analysis data. took 0.04s
+Analyze and compile ATL. took 0.07s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.06s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+
+Full traceback:
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 283, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 35, in script
+    $ cg_start_pos = (int((config.screen_width / 2) - (cork_gun_size[0] / 2)), config.screen_height - cork_gun_size[1] + 60)
+  File "renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/gun-minigame.rpy", line 35, in <module>
+    $ cg_start_pos = (int((config.screen_width / 2) - (cork_gun_size[0] / 2)), config.screen_height - cork_gun_size[1] + 60)
+NameError: name 'cork_gun_size' is not defined
+
+While running game code:
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 283, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 35, in script
+    $ cg_start_pos = (int((config.screen_width / 2) - (cork_gun_size[0] / 2)), config.screen_height - cork_gun_size[1] + 60)
+  File "game/gun-minigame.rpy", line 35, in <module>
+    $ cg_start_pos = (int((config.screen_width / 2) - (cork_gun_size[0] / 2)), config.screen_height - cork_gun_size[1] + 60)
+NameError: name 'cork_gun_size' is not defined
+Resetting cache.
+Bootstrap to the start of init.init. took 56.07s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.23s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.08s
+Loading analysis data. took 0.06s
+Analyze and compile ATL. took 0.10s
+Reloading save slot metadata. took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.08s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.13s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.05s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.12s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 142.35s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.25s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.08s
+Loading analysis data. took 0.06s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.08s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+
+Full traceback:
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 283, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 39, in script
+    call screen gun_minigame with fade
+  File "renpy/ast.py", line 2259, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 3345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "renpy/display/core.py", line 4052, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 476, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 4052, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "renpy/display/screen.py", line 487, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 680, in update
+    self.screen.function(**self.scope)
+  File "game/gun-minigame.rpy", line 25, in execute
+    screen gun_minigame:
+  File "game/gun-minigame.rpy", line 25, in execute
+    screen gun_minigame:
+  File "game/gun-minigame.rpy", line 29, in execute
+    add CorkGunTrans
+  File "renpy/sl2/sldisplayables.py", line 451, in sl2add
+    d = renpy.easy.displayable(d, scope=scope)
+  File "renpy/easy.py", line 145, in displayable
+    raise Exception("Not a displayable: %r" % (d,))
+Exception: Not a displayable: <function CorkGunTrans at 0x0000000005fca650>
+
+While running game code:
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 283, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 39, in script
+    call screen gun_minigame with fade
+  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/gun-minigame.rpy", line 25, in execute
+    screen gun_minigame:
+  File "game/gun-minigame.rpy", line 25, in execute
+    screen gun_minigame:
+  File "game/gun-minigame.rpy", line 29, in execute
+    add CorkGunTrans
+Exception: Not a displayable: <function CorkGunTrans at 0x0000000005fca650>
+Resetting cache.
+Bootstrap to the start of init.init. took 165.53s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.02s
+Loading script. took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.09s
+Loading analysis data. took 0.06s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.08s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 218.83s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.09s
+Loading analysis data. took 0.06s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.06s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init. took 267.98s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.08s
+Loading analysis data. took 0.06s
+Analyze and compile ATL. took 0.07s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.08s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.09s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 354.45s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.25s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/gun-minigame.rpy", line 37: invalid syntax
+    cg_trans = Transform(child=cg_image, zoom=0.5, pos=(cg_start_pos[0], cg_start_pos[1], function=UpdateGun))
+                                                                                                   ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Interface start. took 0.13s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 368.37s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.10s
+Loading analysis data. took 0.03s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+
+Full traceback:
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 283, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 39, in script
+    call screen gun_minigame with fade
+  File "renpy/ast.py", line 2259, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 3345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3595, in interact
+    scene_lists.replace_transient()
+  File "renpy/display/core.py", line 1069, in replace_transient
+    self.remove(layer, tag, prefix=prefix)
+  File "renpy/display/core.py", line 1397, in remove
+    self.hide_or_replace(layer, remove_index, prefix)
+  File "renpy/display/core.py", line 1308, in hide_or_replace
+    d = oldsle.displayable._in_current_store()._hide(now - st, now - at, prefix)
+  File "renpy/display/screen.py", line 574, in _hide
+    c = d._hide(st, at, kind)
+  File "renpy/display/transform.py", line 802, in _hide
+    self.update_state()
+  File "renpy/display/transform.py", line 878, in update_state
+    fr = self.function(self, self.st, self.at)
+  File "game/gun-minigame.rpy", line 9, in UpdateGun
+    cg_pos = (int(mousepos[0] - cg_size[0] / 2), cg_opos[1])
+NameError: global name 'mousepos' is not defined
+
+While running game code:
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 283, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 39, in script
+    call screen gun_minigame with fade
+  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/gun-minigame.rpy", line 9, in UpdateGun
+    cg_pos = (int(mousepos[0] - cg_size[0] / 2), cg_opos[1])
+NameError: global name 'mousepos' is not defined
+Resetting cache.
+Bootstrap to the start of init.init. took 388.52s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.02s
+Loading script. took 0.31s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.09s
+Loading analysis data. took 0.07s
+Analyze and compile ATL. took 0.07s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+
+Full traceback:
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 283, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 39, in script
+    call screen gun_minigame with fade
+  File "renpy/ast.py", line 2259, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 3345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3595, in interact
+    scene_lists.replace_transient()
+  File "renpy/display/core.py", line 1069, in replace_transient
+    self.remove(layer, tag, prefix=prefix)
+  File "renpy/display/core.py", line 1397, in remove
+    self.hide_or_replace(layer, remove_index, prefix)
+  File "renpy/display/core.py", line 1308, in hide_or_replace
+    d = oldsle.displayable._in_current_store()._hide(now - st, now - at, prefix)
+  File "renpy/display/screen.py", line 574, in _hide
+    c = d._hide(st, at, kind)
+  File "renpy/display/transform.py", line 802, in _hide
+    self.update_state()
+  File "renpy/display/transform.py", line 878, in update_state
+    fr = self.function(self, self.st, self.at)
+  File "game/gun-minigame.rpy", line 13, in UpdateGun
+    cg_pos = (cg_pos[0], cg_opos[1] + int((mousePos[1] - config.screen_height / 2) / 7))
+NameError: global name 'cg_opos' is not defined
+
+While running game code:
+  File "game/script.rpy", line 52, in script call
+    call STORY
+  File "game/STORY.rpy", line 283, in script call
+    call gun_start
+  File "game/gun-minigame.rpy", line 39, in script
+    call screen gun_minigame with fade
+  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/gun-minigame.rpy", line 13, in UpdateGun
+    cg_pos = (cg_pos[0], cg_opos[1] + int((mousePos[1] - config.screen_height / 2) / 7))
+NameError: global name 'cg_opos' is not defined
+Resetting cache.
+Bootstrap to the start of init.init. took 431.33s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.26s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.10s
+Loading analysis data. took 0.06s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 472.52s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.26s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.08s
+Loading analysis data. took 0.06s
+Analyze and compile ATL. took 0.07s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.14s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 551.33s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.01s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.09s
+Loading analysis data. took 0.06s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.06s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 869.58s
+Early init. took 0.00s
+Loader init. took 0.14s
+Loading error handling. took 0.02s
+Loading script. took 0.62s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Set script version to: (6, 99, 12, 4) (alternate path)
+Running init code. took 0.10s
+Loading analysis data. took 0.07s
+Analyze and compile ATL. took 0.07s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\NZXT\\AppData\\Roaming/RenPy/backups\\DDLC-No-More-Time-mod-creation':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.05s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.09s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.0 Compatibility Profile Context 23.5.2.230523'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
