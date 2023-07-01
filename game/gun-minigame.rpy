@@ -1,6 +1,16 @@
 init python:
     def CorkGunTrans(t, st, at):
-        pass
+        global cg_start_pos
+        global cg_pos
+
+        mousePos = renpy.get_mouse_pos()
+
+        if mousePos[0] - cg_size[0] / 2 <= renpy.get_physical_size()[0] - cg_size[0] and mousePos[0] >= cg_size[0] / 2:
+            cg_pos = (mousePos[0] - cg_size[0] / 2, cg_start_pos[1])
+        
+        t.xpos = cg_pos[0]
+
+        return 0
 
 transform half_size:
     zoom 0.5

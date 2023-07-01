@@ -7,7 +7,9 @@ While running game code:
     $ fading_pause(channel="sound", fade=1.0)
   File "game/STORY.rpy", line 247, in <module>
     $ fading_pause(channel="sound", fade=1.0)
-TypeError: fading_pause() got an unexpected keyword argument 'fade'
+  File "game/definitions/definitions.rpy", line 75, in fading_pause
+    renpy.music.play(fn, channel, fadein = fade)
+Exception: Parsing audio spec u'<from 11.989><loop 1.532>bgm/9g.ogg': expected float, got u'11.989><loop'..
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -22,9 +24,19 @@ Full traceback:
     exec(bytecode, globals, locals)
   File "game/STORY.rpy", line 247, in <module>
     $ fading_pause(channel="sound", fade=1.0)
-TypeError: fading_pause() got an unexpected keyword argument 'fade'
+  File "game/definitions/definitions.rpy", line 75, in fading_pause
+    renpy.music.play(fn, channel, fadein = fade)
+  File "renpy/audio/music.py", line 131, in play
+    c.enqueue(filenames, loop=loop, synchro_start=synchro_start, fadein=fadein, tight=tight, relative_volume=relative_volume)
+  File "renpy/audio/audio.py", line 676, in enqueue
+    filename, _, _ = self.split_filename(filename, False)
+  File "renpy/audio/audio.py", line 399, in split_filename
+    start = expect_float()
+  File "renpy/audio/audio.py", line 366, in expect_float
+    raise exception("expected float, got {!r}.".format(v))
+Exception: Parsing audio spec u'<from 11.989><loop 1.532>bgm/9g.ogg': expected float, got u'11.989><loop'..
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.6.1.23060707
 DDLC - No More Time 0.0.1
-Sat Jul  1 15:20:41 2023
+Sat Jul  1 15:25:03 2023
