@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gun-minigame.rpy", line 37: invalid syntax
-    cg_trans = Transform(child=cg_image, zoom=0.5, pos=(cg_start_pos[0], cg_start_pos[1], function=UpdateGun))
-                                                                                                   ^
+File "game/gun-minigame.rpy", line 172: invalid syntax
+                    match target.row:
+                                ^
 
 Ren'Py Version: Ren'Py 7.6.1.23060707
-Sat Jul  1 15:54:41 2023
+Sun Jul  2 12:44:29 2023

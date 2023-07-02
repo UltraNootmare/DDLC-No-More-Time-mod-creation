@@ -74,57 +74,52 @@ init python:
             if target.hit == True:
                 if target.currentFrame == 1:
                     i = Image("mod_assets/minigame_assets/tg-falling-1.png")
-                    match target.row:
-                        case 1:
-                            t = Transform(child=i, zoom=targetR1Z)
-                        case 2:
-                            t = Transform(child=i, zoom=targetR2Z)
-                        case 3:
-                            t = Transform(child=i, zoom=targetR3Z)
+                    if target.row == 1:
+                        t = Transform(child=i, zoom=targetR1Z)
+                    elif target.row == 2:
+                        t = Transform(child=i, zoom=targetR2Z)
+                    elif target.row == 3:
+                        t = Transform(child=i, zoom=targetR3Z)
                     target.currentFrame = 2
                     target.set_child(t)
                 if target.currentFrame == 2:
                     i = Image("mod_assets/minigame_assets/tg-falling-2.png")
-                    match target.row:
-                        case 1:
-                            t = Transform(child=i, zoom=targetR1Z)
-                        case 2:
-                            t = Transform(child=i, zoom=targetR2Z)
-                        case 3:
-                            t = Transform(child=i, zoom=targetR3Z)
+                    if target.row == 1:
+                        t = Transform(child=i, zoom=targetR1Z)
+                    elif target.row == 2:
+                        t = Transform(child=i, zoom=targetR2Z)
+                    elif target.row == 3:
+                        t = Transform(child=i, zoom=targetR3Z)
                     target.currentFrame = 3
                     target.set_child(t)
                 if target.currentFrame == 3:
                     i = Image("mod_assets/minigame_assets/tg-down.png")
-                    match target.row:
-                        case 1:
-                            t = Transform(child=i, zoom=targetR1Z)
-                        case 2:
-                            t = Transform(child=i, zoom=targetR2Z)
-                        case 3:
-                            t = Transform(child=i, zoom=targetR3Z)
+                    if target.row == 1:
+                        t = Transform(child=i, zoom=targetR1Z)
+                    elif target.row == 2:
+                        t = Transform(child=i, zoom=targetR2Z)
+                    elif target.row == 3:
+                        t = Transform(child=i, zoom=targetR3Z)
                     target.currentFrame = 4
                     target.set_child(t)
                 if target.currentFrame == 4:
                     i = Image("mod_assets/minigame_assets/tg-falling-2.png")
-                    match target.row:
-                        case 1:
-                            t = Transform(child=i, zoom=targetR1Z)
-                        case 2:
-                            t = Transform(child=i, zoom=targetR2Z)
-                        case 3:
-                            t = Transform(child=i, zoom=targetR3Z)
+                    if target.row == 1:
+                        t = Transform(child=i, zoom=targetR1Z)
+                    elif target.row == 2:
+                        t = Transform(child=i, zoom=targetR2Z)
+                    elif target.row == 3:
+                        t = Transform(child=i, zoom=targetR3Z)
                     target.currentFrame = 5
                     target.set_child(t)
                 if target.currentFrame == 5:
                     i = Image("mod_assets/minigame_assets/tg-down.png")
-                    match target.row:
-                        case 1:
-                            t = Transform(child=i, zoom=targetR1Z)
-                        case 2:
-                            t = Transform(child=i, zoom=targetR2Z)
-                        case 3:
-                            t = Transform(child=i, zoom=targetR3Z)
+                    if target.row == 1:
+                        t = Transform(child=i, zoom=targetR1Z)
+                    elif target.row == 2:
+                        t = Transform(child=i, zoom=targetR2Z)
+                    elif target.row == 3:
+                        t = Transform(child=i, zoom=targetR3Z)
                     target.currentFrame = 5
                     target.hit = False
                     target.set_child(t)
@@ -132,92 +127,84 @@ init python:
                 if target.idleDir == "Up":
                     if target.currentFrame == 5:
                         i = Image("mod_assets/minigame_assets/tg-falling-2.png")
-                        match target.row:
-                            case 1:
-                                t = Transform(child=i, zoom=targetR1Z)
-                            case 2:
-                                t = Transform(child=i, zoom=targetR2Z)
-                            case 3:
-                                t = Transform(child=i, zoom=targetR3Z)
+                        if target.row == 1:
+                            t = Transform(child=i, zoom=targetR1Z)
+                        elif target.row == 2:
+                            t = Transform(child=i, zoom=targetR2Z)
+                        elif target.row == 3:
+                            t = Transform(child=i, zoom=targetR3Z)
                             target.currentFrame = 3
                             target.set_child(t)
                     elif target.currentFrame == 3:
                         i = Image("mod_assets/minigame_assets/tg-falling-1.png")
-                        match target.row:
-                            case 1:
-                                t = Transform(child=i, zoom=targetR1Z)
-                            case 2:
-                                t = Transform(child=i, zoom=targetR2Z)
-                            case 3:
-                                t = Transform(child=i, zoom=targetR3Z)
+                        if target.row == 1:
+                            t = Transform(child=i, zoom=targetR1Z)
+                        elif target.row == 2:
+                            t = Transform(child=i, zoom=targetR2Z)
+                        elif target.row == 3:
+                            t = Transform(child=i, zoom=targetR3Z)
                             target.currentFrame = 2
                             target.set_child(t)
                     elif target.currentFrame == 2:
                         i = Image("mod_assets/minigame_assets/tg-idle.png")
-                        match target.row:
-                            case 1:
-                                t = Transform(child=i, zoom=targetR1Z)
-                            case 2:
-                                t = Transform(child=i, zoom=targetR2Z)
-                            case 3:
-                                t = Transform(child=i, zoom=targetR3Z)
-                            target.currentFrame = 1
-                            target.idleDir = "Down"
-                            target.set_child(t)
+                        if target.row == 1:
+                            t = Transform(child=i, zoom=targetR1Z)
+                        elif target.row == 2:
+                            t = Transform(child=i, zoom=targetR2Z)
+                        elif target.row == 3:
+                            t = Transform(child=i, zoom=targetR3Z)
+                        target.currentFrame = 1
+                        target.idleDir = "Down"
+                        target.set_child(t)
                 elif target.idleDir == "Down":
                     if target.currentFrame == 1:
-                    i = Image("mod_assets/minigame_assets/tg-falling-1.png")
-                    match target.row:
-                        case 1:
+                        i = Image("mod_assets/minigame_assets/tg-falling-1.png")
+                        if target.row == 1:
                             t = Transform(child=i, zoom=targetR1Z)
-                        case 2:
+                        elif target.row == 2:
                             t = Transform(child=i, zoom=targetR2Z)
-                        case 3:
+                        elif target.row == 3:
                             t = Transform(child=i, zoom=targetR3Z)
-                    target.currentFrame = 2
-                    target.set_child(t)
+                        target.currentFrame = 2
+                        target.set_child(t)
                 if target.currentFrame == 2:
                     i = Image("mod_assets/minigame_assets/tg-falling-2.png")
-                    match target.row:
-                        case 1:
-                            t = Transform(child=i, zoom=targetR1Z)
-                        case 2:
-                            t = Transform(child=i, zoom=targetR2Z)
-                        case 3:
-                            t = Transform(child=i, zoom=targetR3Z)
+                    if target.row == 1:
+                        t = Transform(child=i, zoom=targetR1Z)
+                    elif target.row == 2:
+                        t = Transform(child=i, zoom=targetR2Z)
+                    elif target.row == 3:
+                        t = Transform(child=i, zoom=targetR3Z)
                     target.currentFrame = 3
                     target.set_child(t)
                 if target.currentFrame == 3:
                     i = Image("mod_assets/minigame_assets/tg-down.png")
-                    match target.row:
-                        case 1:
-                            t = Transform(child=i, zoom=targetR1Z)
-                        case 2:
-                            t = Transform(child=i, zoom=targetR2Z)
-                        case 3:
-                            t = Transform(child=i, zoom=targetR3Z)
+                    if target.row == 1:
+                        t = Transform(child=i, zoom=targetR1Z)
+                    elif target.row == 2:
+                        t = Transform(child=i, zoom=targetR2Z)
+                    elif target.row == 3:
+                        t = Transform(child=i, zoom=targetR3Z)
                     target.currentFrame = 4
                     target.set_child(t)
                 if target.currentFrame == 4:
                     i = Image("mod_assets/minigame_assets/tg-falling-2.png")
-                    match target.row:
-                        case 1:
-                            t = Transform(child=i, zoom=targetR1Z)
-                        case 2:
-                            t = Transform(child=i, zoom=targetR2Z)
-                        case 3:
-                            t = Transform(child=i, zoom=targetR3Z)
+                    if target.row == 1:
+                        t = Transform(child=i, zoom=targetR1Z)
+                    elif target.row == 2:
+                        t = Transform(child=i, zoom=targetR2Z)
+                    elif target.row == 3:
+                        t = Transform(child=i, zoom=targetR3Z)
                     target.currentFrame = 5
                     target.set_child(t)
                 if target.currentFrame == 5:
                     i = Image("mod_assets/minigame_assets/tg-down.png")
-                    match target.row:
-                        case 1:
-                            t = Transform(child=i, zoom=targetR1Z)
-                        case 2:
-                            t = Transform(child=i, zoom=targetR2Z)
-                        case 3:
-                            t = Transform(child=i, zoom=targetR3Z)
+                    if target.row == 1:
+                        t = Transform(child=i, zoom=targetR1Z)
+                    elif target.row == 2:
+                        t = Transform(child=i, zoom=targetR2Z)
+                    elif target.row == 3:
+                        t = Transform(child=i, zoom=targetR3Z)
                     target.currentFrame = 5
                     target.idleDir = "Up"
                     target.hit = False
